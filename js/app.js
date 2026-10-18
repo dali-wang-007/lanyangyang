@@ -19,6 +19,8 @@ export async function initCatalog(root = document) {
   const pagination = root.querySelector('#resource-pagination');
   const filterToggle = root.querySelector('[data-filter-toggle]');
   const filterPanel = root.querySelector('[data-filter-panel]');
+  const filterApply = root.querySelector('[data-filter-apply]');
+  const selectedFilters = root.querySelector('[data-selected-filters]');
   const filterButtons = [...root.querySelectorAll('[data-filter-dimension][data-filter-value]')];
   const legacyCollectionButtons = [...root.querySelectorAll('[data-collection]')];
   const activeFilterCount = root.querySelector('[data-active-filter-count]');
@@ -80,6 +82,17 @@ export async function initCatalog(root = document) {
       button.classList.toggle('is-active', active);
       button.setAttribute('aria-pressed', String(active));
     }
+    if (selectedFilters) {
+      const labels = [];
+      for (const dimension of ['collectionIds', 'scenarios', 'materialTypes', 'audiences']) {
+        for (const value of state[dimension]) {
+          const source = filterButtons.find((button) => button.dataset.filterDimension === dimension && button.dataset.filterValue === value);
+          labels.push(`<button type="button" data-remove-filter="${dimension}" data-remove-value="${value.replaceAll('&', '&amp;').replaceAll('"', '&quot;')}">${source?.textContent.trim() || value}<span aria-hidden="true">×</span></button>`);
+        }
+      }
+      selectedFilters.innerHTML = labels.join('');
+      selectedFilters.hidden = labels.length === 0;
+    }
   }
 
   function render() {
@@ -95,7 +108,22 @@ export async function initCatalog(root = document) {
     });
     pagination.innerHTML = renderPagination(pageResult);
     clearSearch.hidden = state.query.length === 0;
+    if (filterApply) filterApply.textContent = `查看 ${filtered.length} 条资料`;
     syncControls();
+  }
+
+  function closeFilters() {
+    if (!filterPanel) return;
+    if (typeof filterPanel.close === 'function' && filterPanel.open) filterPanel.close();
+    else filterPanel.removeAttribute('open');
+    filterToggle?.setAttribute('aria-expanded', 'false');
+  }
+
+  function openFilters() {
+    if (!filterPanel) return;
+    if (typeof filterPanel.showModal === 'function') filterPanel.showModal();
+    else filterPanel.setAttribute('open', '');
+    filterToggle?.setAttribute('aria-expanded', 'true');
   }
 
   function resetFilters() {
@@ -106,8 +134,7 @@ export async function initCatalog(root = document) {
     state.audiences = [];
     state.page = 1;
     searchInput.value = '';
-    if (filterPanel) filterPanel.hidden = true;
-    if (filterToggle) filterToggle.setAttribute('aria-expanded', 'false');
+    closeFilters();
     render();
     searchInput.focus();
   }
@@ -149,8 +176,26 @@ export async function initCatalog(root = document) {
 
   filterToggle?.addEventListener('click', () => {
     const expanded = filterToggle.getAttribute('aria-expanded') === 'true';
-    filterToggle.setAttribute('aria-expanded', String(!expanded));
-    filterPanel.hidden = expanded;
+    if (expanded) closeFilters();
+    else openFilters();
+  });
+
+  root.querySelectorAll('[data-filter-close]').forEach((button) => button.addEventListener('click', closeFilters));
+  filterApply?.addEventListener('click', () => {
+    closeFilters();
+    summary.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  });
+  filterPanel?.addEventListener('cancel', () => filterToggle?.setAttribute('aria-expanded', 'false'));
+  filterPanel?.addEventListener('click', (event) => {
+    if (event.target === filterPanel) closeFilters();
+  });
+
+  selectedFilters?.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-remove-filter]');
+    if (!button) return;
+    state[button.dataset.removeFilter] = state[button.dataset.removeFilter].filter((value) => value !== button.dataset.removeValue);
+    state.page = 1;
+    render();
   });
 
   root.querySelectorAll('[data-filter-reset]').forEach((button) => button.addEventListener('click', resetFilters));

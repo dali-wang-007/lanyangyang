@@ -71,14 +71,14 @@ export function renderPagination({ page, totalPages }) {
 </nav>`;
 }
 
-function renderProductImage(image, className = '') {
-  return `<img class="${className}" src="${escapeHtml(image.src)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="lazy" alt="${escapeHtml(image.alt)}">`;
+function renderProductImage(image, className = '', { eager = false } = {}) {
+  return `<img class="${className}" src="${escapeHtml(image.src)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="${eager ? 'eager' : 'lazy'}"${eager ? ' fetchpriority="high"' : ''} alt="${escapeHtml(image.alt)}">`;
 }
 
 export function renderProductCard(product) {
   return `<article class="product-card" id="product-${escapeHtml(product.id)}">
   <a class="product-card__image" href="product.html?id=${encodeURIComponent(product.id)}" aria-label="查看产品：${escapeHtml(product.title)}">
-    ${renderProductImage(product.cover)}
+    ${renderProductImage(product.cover, '', { eager: true })}
   </a>
   <div class="product-card__body">
     <p class="product-card__kicker">数字产品</p>
@@ -89,11 +89,51 @@ export function renderProductCard(product) {
 </article>`;
 }
 
-export function renderProductDetail(product) {
+export function renderProductShelf(products) {
+  const items = products.map((product, index) => `<button class="product-shelf__item${index === 0 ? ' is-active' : ''}" type="button" data-product-select="${escapeHtml(product.id)}" aria-pressed="${index === 0}">
+  <span>数字产品</span>
+  <strong>${escapeHtml(product.title)}</strong>
+</button>`).join('\n');
+  return `${items}
+<div class="product-shelf__coming" aria-label="更多产品正在整理中">
+  <span aria-hidden="true">＋</span>
+  <strong>更多产品</strong>
+  <small>正在整理中</small>
+</div>`;
+}
+
+function renderProductGallery(product, { inline = false } = {}) {
   const gallery = product.gallery.map((image, index) => `<figure class="product-gallery__image" data-gallery-image="${index}"${index === 0 ? '' : ' hidden'}>
-    ${renderProductImage(image)}
+    ${renderProductImage(image, '', { eager: index === 0 })}
   </figure>`).join('\n');
-  const dots = product.gallery.map((_, index) => `<button type="button" data-gallery-dot="${index}" aria-label="查看第 ${index + 1} 张介绍图" aria-pressed="${index === 0}"></button>`).join('');
+  const thumbs = product.gallery.map((image, index) => `<button type="button" data-gallery-thumb="${index}" data-gallery-dot="${index}" aria-label="查看第 ${index + 1} 张介绍图" aria-pressed="${index === 0}">
+    ${renderProductImage(image, '', { eager: index === 0 })}
+  </button>`).join('');
+  return `<div class="product-gallery${inline ? ' product-gallery--inline' : ''}" data-gallery data-gallery-total="${product.gallery.length}">
+    <div class="product-gallery__viewport">${gallery}</div>
+    <div class="product-gallery__controls">
+      <button type="button" data-gallery-step="-1" aria-label="上一张介绍图">←</button>
+      <span class="product-gallery__thumbs">${thumbs}</span>
+      <button type="button" data-gallery-step="1" aria-label="下一张介绍图">→</button>
+    </div>
+  </div>`;
+}
+
+export function renderProductShowcase(product) {
+  const highlights = product.highlights.map((item) => `<li>${escapeHtml(item)}</li>`).join('');
+  return `<article class="product-showcase" data-product-showcase="${escapeHtml(product.id)}">
+  ${renderProductGallery(product, { inline: true })}
+  <div class="product-showcase__copy">
+    <p class="product-card__kicker">数字产品</p>
+    <h3>${escapeHtml(product.title)}</h3>
+    <p>${escapeHtml(product.summary)}</p>
+    <ul class="product-showcase__highlights">${highlights}</ul>
+    <a class="button button--primary" href="product.html?id=${encodeURIComponent(product.id)}">查看完整介绍 <span aria-hidden="true">→</span></a>
+  </div>
+</article>`;
+}
+
+export function renderProductDetail(product) {
   const highlights = product.highlights.map((item) => `<li>${escapeHtml(item)}</li>`).join('');
   const channels = product.channels.map((channel) => `<a class="button button--primary" href="${escapeHtml(channel.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(channel.label)} <span aria-hidden="true">↗</span></a>`).join('');
 
@@ -106,14 +146,7 @@ export function renderProductDetail(product) {
     <ul class="check-list">${highlights}</ul>
     <div class="product-detail__actions">${channels}</div>
   </div>
-  <div class="product-gallery" data-gallery data-gallery-total="${product.gallery.length}">
-    <div class="product-gallery__viewport">${gallery}</div>
-    <div class="product-gallery__controls">
-      <button type="button" data-gallery-step="-1" aria-label="上一张介绍图">←</button>
-      <span class="product-gallery__dots">${dots}</span>
-      <button type="button" data-gallery-step="1" aria-label="下一张介绍图">→</button>
-    </div>
-  </div>
+  ${renderProductGallery(product)}
 </div>`;
 }
 

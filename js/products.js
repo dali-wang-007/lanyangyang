@@ -1,22 +1,27 @@
-import { getGalleryIndex, renderProductCard, renderProductDetail } from './render.js';
+import {
+  getGalleryIndex,
+  renderProductCard,
+  renderProductDetail,
+  renderProductShelf,
+  renderProductShowcase
+} from './render.js';
 
 function setupGallery(root) {
-  const gallery = root.querySelector('[data-gallery]');
-  if (!gallery) return;
+  root.querySelectorAll('[data-gallery]').forEach((gallery) => {
   const images = [...gallery.querySelectorAll('[data-gallery-image]')];
-  const dots = [...gallery.querySelectorAll('[data-gallery-dot]')];
+  const controls = [...gallery.querySelectorAll('[data-gallery-dot]')];
   let current = 0;
 
   function show(index) {
     current = getGalleryIndex(index, 0, images.length);
     images.forEach((image, imageIndex) => { image.hidden = imageIndex !== current; });
-    dots.forEach((dot, dotIndex) => dot.setAttribute('aria-pressed', String(dotIndex === current)));
+    controls.forEach((control, controlIndex) => control.setAttribute('aria-pressed', String(controlIndex === current)));
   }
 
   gallery.querySelectorAll('[data-gallery-step]').forEach((button) => button.addEventListener('click', () => {
     show(getGalleryIndex(current, Number(button.dataset.galleryStep), images.length));
   }));
-  dots.forEach((dot) => dot.addEventListener('click', () => show(Number(dot.dataset.galleryDot))));
+  controls.forEach((control) => control.addEventListener('click', () => show(Number(control.dataset.galleryDot))));
 
   let touchStartX = null;
   gallery.addEventListener('touchstart', (event) => { touchStartX = event.changedTouches[0]?.clientX ?? null; }, { passive: true });
@@ -26,12 +31,15 @@ function setupGallery(root) {
     if (Math.abs(distance) >= 44) show(getGalleryIndex(current, distance < 0 ? 1 : -1, images.length));
     touchStartX = null;
   }, { passive: true });
+  });
 }
 
 export async function initProducts(root = document) {
   const list = root.querySelector('[data-product-list]');
+  const shelf = root.querySelector('[data-product-shelf]');
+  const showcase = root.querySelector('[data-product-showcase]');
   const detail = root.querySelector('[data-product-detail]');
-  if (!list && !detail) return;
+  if (!list && !shelf && !showcase && !detail) return;
 
   try {
     const response = await fetch('data/products.json');
@@ -39,6 +47,24 @@ export async function initProducts(root = document) {
     const products = await response.json();
 
     if (list) list.innerHTML = products.map(renderProductCard).join('\n');
+    if (shelf) shelf.innerHTML = renderProductShelf(products);
+    if (showcase && products[0]) {
+      showcase.innerHTML = renderProductShowcase(products[0]);
+      setupGallery(showcase);
+    }
+    shelf?.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-product-select]');
+      if (!button || !showcase) return;
+      const product = products.find((item) => item.id === button.dataset.productSelect);
+      if (!product) return;
+      shelf.querySelectorAll('[data-product-select]').forEach((item) => {
+        const active = item === button;
+        item.classList.toggle('is-active', active);
+        item.setAttribute('aria-pressed', String(active));
+      });
+      showcase.innerHTML = renderProductShowcase(product);
+      setupGallery(showcase);
+    });
     if (detail) {
       const requestedId = new URLSearchParams(location.search).get('id');
       const product = products.find((item) => item.id === requestedId) || products[0];
@@ -48,7 +74,7 @@ export async function initProducts(root = document) {
       setupGallery(detail);
     }
   } catch (error) {
-    const target = detail || list;
+    const target = detail || showcase || shelf || list;
     target.innerHTML = '<div class="empty-state"><p>产品介绍暂时没有加载成功，请稍后刷新页面。</p></div>';
     console.error('Unable to load products', error);
   }
