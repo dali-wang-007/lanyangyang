@@ -70,7 +70,7 @@ export async function initProducts(root = document) {
       const product = products.find((item) => item.id === requestedId) || products[0];
       if (!product) throw new Error('No product available');
       detail.innerHTML = renderProductDetail(product);
-      document.title = `${product.title}｜懒羊羊`;
+      document.title = `${product.title}｜PM大力王`;
       setupGallery(detail);
     }
   } catch (error) {
