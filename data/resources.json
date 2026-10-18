@@ -1,0 +1,2864 @@
+[
+  {
+    "id": "ai-MKEBdc7bcookcyxIwNgcS9hMnKf",
+    "title": "AI 工作资料处理提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "处理新人入职资料、项目背景、会议纪要、制度文件、客户反馈、领导转发材料、长文档和汇报提纲",
+    "problem": "资料太多读不完、重点抓不住、风险和待确认问题漏掉、难以转成下一步行动",
+    "url": "https://my.feishu.cn/docx/MKEBdc7bcookcyxIwNgcS9hMnKf",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-02",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 4,
+      "links": [
+        "https://my.feishu.cn/docx/MKEBdc7bcookcyxIwNgcS9hMnKf"
+      ],
+      "originalLinkText": "AI 工作资料处理提示词包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘",
+      "新人入职"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "职场新人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-J8GedQADeo0lx6x8rPMcbhAxngg",
+    "title": "AI 工作知识库搭建提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "个人工作知识库搭建、旧资料分类、项目资料入库、会议纪要入库、经验复盘沉淀、每周知识库维护",
+    "problem": "资料散在聊天记录和文件夹里、经验无法复用、写汇报和交接时反复从零开始",
+    "url": "https://my.feishu.cn/docx/J8GedQADeo0lx6x8rPMcbhAxngg",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-03",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 5,
+      "links": [
+        "https://my.feishu.cn/docx/J8GedQADeo0lx6x8rPMcbhAxngg"
+      ],
+      "originalLinkText": "AI 工作知识库搭建提示词包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-H3TmdZ2z4owLDdxW46tcT3xcnVc",
+    "title": "AI 年中汇报提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "年中汇报、半年总结、绩效复盘、晋升材料、组员/组长/部门经理向上汇报",
+    "problem": "零散工作没内容可写、成果提炼弱、问题风险说不清、PPT大纲和发言稿难整理",
+    "url": "https://my.feishu.cn/docx/H3TmdZ2z4owLDdxW46tcT3xcnVc",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-04",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 6,
+      "links": [
+        "https://my.feishu.cn/docx/H3TmdZ2z4owLDdxW46tcT3xcnVc"
+      ],
+      "originalLinkText": "AI 年中汇报提示词包"
+    },
+    "primaryScenario": "汇报与绩效",
+    "scenarios": [
+      "汇报与绩效",
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-YOAsduGkVoRHkUx1ptqca9dkntW",
+    "title": "AI 相关概念速查表",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "产品经理/项目负责人入门 AI 项目、和老板/研发/业务对齐概念",
+    "problem": "搞清 AI 项目基本逻辑、常见概念、易混淆概念和项目沟通问题",
+    "url": "https://my.feishu.cn/docx/YOAsduGkVoRHkUx1ptqca9dkntW",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-07",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 7,
+      "links": [
+        "https://my.feishu.cn/docx/YOAsduGkVoRHkUx1ptqca9dkntW"
+      ],
+      "originalLinkText": "AI 相关概念速查表"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-ZZjsdgKfJoaf2gxsdMRcna6BnmB",
+    "title": "智能体知识库交付模板",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "产品经理/项目负责人整理 Agent 知识库、RAG 资料、评测集",
+    "problem": "把散乱业务资料整理成 Agent 可执行、可追溯、可评测的知识库",
+    "url": "https://my.feishu.cn/docx/ZZjsdgKfJoaf2gxsdMRcna6BnmB",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-08",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 8,
+      "links": [
+        "https://my.feishu.cn/docx/ZZjsdgKfJoaf2gxsdMRcna6BnmB"
+      ],
+      "originalLinkText": "智能体知识库交付模板"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-L1QCdKq1JoeRIdxNbcKc1Nvnn9c",
+    "title": "AI 项目知识库提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "产品经理做 AI 项目、知识库建设、资料筛选、规则抽取、评测准备、老板汇报和研发沟通",
+    "problem": "把历史 PRD、SOP、会议纪要等资料筛成可入库内容，并生成规则、知识卡片、评测问题和汇报话术",
+    "url": "https://my.feishu.cn/docx/L1QCdKq1JoeRIdxNbcKc1Nvnn9c",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-09",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 9,
+      "links": [
+        "https://my.feishu.cn/docx/L1QCdKq1JoeRIdxNbcKc1Nvnn9c"
+      ],
+      "originalLinkText": "AI 项目知识库提示词包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘",
+      "汇报与绩效"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-Fbh8dHq4voCNI2xchkrc31oMnzd",
+    "title": "AI Skill 设计模板",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "沉淀 AI Skill、把高频工作方法变成可复用资料、团队分享 AI 用法、给老板汇报 AI 能力沉淀",
+    "problem": "帮助区分 Skill/Prompt/Tool/知识库/Agent，并生成可复用 Skill 模板、提示词、示例和汇报话术",
+    "url": "https://my.feishu.cn/docx/Fbh8dHq4voCNI2xchkrc31oMnzd",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-10",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 10,
+      "links": [
+        "https://my.feishu.cn/docx/Fbh8dHq4voCNI2xchkrc31oMnzd"
+      ],
+      "originalLinkText": "AI Skill 设计模板"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "汇报与绩效",
+      "职场成长"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-ZZZ5drR5UobcU0xptU5cqs4Qnod",
+    "title": "普通人也能用的 AI Skill 入门模板",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人入门 Skill、沉淀周报/会议纪要/资料总结等高频工作方法、给老板汇报 AI 能力沉淀",
+    "problem": "帮助区分 Skill/Prompt/Agent/Tool/知识库，并提供生成 Skill 的提示词、文档版模板、3 个可复制示例和汇报话术",
+    "url": "https://my.feishu.cn/docx/ZZZ5drR5UobcU0xptU5cqs4Qnod",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-14",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 11,
+      "links": [
+        "https://my.feishu.cn/docx/ZZZ5drR5UobcU0xptU5cqs4Qnod"
+      ],
+      "originalLinkText": "普通人也能用的 AI Skill 入门模板"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "汇报与绩效",
+      "职场成长"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-BHP6dxnBQoNGnox86VXc6Thkn7b",
+    "title": "Agent Workflow Tool Skill 区分表 + 产品经理交付物模板",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "产品经理做 AI 项目、智能体方案设计、和老板/研发/业务对齐 Agent、Workflow、Tool、Skill 概念",
+    "problem": "帮助产品经理区分 Agent/Workflow/Tool/Skill，并输出角色定义、任务路径、Tool 清单、Skill 说明书和生成提示词",
+    "url": "https://my.feishu.cn/docx/BHP6dxnBQoNGnox86VXc6Thkn7b",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-15",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 12,
+      "links": [
+        "https://my.feishu.cn/docx/BHP6dxnBQoNGnox86VXc6Thkn7b"
+      ],
+      "originalLinkText": "Agent / Workflow / Tool / Skill 区分表 + 产品经理交付物模板"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-PEGsdCfhroYvjYxI1vCcpR6bn3g",
+    "title": "AI 智能体工作机制速查表",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人理解 AI 智能体、产品经理/运营/项目经理入门智能体概念、判断 AI 是否具备智能体能力",
+    "problem": "帮助区分聊天助手和智能体，理解大模型、知识库、RAG、Tool、Workflow、Skill、权限评测的关系，并提供安全使用检查清单",
+    "url": "https://my.feishu.cn/docx/PEGsdCfhroYvjYxI1vCcpR6bn3g",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-16",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 13,
+      "links": [
+        "https://my.feishu.cn/docx/PEGsdCfhroYvjYxI1vCcpR6bn3g"
+      ],
+      "originalLinkText": "AI 智能体工作机制速查表"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "职场成长"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-UWjbd370PoPViUxt2jvcOkOdnfb",
+    "title": "Markdown 常用语法速查表",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人用 AI 写资料、做总结、整理会议纪要、搭知识库、输出 md 格式文档",
+    "problem": "帮助非技术岗理解 Markdown 是什么、掌握常用语法，并提供会议纪要、周报、需求说明、资料总结的 Markdown 提示词",
+    "url": "https://my.feishu.cn/docx/UWjbd370PoPViUxt2jvcOkOdnfb",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-17",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 14,
+      "links": [
+        "https://my.feishu.cn/docx/UWjbd370PoPViUxt2jvcOkOdnfb"
+      ],
+      "originalLinkText": "Markdown 常用语法速查表"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-TMejdkzPVojHhUxhj3jcDbRqnKf",
+    "title": "端午假期 AI 小功能提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "端午假期、普通人入门 AI、端午打工人人格测试、假期吃粽指南、好运指南、朋友圈分享图、群聊互动",
+    "problem": "帮助普通人用 AI 生成 3 个端午小功能，并提供一键生成三张图卡的提示词、岗位形象词规则、吃粽指南、好运指南和转发文案",
+    "url": "https://my.feishu.cn/docx/TMejdkzPVojHhUxhj3jcDbRqnKf",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-19",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 15,
+      "links": [
+        "https://my.feishu.cn/docx/TMejdkzPVojHhUxhj3jcDbRqnKf"
+      ],
+      "originalLinkText": "端午 AI 小功能提示词资料包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-Ld07dDzWYoYuNJxLWy6czoF0neh",
+    "title": "AI Workflow 设计模板和提示词",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人设计 AI Workflow、产品经理做 AI 项目、会议纪要/周报/客户反馈分类等重复工作自动化",
+    "problem": "帮助区分流程图、Workflow、Agent 和 Skill，并提供可填写设计表、通用生成提示词、会议纪要完整示例、交付检查清单和汇报话术",
+    "url": "https://my.feishu.cn/docx/Ld07dDzWYoYuNJxLWy6czoF0neh",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-20",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 16,
+      "links": [
+        "https://my.feishu.cn/docx/Ld07dDzWYoYuNJxLWy6czoF0neh"
+      ],
+      "originalLinkText": "AI Workflow 设计模板和提示词"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘",
+      "汇报与绩效"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-NU4edsh9lo0ASKxsux9cKopcnGg",
+    "title": "假期后返工 AI 启动提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "假期后第一天返工、任务整理、优先级排序、领导同步、同事协作、各岗位快速恢复工作状态",
+    "problem": "帮助把假期前未完成任务、领导交代、会议节点和担心事项整理成返工启动清单，并生成优先级、确认事项、今日安排和同步话术",
+    "url": "https://my.feishu.cn/docx/NU4edsh9lo0ASKxsux9cKopcnGg",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-21",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 17,
+      "links": [
+        "https://my.feishu.cn/docx/NU4edsh9lo0ASKxsux9cKopcnGg"
+      ],
+      "originalLinkText": "假期后返工 AI 启动提示词包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘",
+      "沟通表达"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-KN78dDXMXoxcJxxRunBciCpSnOv",
+    "title": "WorkBuddy 工作资料助手提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人使用 WorkBuddy 整理项目资料、会议纪要、周报素材、风险事项、领导同步话术",
+    "problem": "帮助把零散工作资料整理成可复用的工作资料助手，并生成项目档案、周报素材、风险清单、知识卡片和同步话术",
+    "url": "https://my.feishu.cn/docx/KN78dDXMXoxcJxxRunBciCpSnOv",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-22",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 18,
+      "links": [
+        "https://my.feishu.cn/docx/KN78dDXMXoxcJxxRunBciCpSnOv"
+      ],
+      "originalLinkText": "WorkBuddy 工作资料助手提示词包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘",
+      "沟通表达"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-Zurld3eLCoetMWxMi0ecx7gbnTe",
+    "title": "非技术岗 Codex 上手资料包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "非技术岗第一次使用 Codex、整理文件、处理表格、制作网页原型、把重复工作变成可执行任务",
+    "problem": "帮助判断任务是否适合交给 Codex，并提供首个任务填写模板、结果验收清单、3 个可复制场景和安全边界",
+    "url": "https://my.feishu.cn/docx/Zurld3eLCoetMWxMi0ecx7gbnTe",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-23",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 19,
+      "links": [
+        "https://my.feishu.cn/docx/Zurld3eLCoetMWxMi0ecx7gbnTe"
+      ],
+      "originalLinkText": "非技术岗 Codex 上手资料包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "指南/手册",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-Bo9hdnHIFoWjygxlak6ciTfBnUc",
+    "title": "年中汇报 PPT 通用提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "年中汇报、项目价值汇报、阶段成果汇报、个人绩效汇报、团队成果汇报、问题复盘汇报、跨岗位成果表达",
+    "problem": "帮助不同岗位把零散资料整理成领导能看懂的 PPT 结构，提炼成果价值、优化单页表达、诊断 AI 资料搬运问题，并生成发言稿和自查清单",
+    "url": "https://my.feishu.cn/docx/Bo9hdnHIFoWjygxlak6ciTfBnUc",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-25",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 20,
+      "links": [
+        "https://my.feishu.cn/docx/Bo9hdnHIFoWjygxlak6ciTfBnUc"
+      ],
+      "originalLinkText": "年中汇报 PPT 通用提示词包"
+    },
+    "primaryScenario": "汇报与绩效",
+    "scenarios": [
+      "汇报与绩效",
+      "AI协作与效率",
+      "沟通表达"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-MkBtdCvBioGMFVxhmXtcW2phn3f",
+    "title": "WorkBuddy 团队知识库生成提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "团队知识库建设、多人协作流程标准化、AI 生成文档复核与提交流程",
+    "problem": "帮助把多人协作任务拆成可执行、可校验、可复用的流程，减少目录错放、内容不一致、复核遗漏和交付断点",
+    "url": "https://my.feishu.cn/docx/MkBtdCvBioGMFVxhmXtcW2phn3f",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-26",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 21,
+      "links": [
+        "https://my.feishu.cn/docx/MkBtdCvBioGMFVxhmXtcW2phn3f"
+      ],
+      "originalLinkText": "WorkBuddy 团队知识库生成提示词包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-GqzhdqWdao9EfRxtvqgc7nl0n8e",
+    "title": "AI 项目总控提示词模板",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "多 AI 子任务并行协作、项目巡检、进度跟踪、卡点识别与交付收口",
+    "problem": "提供子任务登记表、总控初始化提示词、统一状态汇报、巡检规则、五类卡点判断、解堵指令和交付收口模板",
+    "url": "https://my.feishu.cn/docx/GqzhdqWdao9EfRxtvqgc7nl0n8e",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-27",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 22,
+      "links": [
+        "https://my.feishu.cn/docx/GqzhdqWdao9EfRxtvqgc7nl0n8e"
+      ],
+      "originalLinkText": "AI 项目总控提示词模板"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-YkgbdmwSjo0T82x64lqc3rPVnSd",
+    "title": "AI 输出验收提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "AI 初稿验收、PRD/方案/汇报/数据报告/对外话术交付前检查，适合 WorkBuddy、Codex 等工具生成内容后的复核",
+    "problem": "帮助职场人检查 AI 是否乱补事实、写偏范围、遗漏流程字段、过度承诺，并把问题整理成可执行修订清单",
+    "url": "https://my.feishu.cn/docx/YkgbdmwSjo0T82x64lqc3rPVnSd",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-28",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 23,
+      "links": [
+        "https://my.feishu.cn/docx/YkgbdmwSjo0T82x64lqc3rPVnSd"
+      ],
+      "originalLinkText": "AI 输出验收提示词包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-SnhFdX9PCoq8Erxy5EwcOXwjnbb",
+    "title": "Codex 八大能力提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "非技术岗使用 Codex、整理文件、创建文档、迁移资料、浏览器/电脑控制、沉淀技能和自动化工作流",
+    "problem": "帮助普通职场人看懂 Codex 8 个核心用法，并拿到可复制提示词、组合工作流、结果验收清单和安全提醒",
+    "url": "https://my.feishu.cn/docx/SnhFdX9PCoq8Erxy5EwcOXwjnbb",
+    "resourceType": "docx",
+    "updatedAt": "2026-06-30",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 24,
+      "links": [
+        "https://my.feishu.cn/docx/SnhFdX9PCoq8Erxy5EwcOXwjnbb"
+      ],
+      "originalLinkText": "Codex 八大能力提示词包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "职场成长"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-KEdCdzUTzoIcuLxdmuacgisynWd",
+    "title": "WorkBuddy岗位场景提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "公司开始推AI、普通员工使用WorkBuddy跑通重复工作、沉淀Skill、整理组内分享、会议纪要、客户反馈、竞品整理、周报绩效",
+    "problem": "帮助普通员工把WorkBuddy实操过程整理成不同岗位和场景可复用的提示词，让AI能力被团队和领导看见",
+    "url": "https://my.feishu.cn/docx/KEdCdzUTzoIcuLxdmuacgisynWd",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-02",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 25,
+      "links": [
+        "https://my.feishu.cn/docx/KEdCdzUTzoIcuLxdmuacgisynWd"
+      ],
+      "originalLinkText": "WorkBuddy 岗位场景提示词包｜PM大力王"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "汇报与绩效"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-Dg4TdVLvBo2Z5YxrUDYcwp8onXb",
+    "title": "AI 上下文填写模板",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人使用 AI 写周报、写文章、做汇报、整理会议纪要、分析方案、复盘项目、让 AI 先反问补齐上下文",
+    "problem": "分不清 Prompt 和上下文、AI 回答泛/跑偏/编信息、周报和汇报缺背景、任务边界不清",
+    "url": "https://my.feishu.cn/docx/Dg4TdVLvBo2Z5YxrUDYcwp8onXb",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-03",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 26,
+      "links": [
+        "https://my.feishu.cn/docx/Dg4TdVLvBo2Z5YxrUDYcwp8onXb"
+      ],
+      "originalLinkText": "AI 上下文填写模板"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "汇报与绩效",
+      "项目推进与复盘"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-O8g5dWOXsolnhQxUGKGcRsG5nhe",
+    "title": "WorkBuddy脱敏与资料整理提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人使用WorkBuddy整理已脱敏的客户反馈、会议纪要、问题清单、竞品资料、活动复盘和周报绩效素材",
+    "problem": "帮助先做资料分级和敏感信息检查，再生成资料归类表、领导摘要、周报绩效表达和不同岗位可复用提示词",
+    "url": "https://my.feishu.cn/docx/O8g5dWOXsolnhQxUGKGcRsG5nhe",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-05",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 27,
+      "links": [
+        "https://my.feishu.cn/docx/O8g5dWOXsolnhQxUGKGcRsG5nhe"
+      ],
+      "originalLinkText": "WorkBuddy 脱敏与资料整理提示词包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "汇报与绩效",
+      "沟通表达"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-KL1xdTPtJo85XrxzUfOcmjw3nMd",
+    "title": "新人 WorkBuddy 办公实操提示词",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "职场新人、校招生使用 WorkBuddy 做资料整理、接任务确认、会议纪要、文档初稿、周报同步和交付前复核",
+    "problem": "帮助新人区分学生用 AI 和职场用 AI，把 AI 用到真实交付里，减少返工，沉淀可复用提示词",
+    "url": "https://my.feishu.cn/docx/KL1xdTPtJo85XrxzUfOcmjw3nMd",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-05",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 28,
+      "links": [
+        "https://my.feishu.cn/docx/KL1xdTPtJo85XrxzUfOcmjw3nMd"
+      ],
+      "originalLinkText": "新人 WorkBuddy 办公实操提示词"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "新人入职",
+      "项目推进与复盘"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "职场新人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-C1xDdE8KpozOjIxjEvScqRzCnRc",
+    "title": "产品经理 AI 虚拟团队提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "产品经理使用 Codex、WorkBuddy、ChatGPT、飞书 AI 推进项目资料整理、需求分析、PRD 输出、原型检查和项目总控",
+    "problem": "帮助产品经理把 AI 拆成 5 个协作角色，减少资料散、需求判断弱、文档返工、原型遗漏和项目风险漏看",
+    "url": "https://my.feishu.cn/docx/C1xDdE8KpozOjIxjEvScqRzCnRc",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-05",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 29,
+      "links": [
+        "https://my.feishu.cn/docx/C1xDdE8KpozOjIxjEvScqRzCnRc"
+      ],
+      "originalLinkText": "产品经理 AI 虚拟团队提示词包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-VvpQd0BVhoksVQxUNnBc0HcEnce",
+    "title": "WorkBuddy 新业务项目配置清单",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "产品经理接到新业务需求、系统新增功能、项目资料整理、PRD/评审/测试用例准备",
+    "problem": "不知道如何在 WorkBuddy 里搭项目管理平台、项目指令怎么写、资料/专家/技能/任务怎么配置",
+    "url": "https://my.feishu.cn/docx/VvpQd0BVhoksVQxUNnBc0HcEnce",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-05",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 30,
+      "links": [
+        "https://my.feishu.cn/docx/VvpQd0BVhoksVQxUNnBc0HcEnce"
+      ],
+      "originalLinkText": "WorkBuddy 新业务项目配置清单"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-XxuGdClXMob97UxVobyco8hknmg",
+    "title": "领导汇报 AI 提示词资料包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "职场人、产品经理、项目负责人使用 AI 准备领导汇报、项目进展汇报、风险问题汇报、会前材料和投屏材料",
+    "problem": "帮助把汇报资料从材料整理升级为汇报框架设计，生成开场话术、表达顺序、重点内容、追问预测和会议收口",
+    "url": "https://my.feishu.cn/docx/XxuGdClXMob97UxVobyco8hknmg",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-09",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 31,
+      "links": [
+        "https://my.feishu.cn/docx/XxuGdClXMob97UxVobyco8hknmg"
+      ],
+      "originalLinkText": "领导汇报 AI 提示词资料包"
+    },
+    "primaryScenario": "汇报与绩效",
+    "scenarios": [
+      "汇报与绩效",
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-M4LKdh6csozCWlxcMYHct2qhnwb",
+    "title": "GPT-5.6 职场人能力与场景速查表",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人、产品经理、运营、项目负责人了解 GPT-5.6、ChatGPT Work 和 Codex 的能力，并选择可落地的办公场景",
+    "problem": "帮助非技术岗区分 Chat、Work、Codex，掌握资料整理、办公文件、Site、插件、本地电脑、流程复用和多智能体协作的使用方法",
+    "url": "https://my.feishu.cn/docx/M4LKdh6csozCWlxcMYHct2qhnwb",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-11",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 34,
+      "links": [
+        "https://my.feishu.cn/docx/M4LKdh6csozCWlxcMYHct2qhnwb"
+      ],
+      "originalLinkText": "GPT-5.6 职场人能力与场景提示词资料包"
+    },
+    "primaryScenario": "职场成长",
+    "scenarios": [
+      "职场成长",
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-K7Scd6eototLW8xETygcJIaxned",
+    "title": "WorkBuddy 项目智能体团队搭建资料包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "产品经理、项目经理、业务分析师在 WorkBuddy 项目中组织已有专家，建立团队分工、交接、审核与测试机制",
+    "problem": "提供两种团队搭建方式：AI 先规划并由人工审核、产品经理直接预设；包含完整提示词、角色边界、协作规则、简化版项目指令、测试任务和审核清单",
+    "url": "https://my.feishu.cn/docx/K7Scd6eototLW8xETygcJIaxned",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-11",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 35,
+      "links": [
+        "https://my.feishu.cn/docx/K7Scd6eototLW8xETygcJIaxned"
+      ],
+      "originalLinkText": "WorkBuddy 项目智能体团队搭建资料包"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率"
+    ],
+    "materialType": "资料包",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-IlUkdUBWIolOyNx0iVncmbmQnRg",
+    "title": "WorkBuddy 模糊需求拆解与任务清单实战包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "产品经理、项目经理和业务分析师使用 WorkBuddy 处理一句模糊需求，完成需求澄清、待确认问题整理、人工拍板和任务分工",
+    "problem": "提供模式选择、5 轮可复制提示词、需求就绪检查、AI 交付自查，以及需求说明和 Excel 任务清单演示附件",
+    "url": "https://my.feishu.cn/docx/IlUkdUBWIolOyNx0iVncmbmQnRg",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-03",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 36,
+      "links": [
+        "https://my.feishu.cn/docx/IlUkdUBWIolOyNx0iVncmbmQnRg"
+      ],
+      "originalLinkText": "https://my.feishu.cn/docx/IlUkdUBWIolOyNx0iVncmbmQnRg"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-B857dpHiEohfuYxieZVc4NCQnPK",
+    "title": "多个 AI 共用个人工作知识库提示词资料包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人、产品经理、运营、项目负责人整理 Word、Excel、PDF 等散落工作资料，创建可被 WorkBuddy、Codex 和其他本地文件型 AI 共用的个人知识库",
+    "problem": "提供五层知识库目录、WorkBuddy 建库、Codex/通用 AI 接入、读取回执、实际任务、更新建议和人工验收提示词",
+    "url": "https://my.feishu.cn/docx/B857dpHiEohfuYxieZVc4NCQnPK",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-16",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 37,
+      "links": [
+        "https://my.feishu.cn/docx/B857dpHiEohfuYxieZVc4NCQnPK"
+      ],
+      "originalLinkText": "多个 AI 共用个人工作知识库提示词资料包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-DbWjdGdzsonZV5x0Q9bc45i6nGb",
+    "title": "复杂数据逻辑与最优方案分析提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "运营分析、成本测算、最优组合、供应商选择、资源调度、策略评估、需求评审、业务汇报",
+    "problem": "把数据多、规则多的问题拆成目标、输入、约束和可验算步骤，比较候选方案并解释最低费用或最优策略",
+    "url": "https://my.feishu.cn/docx/DbWjdGdzsonZV5x0Q9bc45i6nGb",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-18",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 38,
+      "links": [
+        "https://my.feishu.cn/docx/DbWjdGdzsonZV5x0Q9bc45i6nGb"
+      ],
+      "originalLinkText": "复杂数据逻辑与最优方案分析提示词包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-CPStbF8ILoUUBexWf8Rc3jjTnWh",
+    "title": "WorkBuddy 职场核心功能实操包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人使用 WorkBuddy 读取 Word 和 Excel、跨文件核对资料、生成 Word/Excel/PPT、复用项目资产、配置自动化和只读连接器或助理",
+    "problem": "帮助职场人掌握任务、项目、Skill/专家、自动化、连接器/助理 5 类常用功能，并提供虚构练习资料、可复制提示词、截图操作说明和参考答案",
+    "url": "https://my.feishu.cn/file/CPStbF8ILoUUBexWf8Rc3jjTnWh",
+    "resourceType": "file",
+    "updatedAt": "2026-07-18",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 39,
+      "links": [
+        "https://my.feishu.cn/file/CPStbF8ILoUUBexWf8Rc3jjTnWh"
+      ],
+      "originalLinkText": "WorkBuddy 职场核心功能实操包（兼容版）"
+    },
+    "primaryScenario": "职场成长",
+    "scenarios": [
+      "职场成长",
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "资料包",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-Hm5EdEjO3oXFNSx6mXEcp5XcnMg",
+    "title": "个人知识库持续工作通用与岗位提示词资料包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人、产品、运营、项目、销售与客户成功、人事行政、财务采购、团队管理者持续调用个人知识库完成周报、会议、需求、复盘和汇报",
+    "problem": "提供新增资料入项目、读取知识、生成成果、更新建议、人工确认和新任务验证的通用提示词，并按岗位提供可直接复制的工作场景模板",
+    "url": "https://my.feishu.cn/docx/Hm5EdEjO3oXFNSx6mXEcp5XcnMg",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-18",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 40,
+      "links": [
+        "https://my.feishu.cn/docx/Hm5EdEjO3oXFNSx6mXEcp5XcnMg"
+      ],
+      "originalLinkText": "个人知识库持续工作提示词资料包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘",
+      "汇报与绩效"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "管理者"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-WtqedGIJDoeO08xCvzyckynGnBe",
+    "title": "WorkBuddy 项目学习流程实操资料包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "产品经理、项目经理、运营及普通职场人使用 WorkBuddy 学习多份 Word、Excel、PDF 项目资料，识别版本冲突并沉淀确认版项目理解",
+    "problem": "提供 5 份虚构混合格式练习资料、完整操作步骤与提示词、实操记录模板和结果自检清单，帮助避免上传资料后直接相信 AI 理解",
+    "url": "https://my.feishu.cn/docx/WtqedGIJDoeO08xCvzyckynGnBe",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-21",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 41,
+      "links": [
+        "https://my.feishu.cn/docx/WtqedGIJDoeO08xCvzyckynGnBe"
+      ],
+      "originalLinkText": "WorkBuddy 项目学习流程实操资料包（在线领取页）"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率"
+    ],
+    "materialType": "资料包",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-VOlYdCTTao8znFxPxHRcVkP5nzI",
+    "title": "个人工作 Skill 创建与验收提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "已经搭建个人知识库，想把周报、会前准备、客户反馈复盘等重复工作做成可反复调用的 WorkBuddy Skill 的普通职场人",
+    "problem": "提供工作周报、会前准备、客户反馈复盘 3 套 Skill 创建与首次调用提示词，以及通用创建模板、问题诊断和复测验收表",
+    "url": "https://my.feishu.cn/docx/VOlYdCTTao8znFxPxHRcVkP5nzI",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-23",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 42,
+      "links": [
+        "https://my.feishu.cn/docx/VOlYdCTTao8znFxPxHRcVkP5nzI"
+      ],
+      "originalLinkText": "个人工作 Skill 创建与验收提示词包（在线领取页）"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "汇报与绩效",
+      "沟通表达"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-NyWXdKr9Ho4ZGcxyXC4cSxmxnpg",
+    "title": "AI 滚动展示框提示词资料包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "Excel、Word、飞书表格和长文档内容过长，一页截图放不下，需要制作文章、汇报或网页中的自动滚动展示框",
+    "problem": "提供直接生成滚动框提示词、滚动展示框 Skill 创建提示词、参数填写卡、Codex 演示截图指南和脱敏检查清单",
+    "url": "https://my.feishu.cn/docx/NyWXdKr9Ho4ZGcxyXC4cSxmxnpg",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-23",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 43,
+      "links": [
+        "https://my.feishu.cn/docx/NyWXdKr9Ho4ZGcxyXC4cSxmxnpg",
+        "https://my.feishu.cn/file/CNmebMwdyowEqwxK8NVcrRzPnsU",
+        "https://my.feishu.cn/file/N9qzbArccoQfqNxHuctckcMCn5e",
+        "https://my.feishu.cn/file/DL4Ibzdb7oKCzfxABKKclwOXnHf"
+      ],
+      "originalLinkText": "在线阅读｜Word 下载｜PDF 下载｜完整资料包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-BhtEdC248oU4ZgxSPStc2fTln1d",
+    "title": "AI 周报记录助手｜飞书在线模板与提示词",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人持续记录每日工作，并用豆包、元宝等对话型 AI 生成周报、日报、领导简报和月度复盘",
+    "problem": "解决周报素材散、AI 输出流水账、完成状态混淆、成果缺数据、问题协同说不清；提供在线记录表、虚构演示数据和完整提示词",
+    "url": "https://my.feishu.cn/docx/BhtEdC248oU4ZgxSPStc2fTln1d",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-26",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 44,
+      "links": [
+        "https://my.feishu.cn/docx/BhtEdC248oU4ZgxSPStc2fTln1d"
+      ],
+      "originalLinkText": "AI 周报工作记录表｜使用说明书"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "汇报与绩效"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-TnAidIR1ToApZXxO8BqcogtSnPc",
+    "title": "AI 成果可见提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人使用 WorkBuddy 或其他 AI 工具整理资料、检查初稿、写周报绩效，并把高频工作沉淀为团队流程",
+    "problem": "帮助把 AI 提效过程转成领导看得见的任务记录、人工判断、成果表达和复用方法；提供 4 组提示词、6 类岗位示例和成果证据表",
+    "url": "https://my.feishu.cn/docx/TnAidIR1ToApZXxO8BqcogtSnPc",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-26",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 45,
+      "links": [
+        "https://my.feishu.cn/docx/TnAidIR1ToApZXxO8BqcogtSnPc"
+      ],
+      "originalLinkText": "AI 成果可见提示词包（在线领取）"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "汇报与绩效",
+      "职场成长"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-V6G1dCNZ7oeSHBx3ys4c6OKlnBf",
+    "title": "AI 加活沟通实操包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人使用 WorkBuddy 分析临时加活、现有任务冲突、模糊交付范围和长期 AI 职责",
+    "problem": "提供工作信息卡、五类任务判断、四类领导沟通话术和通用 WorkBuddy 提示词，帮助避免 AI 提效后工作无限叠加",
+    "url": "https://my.feishu.cn/docx/V6G1dCNZ7oeSHBx3ys4c6OKlnBf",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-29",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 46,
+      "links": [
+        "https://my.feishu.cn/docx/V6G1dCNZ7oeSHBx3ys4c6OKlnBf"
+      ],
+      "originalLinkText": "AI 加活沟通实操包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "沟通表达",
+      "项目推进与复盘"
+    ],
+    "materialType": "资料包",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-KG1CduSBloO9QDxD4fscseXNnUb",
+    "title": "WorkBuddy 无 AI 味 PPT 实战提示词包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "产品经理、运营、项目负责人、销售、客户成功、人事行政等岗位制作项目复盘、月报、阶段汇报和资源申请 PPT",
+    "problem": "帮助先判断汇报类型，盘点资料与缺口，生成观点式大纲，标注数据来源并逐页复核，减少模板化表达和 AI 味",
+    "url": "https://my.feishu.cn/docx/KG1CduSBloO9QDxD4fscseXNnUb",
+    "resourceType": "docx",
+    "updatedAt": "2026-07-29",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 47,
+      "links": [
+        "https://my.feishu.cn/docx/KG1CduSBloO9QDxD4fscseXNnUb"
+      ],
+      "originalLinkText": "WorkBuddy 无 AI 味 PPT 实战提示词包"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "汇报与绩效",
+      "项目推进与复盘"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-WtqedGIJDoeO08xCvzyckynGnBe-row48",
+    "title": "AI 项目进度汇报实操资料包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "职场人、产品经理、项目经理使用 WorkBuddy 或其他 AI 工具，临时整理项目进度、准备领导汇报和快速回复",
+    "problem": "提供领导关心的 5 类信息清单、完整项目进度提示词、30 秒回复模板、详细汇报模板和发送前检查清单，帮助把散乱资料整理成可判断、可决策的进度说明",
+    "url": "https://my.feishu.cn/docx/WtqedGIJDoeO08xCvzyckynGnBe",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-02",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 48,
+      "links": [
+        "https://my.feishu.cn/docx/WtqedGIJDoeO08xCvzyckynGnBe"
+      ],
+      "originalLinkText": "AI 项目进度汇报实操资料包（在线领取页）",
+      "idCollision": true
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "汇报与绩效",
+      "AI协作与效率"
+    ],
+    "materialType": "资料包",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-FEc7s2QBuh2hhDtKGTFcwRzynXb",
+    "title": "业务智能体 5 项核心能力设计与验收工具包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "产品经理设计业务智能体、拆解核心能力、整理任务主线与业务规则、定义边界并进行评测验收",
+    "problem": "提供能力定义卡、任务主线、规则包、边界检查、评测追踪和发布检查，帮助把智能体方案写成可开发、可验收、可交付的产品方案",
+    "url": "https://my.feishu.cn/sheets/FEc7s2QBuh2hhDtKGTFcwRzynXb",
+    "resourceType": "sheets",
+    "updatedAt": "2026-08-02",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 49,
+      "links": [
+        "https://my.feishu.cn/sheets/FEc7s2QBuh2hhDtKGTFcwRzynXb"
+      ],
+      "originalLinkText": "业务智能体 5 项核心能力设计与验收工具包（在线领取）"
+    },
+    "primaryScenario": "职场成长",
+    "scenarios": [
+      "职场成长",
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "资料包",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-T1uYdknigoOduMxGOOgcqG46nvb",
+    "title": "职场邮件 AI 提示词与模板包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "求职投递、跨部门确认、客户跟进、请领导决策，以及日常工作邮件起草与发送前复核",
+    "problem": "帮助职场人掌握邮件基本规范，使用 AI 起草不同场景邮件，并检查行动人、截止时间、附件、承诺和敏感信息",
+    "url": "https://my.feishu.cn/docx/T1uYdknigoOduMxGOOgcqG46nvb",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-02",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 50,
+      "links": [
+        "https://my.feishu.cn/docx/T1uYdknigoOduMxGOOgcqG46nvb"
+      ],
+      "originalLinkText": "职场邮件 AI 提示词与模板包（在线领取）"
+    },
+    "primaryScenario": "沟通表达",
+    "scenarios": [
+      "沟通表达",
+      "AI协作与效率",
+      "职场成长"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-PkUTffXpNlyfIFdIBTgcwJOAn6g",
+    "title": "WorkBuddy × 腾讯文档项目台账实操资料包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "产品经理、项目经理和业务负责人使用 WorkBuddy 读取项目台账、整合多方反馈，并将评审结果回写腾讯文档",
+    "problem": "提供虚构项目台账、研发与测试补充反馈、完整操作提示词和参考结果，帮助识别风险、保留待确认项并完成增量更新",
+    "url": "https://my.feishu.cn/drive/folder/PkUTffXpNlyfIFdIBTgcwJOAn6g",
+    "resourceType": "folder",
+    "updatedAt": "2026-08-02",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 51,
+      "links": [
+        "https://my.feishu.cn/drive/folder/PkUTffXpNlyfIFdIBTgcwJOAn6g"
+      ],
+      "originalLinkText": "WorkBuddy腾讯文档项目台账实操资料包（在线文件夹）"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率",
+      "沟通表达"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-KFuwdX8GJo4wH9xT4XhclbZznsb",
+    "title": "WorkBuddy会员与套餐判断表",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "正在评估 WorkBuddy 会员是否值得续费，或在标准版、高级版和加量包之间做选择的职场人",
+    "problem": "提供会员价值记录、4周用量追踪、续费判断、套餐选择和补量升级计算表，帮助按真实交付与实际用量做决定",
+    "url": "https://my.feishu.cn/docx/KFuwdX8GJo4wH9xT4XhclbZznsb",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-04",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 52,
+      "links": [
+        "https://my.feishu.cn/docx/KFuwdX8GJo4wH9xT4XhclbZznsb"
+      ],
+      "originalLinkText": "WorkBuddy会员与套餐判断表（在线领取）"
+    },
+    "primaryScenario": "职场成长",
+    "scenarios": [
+      "职场成长",
+      "AI协作与效率"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-XGr1d2Zb8oN0ibxXbsdcImXYnlh",
+    "title": "WorkBuddy × 飞书远程派活提示词与排查清单",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "已经把 WorkBuddy 接入飞书，希望从手机发起低风险办公任务，并在飞书中接收结果的普通职场人",
+    "problem": "提供远程任务通用模板、6 个办公场景提示词、接入检查、三层验收、故障排查和安全边界",
+    "url": "https://my.feishu.cn/docx/XGr1d2Zb8oN0ibxXbsdcImXYnlh",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-05",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 53,
+      "links": [
+        "https://my.feishu.cn/docx/XGr1d2Zb8oN0ibxXbsdcImXYnlh"
+      ],
+      "originalLinkText": "WorkBuddy × 飞书远程派活提示词与排查清单（在线领取）"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-N01QdT8joohdcbxE4KlcuE8Qnpn",
+    "title": "WorkBuddy 飞书 CLI 工作流提示词与权限清单",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "已经把 WorkBuddy 接入飞书，希望让 AI 在授权范围内创建文档、检查表格、分析日程和整理妙记的职场人",
+    "problem": "提供 CLI 安装与配置、账号授权检查、文档闭环测试、4 类办公提示词、执行前检查和权限排查清单",
+    "url": "https://my.feishu.cn/docx/N01QdT8joohdcbxE4KlcuE8Qnpn",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-05",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 54,
+      "links": [
+        "https://my.feishu.cn/docx/N01QdT8joohdcbxE4KlcuE8Qnpn"
+      ],
+      "originalLinkText": "WorkBuddy 飞书 CLI 工作流提示词与权限清单（在线领取）"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-ZvA7dROvyoHB7KxdtVVcqvt4nHb",
+    "title": "WorkBuddy 高质量协作与验收工具包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "使用 WorkBuddy 整理资料、生成文件、减少返工并沉淀个人工作方法的普通职场人、产品经理和项目负责人",
+    "problem": "提供结果验收清单、任务定义卡、模式选择、经验沉淀表和 3 组可复制提示词，帮助把 AI 交付变成可检查、可复用的工作流程",
+    "url": "https://my.feishu.cn/docx/ZvA7dROvyoHB7KxdtVVcqvt4nHb",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-06",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 55,
+      "links": [
+        "https://my.feishu.cn/docx/ZvA7dROvyoHB7KxdtVVcqvt4nHb"
+      ],
+      "originalLinkText": "WorkBuddy 高质量协作与验收工具包（在线领取）"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率",
+      "职场成长"
+    ],
+    "materialType": "资料包",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-NH2OdH4ttoBsr2xfIJIcIAq6njh",
+    "title": "公众号文章数据复盘与选题实验表",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "正在运营公众号、知识号或个人 IP，希望根据真实数据调整内容的创作者",
+    "problem": "提供账号概览、单篇数据卡、选题实验卡、标题封面检查、发布后复盘和 AI 分析提示词，帮助把流量焦虑转成可验证的内容实验",
+    "url": "https://my.feishu.cn/docx/NH2OdH4ttoBsr2xfIJIcIAq6njh",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-06",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 56,
+      "links": [
+        "https://my.feishu.cn/docx/NH2OdH4ttoBsr2xfIJIcIAq6njh"
+      ],
+      "originalLinkText": "公众号文章数据复盘与选题实验表（在线领取）"
+    },
+    "primaryScenario": "内容创作与展示",
+    "scenarios": [
+      "内容创作与展示",
+      "项目推进与复盘",
+      "AI协作与效率"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "内容创作者"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-GjuTdnq4roO8Fpxx2tFcCFI1nnf",
+    "title": "WorkBuddy任务判断表与5类职场提示词",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "正在学习 AI 办公，希望判断哪些工作适合交给 WorkBuddy 的普通职场人和非技术岗",
+    "problem": "提供输入、规则、验收、责任四项判断表，区分直接执行、协作推进和人工决策，并附资料整理、信息核对、任务拆解、文件初稿和流程沉淀提示词",
+    "url": "https://my.feishu.cn/docx/GjuTdnq4roO8Fpxx2tFcCFI1nnf",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-06",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 57,
+      "links": [
+        "https://my.feishu.cn/docx/GjuTdnq4roO8Fpxx2tFcCFI1nnf"
+      ],
+      "originalLinkText": "WorkBuddy任务判断表与5类职场提示词（在线领取）"
+    },
+    "primaryScenario": "职场成长",
+    "scenarios": [
+      "职场成长",
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-MVXyd4A1GocXAkxUG7bc9ddmnLb",
+    "title": "AI 黑话六层速查表",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人、产品经理、运营和项目负责人理解 LLM、RAG、MCP、Agent、Workflow、Skill 等概念，并判断真实工作需要哪类 AI 能力",
+    "problem": "把高频 AI 概念放进模型、上下文、知识、工具、执行、验收六个层级，提供易混概念对照和任务选型建议，帮助从“听过定义”走向“会组合、会落地”",
+    "url": "https://my.feishu.cn/docx/MVXyd4A1GocXAkxUG7bc9ddmnLb",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-06",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 58,
+      "links": [
+        "https://my.feishu.cn/docx/MVXyd4A1GocXAkxUG7bc9ddmnLb"
+      ],
+      "originalLinkText": "AI 黑话六层速查表（在线领取）"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "职场成长",
+      "项目推进与复盘"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-YJo2dpWyOohz53x7AIkcT21vncb",
+    "title": "WorkBuddy与Codex任务分工示例和提示词",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "需要在 WorkBuddy 和 Codex 之间选择，或希望两个工具协作完成办公交付与项目流程的普通职场人、产品经理和项目负责人",
+    "problem": "从工作终点、交付形态、验收证据和复用深度区分两个工具，提供 6 类常见任务分工、两套可复制提示词、协作顺序和交付检查",
+    "url": "https://my.feishu.cn/docx/YJo2dpWyOohz53x7AIkcT21vncb",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-07",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 59,
+      "links": [
+        "https://my.feishu.cn/docx/YJo2dpWyOohz53x7AIkcT21vncb"
+      ],
+      "originalLinkText": "WorkBuddy与Codex任务分工示例和提示词（在线领取）"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-Td1YdrFPooI5aCxmymlcvFhDnXe",
+    "title": "跨境电商运营 WorkBuddy 任务清单",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "跨境电商运营整理平台规则、多平台数据、多语客服、异常订单和运营周报",
+    "problem": "把五类重复工作拆成输入、输出、人工检查点和通用提示词，减少资料分散、口径不一和遗漏",
+    "url": "https://my.feishu.cn/docx/Td1YdrFPooI5aCxmymlcvFhDnXe",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-09",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 60,
+      "links": [
+        "https://my.feishu.cn/docx/Td1YdrFPooI5aCxmymlcvFhDnXe"
+      ],
+      "originalLinkText": "跨境电商运营 WorkBuddy 任务清单"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-GCsQdIplXofWnRxIpxVc5opRn7g",
+    "title": "产品经理 5 项需求准备工作提示词",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "产品经理在写PRD和需求评审前整理用户反馈、需求冲突、边界场景、决策记录与验收风险",
+    "problem": "把模糊材料整理成可评审输入，提前发现证据缺口、冲突和边界问题，减少后续返工",
+    "url": "https://my.feishu.cn/docx/GCsQdIplXofWnRxIpxVc5opRn7g",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-09",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 61,
+      "links": [
+        "https://my.feishu.cn/docx/GCsQdIplXofWnRxIpxVc5opRn7g"
+      ],
+      "originalLinkText": "产品经理 5 项需求准备工作提示词"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率",
+      "沟通表达"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-F6t9dJ2wLopyLoxZcs9c8cjLn9b",
+    "title": "教师日常AI协作提示词与复核清单",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "教师使用AI整理备课资料、分层练习、课后反馈、家校沟通和教研行政材料",
+    "problem": "提供脱敏边界、五类提示词和教师最终复核清单，避免泄露学生信息或让AI代替教师判断",
+    "url": "https://my.feishu.cn/docx/F6t9dJ2wLopyLoxZcs9c8cjLn9b",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-09",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 62,
+      "links": [
+        "https://my.feishu.cn/docx/F6t9dJ2wLopyLoxZcs9c8cjLn9b"
+      ],
+      "originalLinkText": "教师日常AI协作提示词与复核清单"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘",
+      "沟通表达"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-QzyIdp0HpoA1roxNFPVcoTWHn2A",
+    "title": "豆包办公任务Agent三类实测任务与验收清单",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "使用豆包办公任务Agent处理周报生成月度PPT、文件分类重命名和会议纪要Skill",
+    "problem": "提供三类可复现任务提示词、权限边界、人工接管点和通用验收清单",
+    "url": "https://my.feishu.cn/docx/QzyIdp0HpoA1roxNFPVcoTWHn2A",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-09",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 63,
+      "links": [
+        "https://my.feishu.cn/docx/QzyIdp0HpoA1roxNFPVcoTWHn2A"
+      ],
+      "originalLinkText": "豆包办公任务Agent三类实测任务与验收清单"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-IXhOduBZro1s6ox4Y7Jcpqjfntd",
+    "title": "MCP小白概念与工作流程速查",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人、业务人员和产品经理理解 MCP、AI 工具调用和系统边界",
+    "problem": "讲清 Host、Client、Server、Tools、Resources、Prompts 及 MCP 与 API、Agent、业务系统的关系",
+    "url": "https://my.feishu.cn/docx/IXhOduBZro1s6ox4Y7Jcpqjfntd",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-15",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 64,
+      "links": [
+        "https://my.feishu.cn/docx/IXhOduBZro1s6ox4Y7Jcpqjfntd"
+      ],
+      "originalLinkText": "MCP小白概念与工作流程速查"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "产品经理"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-Trk5dktZ4o5uPNxZcDQcfHKQnJh",
+    "title": "WorkBuddy Office五类任务单与验收清单",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人使用WorkBuddy处理Word、Excel和PPT中的高频局部任务",
+    "problem": "列出五类任务的输入、输出、验收点和人工边界，适合先挑一项低风险任务试跑",
+    "url": "https://my.feishu.cn/docx/Trk5dktZ4o5uPNxZcDQcfHKQnJh",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-15",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 65,
+      "links": [
+        "https://my.feishu.cn/docx/Trk5dktZ4o5uPNxZcDQcfHKQnJh"
+      ],
+      "originalLinkText": "WorkBuddy Office五类任务单与验收清单"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-H45vdWTGToy0oex6Qx3cbZZWnrd",
+    "title": "WorkBuddy入门四问与第一个任务准备单",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "刚安装WorkBuddy、仍停留在聊天问答或不知道是否适合自己的人",
+    "problem": "用资料合法、过程可描述、结果可核对、错误可恢复四问筛选任务，并准备第一次安全练习",
+    "url": "https://my.feishu.cn/docx/H45vdWTGToy0oex6Qx3cbZZWnrd",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-15",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 66,
+      "links": [
+        "https://my.feishu.cn/docx/H45vdWTGToy0oex6Qx3cbZZWnrd"
+      ],
+      "originalLinkText": "WorkBuddy入门四问与第一个任务准备单"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-YFcAdniuqoJbYKxEGT0c3C17n2g",
+    "title": "AI协作记忆与上下文管理清单",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "长期用AI做项目，容易忘进度、串任务或拿错旧版本的职场人",
+    "problem": "用进度、长期约定、判断依据、本轮输入四类信息管理记忆，并附状态、版本和纠错检查",
+    "url": "https://my.feishu.cn/docx/YFcAdniuqoJbYKxEGT0c3C17n2g",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-15",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 67,
+      "links": [
+        "https://my.feishu.cn/docx/YFcAdniuqoJbYKxEGT0c3C17n2g"
+      ],
+      "originalLinkText": "AI协作记忆与上下文管理清单"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率",
+      "职场成长"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-DhpndDapLoP4bgxXpRTcKPWrn0g",
+    "title": "AI时代职场能力升级练习册",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "AI接手基础工作后评估并补齐问题定义、资料判断、人机分工和结果验收能力",
+    "problem": "提供问题定义练习、资料判断记录、人机任务编排、结果验收清单和30天训练计划",
+    "url": "https://my.feishu.cn/docx/DhpndDapLoP4bgxXpRTcKPWrn0g",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-16",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 68,
+      "links": [
+        "https://my.feishu.cn/docx/DhpndDapLoP4bgxXpRTcKPWrn0g"
+      ],
+      "originalLinkText": "https://my.feishu.cn/docx/DhpndDapLoP4bgxXpRTcKPWrn0g"
+    },
+    "primaryScenario": "职场成长",
+    "scenarios": [
+      "职场成长",
+      "AI协作与效率"
+    ],
+    "materialType": "指南/手册",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-ZHRsdxTQJotOFJxVI0Xcqwkmn7d",
+    "title": "AI Coding小白第一个项目开工包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "非技术岗和AI初级用户第一次用AI Coding制作个人小网站或简单小工具",
+    "problem": "提供项目筛选、一页需求、开工提示词、分步执行、报错反馈、五轮验收和版本记录，避免一句话让AI做完后反复返工",
+    "url": "https://my.feishu.cn/docx/ZHRsdxTQJotOFJxVI0Xcqwkmn7d",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-25",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 72,
+      "links": [
+        "https://my.feishu.cn/docx/ZHRsdxTQJotOFJxVI0Xcqwkmn7d"
+      ],
+      "originalLinkText": "https://my.feishu.cn/docx/ZHRsdxTQJotOFJxVI0Xcqwkmn7d"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "AI协作与效率"
+    ],
+    "materialType": "资料包",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-JMpSdUzauo6zFlxtb8JcEhd3nGe",
+    "title": "AI蒸馏实操提示词卡",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "用WorkBuddy或其他AI工具，从PPT、方案、复盘、SOP中提炼工作方法，并在新任务中复用",
+    "problem": "提供样本准备、首次蒸馏与新任务验证提示词、Skill封装检查项，帮助把参考材料变成可验证的工作步骤",
+    "url": "https://my.feishu.cn/docx/JMpSdUzauo6zFlxtb8JcEhd3nGe",
+    "resourceType": "docx",
+    "updatedAt": "2026-09-07",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 73,
+      "links": [
+        "https://my.feishu.cn/docx/JMpSdUzauo6zFlxtb8JcEhd3nGe"
+      ],
+      "originalLinkText": "AI蒸馏实操提示词卡（在线阅读）"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-SQrldTt0xoVkR8x0VhAcKcionwb",
+    "title": "项目周报Skill创建与试用指南",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "用WorkBuddy创建个人周报Skill，把固定格式保存下来，每周更换项目资料继续使用",
+    "problem": "提供创建、调用、修改提示词，两周虚构练习资料、格式示范和检验清单，帮助完成第一次创建与后续复用",
+    "url": "https://my.feishu.cn/docx/SQrldTt0xoVkR8x0VhAcKcionwb",
+    "resourceType": "docx",
+    "updatedAt": "2026-09-07",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 74,
+      "links": [
+        "https://my.feishu.cn/docx/SQrldTt0xoVkR8x0VhAcKcionwb"
+      ],
+      "originalLinkText": "项目周报Skill创建与试用指南（在线阅读）"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "汇报与绩效",
+      "项目推进与复盘"
+    ],
+    "materialType": "指南/手册",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-TQhydYcMiolPvVxep7ocVYLlnBg",
+    "title": "豆包竞品变化跟踪练习包",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "竞品官网更新跟踪、两轮资料对比、定时执行准备",
+    "problem": "提供虚构练习、完整提示词、基线记录与失败检查，减少重复查阅",
+    "url": "https://my.feishu.cn/docx/TQhydYcMiolPvVxep7ocVYLlnBg",
+    "resourceType": "docx",
+    "updatedAt": "2026-09-13",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 75,
+      "links": [
+        "https://my.feishu.cn/docx/TQhydYcMiolPvVxep7ocVYLlnBg"
+      ],
+      "originalLinkText": "https://my.feishu.cn/docx/TQhydYcMiolPvVxep7ocVYLlnBg"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率"
+    ],
+    "materialType": "资料包",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-YiacdJap7o2tfLxcqHFcN5Zsnub",
+    "title": "豆包工作4个办公场景提示词与虚构数据",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "第一次使用豆包工作，练习会议整理、数据分析、三页汇报PPT和活动海报",
+    "problem": "提供4类完整提示词、虚构会议与渠道数据、可核对答案和结果检查项，方便安全复现",
+    "url": "https://my.feishu.cn/docx/YiacdJap7o2tfLxcqHFcN5Zsnub",
+    "resourceType": "docx",
+    "updatedAt": "2026-09-16",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 76,
+      "links": [
+        "https://my.feishu.cn/docx/YiacdJap7o2tfLxcqHFcN5Zsnub"
+      ],
+      "originalLinkText": "豆包工作4个办公场景提示词与虚构数据（在线阅读）"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-LuoKd8MWwodAsKxwAM5cEIJinGd",
+    "title": "WorkBuddy 8 个 Skill 职场任务速查表",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "用WorkBuddy处理找Skill、摘要、表达润色、PPT、会议、知识库和网页任务",
+    "problem": "整理8类Skill的适用任务、准备输入、期望输出和人工检查点，帮助按需选择并控制权限",
+    "url": "https://my.feishu.cn/docx/LuoKd8MWwodAsKxwAM5cEIJinGd",
+    "resourceType": "docx",
+    "updatedAt": "2026-09-16",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 77,
+      "links": [
+        "https://my.feishu.cn/docx/LuoKd8MWwodAsKxwAM5cEIJinGd"
+      ],
+      "originalLinkText": "WorkBuddy 8 个 Skill 职场任务速查表（在线阅读）"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "项目推进与复盘",
+      "职场成长"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-RTb7dXpnsoSPKVxkASyciMumnRe",
+    "title": "AI 八大核心概念工作链速查表",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "普通职场人理解Prompt、Context、LLM、Token、RAG、MCP、Skill和Agent",
+    "problem": "讲清8个概念在AI任务链中的分工、4组易混关系、产品宣传判断方法和人工检查清单",
+    "url": "https://my.feishu.cn/docx/RTb7dXpnsoSPKVxkASyciMumnRe",
+    "resourceType": "docx",
+    "updatedAt": "2026-09-16",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 78,
+      "links": [
+        "https://my.feishu.cn/docx/RTb7dXpnsoSPKVxkASyciMumnRe"
+      ],
+      "originalLinkText": "AI 八大核心概念工作链速查表（在线阅读）"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "职场成长"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "ai-NomfdzDofooSbLxW717cg2Ydnuc",
+    "title": "AI制作旅行网站实战手册",
+    "collectionId": "ai",
+    "collectionLabel": "AI 知识和提示词",
+    "tags": [],
+    "scenario": "国庆假期、自驾游、多人旅行、用 AI 生成旅行网站、GitHub Pages 分享",
+    "problem": "提供旅行资料模板、网站生成提示词、产品化调整、GitHub Pages 发布和后续更新步骤，帮助没有编程基础的人做出可分享的旅行网站",
+    "url": "https://ztn.larkenterprise.com/docx/NomfdzDofooSbLxW717cg2Ydnuc",
+    "resourceType": "docx",
+    "updatedAt": "2026-09-28",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/SqAfskjYZhw724teRtKcVqXJnSd?from=from_copylink",
+      "sheetName": "AI提示词索引",
+      "row": 79,
+      "links": [
+        "https://ztn.larkenterprise.com/docx/NomfdzDofooSbLxW717cg2Ydnuc"
+      ],
+      "originalLinkText": "AI制作旅行网站实战手册（在线阅读）"
+    },
+    "primaryScenario": "内容创作与展示",
+    "scenarios": [
+      "内容创作与展示",
+      "AI协作与效率"
+    ],
+    "materialType": "指南/手册",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "newcomer-DlQKsDIFZh0q8BtsLiTcPbrDnGH",
+    "title": "入职前可以问清的50句话术",
+    "collectionId": "newcomer",
+    "collectionLabel": "职场新人模板",
+    "tags": [
+      "入职前"
+    ],
+    "scenario": "校招入职前、Offer确认、和 HR / 直属领导 / 带教人确认信息",
+    "problem": "入职前不知道该问谁、问什么，怕漏掉关键信息",
+    "url": "https://my.feishu.cn/sheets/DlQKsDIFZh0q8BtsLiTcPbrDnGH",
+    "resourceType": "sheets",
+    "updatedAt": null,
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/RovUsdmQ8hw2s0t58HzcrTbMnGf?from=from_copylink",
+      "sheetName": "新人模板索引",
+      "row": 2,
+      "links": [
+        "https://my.feishu.cn/sheets/DlQKsDIFZh0q8BtsLiTcPbrDnGH"
+      ],
+      "originalLinkText": "入职前可以问清的50句话术｜PM大力王"
+    },
+    "primaryScenario": "新人入职",
+    "scenarios": [
+      "新人入职",
+      "沟通表达"
+    ],
+    "materialType": "话术",
+    "audiences": [
+      "职场新人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "newcomer-EYUVsLaoMhjkHbtt0QCceVaqnfc",
+    "title": "新人第一周领导视角自查表",
+    "collectionId": "newcomer",
+    "collectionLabel": "职场新人模板",
+    "tags": [
+      "第一周"
+    ],
+    "scenario": "入职第一周、熟悉业务、问问题、同步进展",
+    "problem": "不知道领导和导师会从哪些细节判断新人是否进入状态",
+    "url": "https://my.feishu.cn/sheets/EYUVsLaoMhjkHbtt0QCceVaqnfc",
+    "resourceType": "sheets",
+    "updatedAt": null,
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/RovUsdmQ8hw2s0t58HzcrTbMnGf?from=from_copylink",
+      "sheetName": "新人模板索引",
+      "row": 4,
+      "links": [
+        "https://my.feishu.cn/sheets/EYUVsLaoMhjkHbtt0QCceVaqnfc"
+      ],
+      "originalLinkText": "新人第一周领导视角自查表"
+    },
+    "primaryScenario": "新人入职",
+    "scenarios": [
+      "新人入职",
+      "职场成长"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "职场新人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "newcomer-XNELskxzNhctvdteCFtcKpBAnvJ",
+    "title": "新人入职第一个月模板包",
+    "collectionId": "newcomer",
+    "collectionLabel": "职场新人模板",
+    "tags": [
+      "新人第一个月"
+    ],
+    "scenario": "入职第一个月、培训整理、业务主线梳理、小任务交付、第一次参与项目",
+    "problem": "刚入职不知道怎么学、怎么整理资料、怎么交付小任务、怎么让领导看见能力",
+    "url": "https://my.feishu.cn/sheets/XNELskxzNhctvdteCFtcKpBAnvJ",
+    "resourceType": "sheets",
+    "updatedAt": null,
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/RovUsdmQ8hw2s0t58HzcrTbMnGf?from=from_copylink",
+      "sheetName": "新人模板索引",
+      "row": 5,
+      "links": [
+        "https://my.feishu.cn/sheets/XNELskxzNhctvdteCFtcKpBAnvJ"
+      ],
+      "originalLinkText": "PM大力王资料库-新人入职第一个月模板包"
+    },
+    "primaryScenario": "新人入职",
+    "scenarios": [
+      "新人入职",
+      "项目推进与复盘",
+      "职场成长"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "职场新人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "newcomer-Em6yd1TO1oggRExSD6XcaC5snze",
+    "title": "新人 AI 工作系统提示词包",
+    "collectionId": "newcomer",
+    "collectionLabel": "职场新人模板",
+    "tags": [
+      "AI新人"
+    ],
+    "scenario": "刚入职用 AI 整理资料、确认任务、向导师提问、沉淀经验、写周报和转正总结",
+    "problem": "不知道怎么把 AI 用到真实工作里，只会让 AI 改句子",
+    "url": "https://my.feishu.cn/docx/Em6yd1TO1oggRExSD6XcaC5snze",
+    "resourceType": "docx",
+    "updatedAt": null,
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/RovUsdmQ8hw2s0t58HzcrTbMnGf?from=from_copylink",
+      "sheetName": "新人模板索引",
+      "row": 6,
+      "links": [
+        "https://my.feishu.cn/docx/Em6yd1TO1oggRExSD6XcaC5snze"
+      ],
+      "originalLinkText": "新人 AI 工作系统提示词包"
+    },
+    "primaryScenario": "新人入职",
+    "scenarios": [
+      "新人入职",
+      "AI协作与效率"
+    ],
+    "materialType": "提示词",
+    "audiences": [
+      "职场新人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "newcomer-Kkv9sCBGjhnHw5t7ySBcASdnnsb",
+    "title": "新人职场规则自查表",
+    "collectionId": "newcomer",
+    "collectionLabel": "职场新人模板",
+    "tags": [
+      "新人规则"
+    ],
+    "scenario": "刚入职、试用期、第一次接任务、帮同事处理事项、同步进度、出错补救",
+    "problem": "不知道职场默认规则，容易把努力用错方向；帮助新人确认交付、边界、进度、记录和补救动作",
+    "url": "https://my.feishu.cn/sheets/Kkv9sCBGjhnHw5t7ySBcASdnnsb",
+    "resourceType": "sheets",
+    "updatedAt": null,
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/RovUsdmQ8hw2s0t58HzcrTbMnGf?from=from_copylink",
+      "sheetName": "新人模板索引",
+      "row": 7,
+      "links": [
+        "https://my.feishu.cn/sheets/Kkv9sCBGjhnHw5t7ySBcASdnnsb"
+      ],
+      "originalLinkText": "新人职场规则自查表｜PM大力王"
+    },
+    "primaryScenario": "新人入职",
+    "scenarios": [
+      "新人入职",
+      "职场成长",
+      "项目推进与复盘"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "职场新人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "management-EtLHsjUCAhHsy3tdwUJceJj3nXb",
+    "title": "管理者任务布置检查表",
+    "collectionId": "management",
+    "collectionLabel": "管理主题模板",
+    "tags": [
+      "团队管理"
+    ],
+    "scenario": "刚带团队、布置任务、项目推进、给新人或成员安排阶段性交付",
+    "problem": "任务目标不清、交付标准模糊、风险同步不明确，导致下属靠猜交付、管理者反复救火",
+    "url": "https://my.feishu.cn/sheets/EtLHsjUCAhHsy3tdwUJceJj3nXb",
+    "resourceType": "sheets",
+    "updatedAt": null,
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/UOGisRIlbh65ottidMpcTxN5nsf?from=from_copylink",
+      "sheetName": "管理模板索引",
+      "row": 2,
+      "links": [
+        "https://my.feishu.cn/sheets/EtLHsjUCAhHsy3tdwUJceJj3nXb"
+      ],
+      "originalLinkText": "管理者任务布置检查表｜PM大力王"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "团队管理"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "职场新人",
+      "管理者"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "management-DaoCs7945hOnH8tcA54czkEFn8e",
+    "title": "管理者结果交付四步卡",
+    "collectionId": "management",
+    "collectionLabel": "管理主题模板",
+    "tags": [
+      "团队管理"
+    ],
+    "scenario": "刚做管理、接老板任务、分配团队工作、推进团队协作、复盘团队成果",
+    "problem": "管理者误以为自己是在“管人”，没有把老板目标、团队能力、协作结构和团队成果组织成自己的成绩",
+    "url": "https://my.feishu.cn/sheets/DaoCs7945hOnH8tcA54czkEFn8e",
+    "resourceType": "sheets",
+    "updatedAt": null,
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/UOGisRIlbh65ottidMpcTxN5nsf?from=from_copylink",
+      "sheetName": "管理模板索引",
+      "row": 3,
+      "links": [
+        "https://my.feishu.cn/sheets/DaoCs7945hOnH8tcA54czkEFn8e"
+      ],
+      "originalLinkText": "管理者结果交付四步卡｜PM大力王"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "团队管理"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "管理者"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "management-LUrAsI2gBhi215tX1ATcSU5TnCb",
+    "title": "管理者年中绩效面谈准备表",
+    "collectionId": "management",
+    "collectionLabel": "管理主题模板",
+    "tags": [
+      "绩效面谈"
+    ],
+    "scenario": "年中绩效面谈、半年度复盘、1 on 1、低绩效沟通、下半年任务对齐",
+    "problem": "管理者面谈前不知道准备什么，容易凭印象评价、谈不清员工想法、下半年任务和低绩效边界",
+    "url": "https://my.feishu.cn/sheets/LUrAsI2gBhi215tX1ATcSU5TnCb",
+    "resourceType": "sheets",
+    "updatedAt": null,
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/UOGisRIlbh65ottidMpcTxN5nsf?from=from_copylink",
+      "sheetName": "管理模板索引",
+      "row": 4,
+      "links": [
+        "https://my.feishu.cn/sheets/LUrAsI2gBhi215tX1ATcSU5TnCb"
+      ],
+      "originalLinkText": "管理者年中绩效面谈准备表｜PM大力王"
+    },
+    "primaryScenario": "团队管理",
+    "scenarios": [
+      "团队管理",
+      "汇报与绩效",
+      "项目推进与复盘"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "管理者"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "management-OSjMsKFxChMpwXt8HOIc1vD9nld",
+    "title": "管理者团队AI工作流检查表",
+    "collectionId": "management",
+    "collectionLabel": "管理主题模板",
+    "tags": [
+      "AI管理"
+    ],
+    "scenario": "团队开始引入 AI、管理者筛选 AI 使用场景、制定 AI 产出标准、沉淀团队提示词和复核流程",
+    "problem": "团队只是零散试工具，没有场景筛选、复核标准和可复用工作流，导致 AI 使用变成形式主义",
+    "url": "https://my.feishu.cn/sheets/OSjMsKFxChMpwXt8HOIc1vD9nld",
+    "resourceType": "sheets",
+    "updatedAt": null,
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/UOGisRIlbh65ottidMpcTxN5nsf?from=from_copylink",
+      "sheetName": "管理模板索引",
+      "row": 5,
+      "links": [
+        "https://my.feishu.cn/sheets/OSjMsKFxChMpwXt8HOIc1vD9nld"
+      ],
+      "originalLinkText": "管理者团队AI工作流检查表｜PM大力王"
+    },
+    "primaryScenario": "AI协作与效率",
+    "scenarios": [
+      "AI协作与效率",
+      "团队管理"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "管理者"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "management-I36FsHu08h6IK2t74Xtcjsywnkc",
+    "title": "管理者日常沟通话术模板",
+    "collectionId": "management",
+    "collectionLabel": "管理主题模板",
+    "tags": [
+      "管理沟通"
+    ],
+    "scenario": "布置任务、跟进进度、反馈交付、处理公平感、承接上级压力、授权、复盘、安抚情绪、表扬员工",
+    "problem": "管理者不知道不同场景下怎么说更稳，容易把压力原样甩给下属，或把话说重、说虚、说失控",
+    "url": "https://my.feishu.cn/sheets/I36FsHu08h6IK2t74Xtcjsywnkc",
+    "resourceType": "sheets",
+    "updatedAt": null,
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/UOGisRIlbh65ottidMpcTxN5nsf?from=from_copylink",
+      "sheetName": "管理模板索引",
+      "row": 6,
+      "links": [
+        "https://my.feishu.cn/sheets/I36FsHu08h6IK2t74Xtcjsywnkc"
+      ],
+      "originalLinkText": "管理者日常沟通话术模板｜PM大力王"
+    },
+    "primaryScenario": "沟通表达",
+    "scenarios": [
+      "沟通表达",
+      "团队管理",
+      "项目推进与复盘"
+    ],
+    "materialType": "话术",
+    "audiences": [
+      "管理者"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "promotion-OGtHsdbxXhGBXAtGSG6ca3ncnub",
+    "title": "临时加活成果记录本",
+    "collectionId": "promotion",
+    "collectionLabel": "升职加薪资料包",
+    "tags": [
+      "职场"
+    ],
+    "scenario": "领导临时加活、非正式项目、临时支持、补充材料、客户反馈整理、跨部门协助",
+    "problem": "把临时加活整理成可见成果，生成领导同步、周报和绩效素材表达",
+    "url": "https://my.feishu.cn/sheets/OGtHsdbxXhGBXAtGSG6ca3ncnub",
+    "resourceType": "sheets",
+    "updatedAt": "2026-06-22",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/OKAlsYvHvhF9oCtHTqbcz6UBn2b?from=from_copylink",
+      "sheetName": "资料包索引",
+      "row": 2,
+      "links": [
+        "https://my.feishu.cn/sheets/OGtHsdbxXhGBXAtGSG6ca3ncnub"
+      ],
+      "originalLinkText": "临时加活成果记录本｜PM大力王"
+    },
+    "primaryScenario": "沟通表达",
+    "scenarios": [
+      "沟通表达",
+      "汇报与绩效"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "promotion-FND7sZbIlhlSo2tJr3YcWwczn3g",
+    "title": "重点项目推进话术与动作模板",
+    "collectionId": "promotion",
+    "collectionLabel": "升职加薪资料包",
+    "tags": [
+      "职场"
+    ],
+    "scenario": "重点项目交接、项目启动会、紧急任务处理、风险同步、跨部门协作、向上汇报、问题升级、项目复盘",
+    "problem": "帮助职场人在重点项目中把表达、推进、风险同步和向上汇报做得更稳，让项目机会沉淀成可见成果",
+    "url": "https://my.feishu.cn/sheets/FND7sZbIlhlSo2tJr3YcWwczn3g",
+    "resourceType": "sheets",
+    "updatedAt": "2026-07-14",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/OKAlsYvHvhF9oCtHTqbcz6UBn2b?from=from_copylink",
+      "sheetName": "资料包索引",
+      "row": 3,
+      "links": [
+        "https://my.feishu.cn/sheets/FND7sZbIlhlSo2tJr3YcWwczn3g"
+      ],
+      "originalLinkText": "重点项目推进话术与动作模板｜PM大力王"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "沟通表达",
+      "汇报与绩效"
+    ],
+    "materialType": "话术",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "promotion-PvnosyuaOhGr7MtKsTIcDZkFnNc",
+    "title": "PM大力王资料库-周报模板",
+    "collectionId": "promotion",
+    "collectionLabel": "升职加薪资料包",
+    "tags": [
+      "周报"
+    ],
+    "scenario": "每周写周报、周会同步、工作进展记录",
+    "problem": "周报只写动作，看不出成果和变化",
+    "url": "https://my.feishu.cn/sheets/PvnosyuaOhGr7MtKsTIcDZkFnNc",
+    "resourceType": "sheets",
+    "updatedAt": "2026-07-14",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/OKAlsYvHvhF9oCtHTqbcz6UBn2b?from=from_copylink",
+      "sheetName": "资料包索引",
+      "row": 4,
+      "links": [
+        "https://my.feishu.cn/sheets/PvnosyuaOhGr7MtKsTIcDZkFnNc"
+      ],
+      "originalLinkText": "PM大力王资料库-周报模板"
+    },
+    "primaryScenario": "汇报与绩效",
+    "scenarios": [
+      "汇报与绩效"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "promotion-PT3UsnOvkhCbwLtP9U5cxFTCnhc",
+    "title": "PM大力王资料库-半年绩效变化改写表",
+    "collectionId": "promotion",
+    "collectionLabel": "升职加薪资料包",
+    "tags": [
+      "绩效"
+    ],
+    "scenario": "半年绩效自评、季度总结、年终总结、晋升材料",
+    "problem": "做了很多事，但自评只写成流水账，领导看不出你带来的变化",
+    "url": "https://my.feishu.cn/sheets/PT3UsnOvkhCbwLtP9U5cxFTCnhc",
+    "resourceType": "sheets",
+    "updatedAt": "2026-07-14",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/OKAlsYvHvhF9oCtHTqbcz6UBn2b?from=from_copylink",
+      "sheetName": "资料包索引",
+      "row": 5,
+      "links": [
+        "https://my.feishu.cn/sheets/PT3UsnOvkhCbwLtP9U5cxFTCnhc"
+      ],
+      "originalLinkText": "PM大力王资料库-半年绩效变化改写表"
+    },
+    "primaryScenario": "汇报与绩效",
+    "scenarios": [
+      "汇报与绩效"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "promotion-GXwjs27mahqWtnttmdscHQz9nLd",
+    "title": "PM大力王资料库-进度同步模板",
+    "collectionId": "promotion",
+    "collectionLabel": "升职加薪资料包",
+    "tags": [
+      "进度"
+    ],
+    "scenario": "领导问进度、项目卡住、事情有变化时主动同步",
+    "problem": "事情一直在做，但领导不知道进展和风险",
+    "url": "https://my.feishu.cn/sheets/GXwjs27mahqWtnttmdscHQz9nLd",
+    "resourceType": "sheets",
+    "updatedAt": "2026-07-14",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/OKAlsYvHvhF9oCtHTqbcz6UBn2b?from=from_copylink",
+      "sheetName": "资料包索引",
+      "row": 6,
+      "links": [
+        "https://my.feishu.cn/sheets/GXwjs27mahqWtnttmdscHQz9nLd"
+      ],
+      "originalLinkText": "PM大力王资料库-进度同步模板"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "promotion-Rzvnsyi2Yhxj7nttlpvcNfOInsb",
+    "title": "PM大力王资料库-任务接收模板",
+    "collectionId": "promotion",
+    "collectionLabel": "升职加薪资料包",
+    "tags": [
+      "任务"
+    ],
+    "scenario": "领导交代任务、临时需求、跨部门协作任务",
+    "problem": "接任务只回收到，后面才发现目标、范围、标准没问清",
+    "url": "https://my.feishu.cn/sheets/Rzvnsyi2Yhxj7nttlpvcNfOInsb",
+    "resourceType": "sheets",
+    "updatedAt": "2026-07-14",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/OKAlsYvHvhF9oCtHTqbcz6UBn2b?from=from_copylink",
+      "sheetName": "资料包索引",
+      "row": 7,
+      "links": [
+        "https://my.feishu.cn/sheets/Rzvnsyi2Yhxj7nttlpvcNfOInsb"
+      ],
+      "originalLinkText": "PM大力王资料库-任务接收模板"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "promotion-XNELskxzNhctvdteCFtcKpBAnvJ",
+    "title": "PM大力王资料库-新人入职第一个月模板包",
+    "collectionId": "promotion",
+    "collectionLabel": "升职加薪资料包",
+    "tags": [
+      "新人"
+    ],
+    "scenario": "新人入职第一个月、培训整理、业务主线梳理、小任务交付、第一次参与项目",
+    "problem": "刚入职不知道怎么学、怎么整理资料、怎么交付小任务、怎么让领导看见能力",
+    "url": "https://my.feishu.cn/sheets/XNELskxzNhctvdteCFtcKpBAnvJ",
+    "resourceType": "sheets",
+    "updatedAt": "2026-07-14",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/OKAlsYvHvhF9oCtHTqbcz6UBn2b?from=from_copylink",
+      "sheetName": "资料包索引",
+      "row": 8,
+      "links": [
+        "https://my.feishu.cn/sheets/XNELskxzNhctvdteCFtcKpBAnvJ"
+      ],
+      "originalLinkText": "PM大力王资料库-新人入职第一个月模板包"
+    },
+    "primaryScenario": "新人入职",
+    "scenarios": [
+      "新人入职",
+      "项目推进与复盘",
+      "职场成长"
+    ],
+    "materialType": "模板/表格",
+    "audiences": [
+      "职场新人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "promotion-KvwxdTZT7oX02kxHYDuckryNn8g",
+    "title": "职业微行为自检与复盘清单",
+    "collectionId": "promotion",
+    "collectionLabel": "升职加薪资料包",
+    "tags": [
+      "职场"
+    ],
+    "scenario": "日常任务开始、协作推进、问题处理、工作交接和每周复盘",
+    "problem": "检查文件命名、信息说明、风险同步、交接闭环等容易被忽略的职业微行为，降低协作成本",
+    "url": "https://my.feishu.cn/docx/KvwxdTZT7oX02kxHYDuckryNn8g",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-09",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/OKAlsYvHvhF9oCtHTqbcz6UBn2b?from=from_copylink",
+      "sheetName": "资料包索引",
+      "row": 10,
+      "links": [
+        "https://my.feishu.cn/docx/KvwxdTZT7oX02kxHYDuckryNn8g"
+      ],
+      "originalLinkText": "职业微行为自检与复盘清单"
+    },
+    "primaryScenario": "项目推进与复盘",
+    "scenarios": [
+      "项目推进与复盘",
+      "职场成长"
+    ],
+    "materialType": "清单/检查表",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  },
+  {
+    "id": "promotion-G4SQdiLhbojvOaxtYL4cfqZYnHf",
+    "title": "女性职场表达与责任边界练习册",
+    "collectionId": "promotion",
+    "collectionLabel": "升职加薪资料包",
+    "tags": [
+      "职场"
+    ],
+    "scenario": "跨部门协作、需求争议、紧急跟进、会议表达和向上沟通",
+    "problem": "识别自我消音，区分情绪、判断、责任和表达边界，并提供可直接使用的话术与复盘练习",
+    "url": "https://my.feishu.cn/docx/G4SQdiLhbojvOaxtYL4cfqZYnHf",
+    "resourceType": "docx",
+    "updatedAt": "2026-08-21",
+    "source": {
+      "sheetUrl": "https://my.feishu.cn/sheets/OKAlsYvHvhF9oCtHTqbcz6UBn2b?from=from_copylink",
+      "sheetName": "资料包索引",
+      "row": 11,
+      "links": [
+        "https://my.feishu.cn/docx/G4SQdiLhbojvOaxtYL4cfqZYnHf"
+      ],
+      "originalLinkText": "女性职场表达与责任边界练习册"
+    },
+    "primaryScenario": "沟通表达",
+    "scenarios": [
+      "沟通表达",
+      "职场成长",
+      "项目推进与复盘"
+    ],
+    "materialType": "指南/手册",
+    "audiences": [
+      "通用职场人"
+    ],
+    "taxonomyVersion": "rules-v1"
+  }
+]

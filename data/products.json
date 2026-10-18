@@ -1,0 +1,39 @@
+[
+  {
+    "id": "workbuddy-course",
+    "title": "WorkBuddy 从 0 到 1 带教课",
+    "summary": "从认识工具到完成真实办公任务的一套上手路径。",
+    "audience": "适合没有技术背景、第一次系统使用 WorkBuddy 的职场人",
+    "cover": {
+      "src": "assets/product/workbuddy-cover-v1.5.png",
+      "alt": "WorkBuddy 从 0 到 1 带教课产品封面",
+      "width": 1086,
+      "height": 1448
+    },
+    "gallery": [
+      {
+        "src": "assets/product/workbuddy-cover-v1.5.png",
+        "alt": "WorkBuddy 从 0 到 1 带教课产品封面",
+        "width": 1086,
+        "height": 1448
+      },
+      {
+        "src": "assets/product/workbuddy-overview-v1.5.png",
+        "alt": "WorkBuddy 从 0 到 1 带教课交付内容介绍",
+        "width": 1086,
+        "height": 1448
+      }
+    ],
+    "highlights": [
+      "围绕真实办公任务理解、练习和交付",
+      "包含清晰的学习路径和配套资料",
+      "网站只做介绍，具体获取方式以小红书为准"
+    ],
+    "channels": [
+      {
+        "label": "前往小红书了解",
+        "url": "https://xhslink.cn/o/2RwQxXP0v1J"
+      }
+    ]
+  }
+]
