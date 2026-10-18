@@ -43,6 +43,34 @@ export function renderResultsSummary({ visible, total, query }) {
   return `${prefix} ${total} 条资料，当前显示 ${visible} 条`;
 }
 
+function paginationItems(page, totalPages) {
+  if (totalPages <= 7) return Array.from({ length: totalPages }, (_, index) => index + 1);
+  const values = new Set([1, totalPages, page - 1, page, page + 1]);
+  const pages = [...values].filter((value) => value >= 1 && value <= totalPages).sort((a, b) => a - b);
+  return pages.flatMap((value, index) => {
+    const previous = pages[index - 1];
+    return previous && value - previous > 1 ? ['ellipsis', value] : [value];
+  });
+}
+
+export function renderPagination({ page, totalPages }) {
+  const safeTotal = Math.max(1, Number(totalPages) || 1);
+  const safePage = Math.min(safeTotal, Math.max(1, Number(page) || 1));
+  if (safeTotal <= 1) return '';
+  const pageButtons = paginationItems(safePage, safeTotal).map((value) => (
+    value === 'ellipsis'
+      ? '<span class="pagination__ellipsis" aria-hidden="true">…</span>'
+      : `<button type="button" data-page="${value}"${value === safePage ? ' aria-current="page"' : ''} aria-label="第 ${value} 页">${value}</button>`
+  )).join('');
+
+  return `<nav class="pagination" aria-label="资料分页">
+  <button type="button" data-page-step="-1" aria-label="上一页"${safePage === 1 ? ' disabled' : ''}>←</button>
+  <span class="pagination__pages">${pageButtons}</span>
+  <span class="pagination__status"><span data-page-current>${safePage}</span> / ${safeTotal}</span>
+  <button type="button" data-page-step="1" aria-label="下一页"${safePage === safeTotal ? ' disabled' : ''}>→</button>
+</nav>`;
+}
+
 function renderProductImage(image, className = '') {
   return `<img class="${className}" src="${escapeHtml(image.src)}" width="${escapeHtml(image.width)}" height="${escapeHtml(image.height)}" loading="lazy" alt="${escapeHtml(image.alt)}">`;
 }

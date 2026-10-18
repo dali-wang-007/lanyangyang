@@ -100,3 +100,26 @@ export function getVisibleResources(resources, limit = 30) {
   if (!Array.isArray(resources) || !Number.isFinite(limit) || limit <= 0) return [];
   return resources.slice(0, Math.floor(limit));
 }
+
+export function paginateResources(resources, requestedPage = 1, requestedPageSize = 10) {
+  const values = Array.isArray(resources) ? resources : [];
+  const pageSize = Number.isFinite(requestedPageSize) && requestedPageSize > 0
+    ? Math.floor(requestedPageSize)
+    : 10;
+  const totalItems = values.length;
+  const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
+  const numericPage = Number.isFinite(requestedPage) ? Math.floor(requestedPage) : 1;
+  const page = Math.min(totalPages, Math.max(1, numericPage));
+  const offset = (page - 1) * pageSize;
+  const items = values.slice(offset, offset + pageSize);
+
+  return {
+    items,
+    page,
+    pageSize,
+    totalItems,
+    totalPages,
+    start: totalItems === 0 ? 0 : offset + 1,
+    end: totalItems === 0 ? 0 : offset + items.length
+  };
+}

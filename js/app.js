@@ -1,12 +1,12 @@
 import {
   filterResources,
   getFacetCounts,
-  getVisibleResources,
+  paginateResources,
   toggleFacetSelection
 } from './catalog.js';
-import { renderResourceList, renderResultsSummary } from './render.js';
+import { renderPagination, renderResourceList, renderResultsSummary } from './render.js';
 
-const PAGE_SIZE = 30;
+const PAGE_SIZE = 10;
 
 export async function initCatalog(root = document) {
   const list = root.querySelector('#resource-list, #resource-grid');
@@ -16,7 +16,7 @@ export async function initCatalog(root = document) {
   const searchForm = root.querySelector('[data-search-form]');
   const clearSearch = root.querySelector('[data-search-clear]');
   const summary = root.querySelector('#results-summary');
-  const loadMore = root.querySelector('#load-more');
+  const pagination = root.querySelector('#resource-pagination');
   const filterToggle = root.querySelector('[data-filter-toggle]');
   const filterPanel = root.querySelector('[data-filter-panel]');
   const filterButtons = [...root.querySelectorAll('[data-filter-dimension][data-filter-value]')];
@@ -28,7 +28,7 @@ export async function initCatalog(root = document) {
     scenarios: [],
     materialTypes: [],
     audiences: [],
-    visibleLimit: PAGE_SIZE
+    page: 1
   };
 
   let resources = [];
@@ -84,16 +84,16 @@ export async function initCatalog(root = document) {
 
   function render() {
     const filtered = filterResources(resources, state);
-    const visible = getVisibleResources(filtered, state.visibleLimit);
-    list.innerHTML = renderResourceList(visible);
+    const pageResult = paginateResources(filtered, state.page, PAGE_SIZE);
+    state.page = pageResult.page;
+    list.innerHTML = renderResourceList(pageResult.items);
     list.setAttribute('aria-busy', 'false');
     summary.textContent = renderResultsSummary({
-      visible: visible.length,
+      visible: pageResult.items.length,
       total: filtered.length,
       query: state.query
     });
-    loadMore.hidden = visible.length >= filtered.length;
-    if (!loadMore.hidden) loadMore.textContent = `再看 ${Math.min(PAGE_SIZE, filtered.length - visible.length)} 条`;
+    pagination.innerHTML = renderPagination(pageResult);
     clearSearch.hidden = state.query.length === 0;
     syncControls();
   }
@@ -104,7 +104,7 @@ export async function initCatalog(root = document) {
     state.scenarios = [];
     state.materialTypes = [];
     state.audiences = [];
-    state.visibleLimit = PAGE_SIZE;
+    state.page = 1;
     searchInput.value = '';
     if (filterPanel) filterPanel.hidden = true;
     if (filterToggle) filterToggle.setAttribute('aria-expanded', 'false');
@@ -114,7 +114,7 @@ export async function initCatalog(root = document) {
 
   searchInput.addEventListener('input', () => {
     state.query = searchInput.value.trim();
-    state.visibleLimit = PAGE_SIZE;
+    state.page = 1;
     render();
   });
 
@@ -126,7 +126,7 @@ export async function initCatalog(root = document) {
 
   clearSearch.addEventListener('click', () => {
     state.query = '';
-    state.visibleLimit = PAGE_SIZE;
+    state.page = 1;
     searchInput.value = '';
     render();
     searchInput.focus();
@@ -136,14 +136,14 @@ export async function initCatalog(root = document) {
     const dimension = button.dataset.filterDimension;
     const value = button.dataset.filterValue;
     state[dimension] = value === 'all' ? [] : toggleFacetSelection(state[dimension], value);
-    state.visibleLimit = PAGE_SIZE;
+    state.page = 1;
     render();
   }));
 
   legacyCollectionButtons.forEach((button) => button.addEventListener('click', () => {
     const value = button.dataset.collection;
     state.collectionIds = value === 'all' ? [] : [value];
-    state.visibleLimit = PAGE_SIZE;
+    state.page = 1;
     render();
   }));
 
@@ -155,9 +155,12 @@ export async function initCatalog(root = document) {
 
   root.querySelectorAll('[data-filter-reset]').forEach((button) => button.addEventListener('click', resetFilters));
 
-  loadMore.addEventListener('click', () => {
-    state.visibleLimit += PAGE_SIZE;
+  pagination.addEventListener('click', (event) => {
+    const button = event.target.closest('button[data-page], button[data-page-step]');
+    if (!button || button.disabled) return;
+    state.page = button.dataset.page ? Number(button.dataset.page) : state.page + Number(button.dataset.pageStep);
     render();
+    summary.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   });
 
   list.addEventListener('click', (event) => {

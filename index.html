@@ -9,117 +9,87 @@
     <meta property="og:description" content="按使用场景找到需要的职场与 AI 资料，点击直接打开。">
     <meta property="og:type" content="website">
     <title>懒羊羊｜PM大力王的免费资料库</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2315836e'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-size='27' font-family='sans-serif' fill='white'%3E%E6%87%92%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" href="assets/brand/pm-daliwang-avatar.png">
     <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="js/sections.js"></script>
     <script type="module" src="js/app.js"></script>
     <script type="module" src="js/products.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">跳到主要内容</a>
 
-    <header class="site-header">
-      <div class="shell header-inner">
-        <a class="brand" href="#top" aria-label="懒羊羊首页"><span class="brand-mark" aria-hidden="true">懒</span><span>懒羊羊</span></a>
-        <nav class="top-nav" aria-label="主要导航"><a href="#resources">资料</a><a href="#product">产品</a><a href="#about">关于</a></nav>
-      </div>
-    </header>
+    <header class="site-header"><div class="shell header-inner">
+      <a class="brand" href="#resources" aria-label="懒羊羊首页"><span class="brand-avatar" aria-hidden="true"><img src="assets/brand/pm-daliwang-avatar.png" alt=""></span><span>懒羊羊</span></a>
+      <nav class="top-nav" aria-label="主要导航"><a href="#resources">免费资料</a><a href="#product">产品</a><a href="#about">账号</a></nav>
+    </div></header>
 
     <main id="main-content">
-      <section class="directory" id="resources" aria-labelledby="page-title">
-        <div class="shell" id="top">
-          <div class="creator-intro">
-            <span class="creator-avatar" aria-hidden="true">PM</span>
-            <p><strong>PM大力王</strong><span>产品经理 · 分享职场成长、AI 使用与工作提效</span></p>
-            <div class="creator-links" aria-label="PM大力王的公开账号">
-              <a data-social-platform="xiaohongshu" href="https://xhslink.cn/o/2RwQxXP0v1J" target="_blank" rel="noopener noreferrer">小红书 ↗</a>
-              <a data-social-platform="douyin" href="https://www.douyin.com/user/MS4wLjABAAAAQ5Al9OUGKDIws5YiYE5ByAbUIrgR1qr8Z0s4W8mDkOr0Tf-pCmwqzINvBc6KxhvW" target="_blank" rel="noopener noreferrer">抖音 ↗</a>
-            </div>
-          </div>
+      <section class="home-intro" id="top" aria-labelledby="page-title"><div class="shell">
+        <p class="eyebrow">PM大力王的内容入口</p>
+        <h1 id="page-title">懒羊羊</h1>
+        <p class="home-intro__description">找资料、看产品，或去公开账号找我。</p>
+        <div class="section-switcher" role="tablist" aria-label="首页内容快捷入口">
+          <button class="section-tab" id="tab-resources" type="button" role="tab" data-section-tab="resources" aria-controls="resources" aria-selected="true"><strong>免费资料</strong><span>搜索 90 份资料</span></button>
+          <button class="section-tab" id="tab-product" type="button" role="tab" data-section-tab="product" aria-controls="product" aria-selected="false" tabindex="-1"><strong>个人产品</strong><span>查看介绍与获取方式</span></button>
+          <button class="section-tab" id="tab-about" type="button" role="tab" data-section-tab="about" aria-controls="about" aria-selected="false" tabindex="-1"><strong>账号介绍</strong><span>认识 PM大力王</span></button>
+        </div>
+      </div></section>
 
-          <div class="directory-heading">
-            <p class="eyebrow">90 份免费资料</p>
-            <h1 id="page-title">找到你现在需要的资料</h1>
-          </div>
-
+      <section class="directory content-panel" id="resources" data-section-panel="resources" role="tabpanel" aria-labelledby="tab-resources">
+        <div class="shell">
+          <div class="panel-heading"><h2>免费资料</h2><p>搜索、筛选，然后直接打开飞书资料。</p></div>
           <form class="hero-search" role="search" aria-label="搜索免费资料" data-search-form>
             <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             <label class="sr-only" for="catalog-search">搜索资料</label>
-            <input id="catalog-search" type="search" inputmode="search" autocomplete="off" placeholder="例如：周报、项目推进、提示词">
+            <input id="catalog-search" type="search" inputmode="search" autocomplete="off" placeholder="搜索周报、项目推进、提示词…">
             <button class="search-clear" type="button" data-search-clear hidden aria-label="清空搜索">清除</button>
           </form>
 
-          <div class="quick-filters" aria-label="按使用场景筛选">
-            <div class="filter-row" role="group">
+          <div class="quick-filters" aria-label="快速筛选">
+            <div class="filter-row" role="group" aria-label="常用场景">
               <button class="filter-chip is-active" type="button" data-filter-dimension="scenarios" data-filter-value="all" aria-pressed="true">全部</button>
-              <button class="filter-chip" type="button" data-filter-dimension="scenarios" data-filter-value="AI协作与效率" aria-pressed="false">使用 AI <span data-count-facet="scenarios" data-count-value="AI协作与效率"></span></button>
-              <button class="filter-chip" type="button" data-filter-dimension="scenarios" data-filter-value="汇报与绩效" aria-pressed="false">汇报绩效 <span data-count-facet="scenarios" data-count-value="汇报与绩效"></span></button>
-              <button class="filter-chip" type="button" data-filter-dimension="scenarios" data-filter-value="项目推进与复盘" aria-pressed="false">项目推进 <span data-count-facet="scenarios" data-count-value="项目推进与复盘"></span></button>
-              <button class="filter-chip" type="button" data-filter-dimension="scenarios" data-filter-value="沟通表达" aria-pressed="false">沟通表达 <span data-count-facet="scenarios" data-count-value="沟通表达"></span></button>
-              <button class="filter-chip" type="button" data-filter-dimension="scenarios" data-filter-value="新人入职" aria-pressed="false">新人入职 <span data-count-facet="scenarios" data-count-value="新人入职"></span></button>
-              <button class="filter-chip" type="button" data-filter-dimension="scenarios" data-filter-value="团队管理" aria-pressed="false">团队管理 <span data-count-facet="scenarios" data-count-value="团队管理"></span></button>
+              <button class="filter-chip" type="button" data-filter-dimension="scenarios" data-filter-value="AI协作与效率" aria-pressed="false">AI 提效</button>
+              <button class="filter-chip" type="button" data-filter-dimension="scenarios" data-filter-value="汇报与绩效" aria-pressed="false">汇报绩效</button>
+              <button class="filter-chip" type="button" data-filter-dimension="scenarios" data-filter-value="项目推进与复盘" aria-pressed="false">项目推进</button>
+              <button class="filter-chip" type="button" data-filter-dimension="scenarios" data-filter-value="沟通表达" aria-pressed="false">沟通表达</button>
             </div>
-            <button class="filter-more" type="button" data-filter-toggle aria-expanded="false" aria-controls="advanced-filters">更多筛选 <span data-active-filter-count></span></button>
+            <button class="filter-more" type="button" data-filter-toggle aria-expanded="false" aria-controls="advanced-filters">筛选 <span data-active-filter-count></span></button>
           </div>
 
           <div class="filter-panel" id="advanced-filters" data-filter-panel hidden>
-            <fieldset><legend>其他使用场景</legend><div class="filter-options">
-              <button type="button" data-filter-dimension="scenarios" data-filter-value="内容创作与展示" aria-pressed="false">内容创作 <span data-count-facet="scenarios" data-count-value="内容创作与展示"></span></button>
-              <button type="button" data-filter-dimension="scenarios" data-filter-value="职场成长" aria-pressed="false">职场成长 <span data-count-facet="scenarios" data-count-value="职场成长"></span></button>
-            </div></fieldset>
-            <fieldset><legend>资料类型</legend><div class="filter-options">
-              <button type="button" data-filter-dimension="materialTypes" data-filter-value="提示词" aria-pressed="false">提示词</button>
-              <button type="button" data-filter-dimension="materialTypes" data-filter-value="模板/表格" aria-pressed="false">模板/表格</button>
-              <button type="button" data-filter-dimension="materialTypes" data-filter-value="清单/检查表" aria-pressed="false">清单/检查表</button>
-              <button type="button" data-filter-dimension="materialTypes" data-filter-value="话术" aria-pressed="false">话术</button>
-              <button type="button" data-filter-dimension="materialTypes" data-filter-value="指南/手册" aria-pressed="false">指南/手册</button>
-              <button type="button" data-filter-dimension="materialTypes" data-filter-value="资料包" aria-pressed="false">资料包</button>
-              <button type="button" data-filter-dimension="materialTypes" data-filter-value="其他/待整理" aria-pressed="false">其他/待整理</button>
-            </div></fieldset>
-            <fieldset><legend>适用人群</legend><div class="filter-options">
-              <button type="button" data-filter-dimension="audiences" data-filter-value="通用职场人" aria-pressed="false">通用职场人</button>
-              <button type="button" data-filter-dimension="audiences" data-filter-value="职场新人" aria-pressed="false">职场新人</button>
-              <button type="button" data-filter-dimension="audiences" data-filter-value="产品经理" aria-pressed="false">产品经理</button>
-              <button type="button" data-filter-dimension="audiences" data-filter-value="管理者" aria-pressed="false">管理者</button>
-              <button type="button" data-filter-dimension="audiences" data-filter-value="内容创作者" aria-pressed="false">内容创作者</button>
-            </div></fieldset>
-            <fieldset><legend>原始专题</legend><div class="filter-options">
-              <button type="button" data-filter-dimension="collectionIds" data-filter-value="ai" aria-pressed="false">AI 知识</button>
-              <button type="button" data-filter-dimension="collectionIds" data-filter-value="newcomer" aria-pressed="false">职场新人</button>
-              <button type="button" data-filter-dimension="collectionIds" data-filter-value="management" aria-pressed="false">管理主题</button>
-              <button type="button" data-filter-dimension="collectionIds" data-filter-value="promotion" aria-pressed="false">升职加薪</button>
-            </div></fieldset>
-            <button class="filter-reset" type="button" data-filter-reset>清除全部筛选</button>
+            <div class="filter-panel__header"><strong>筛选资料</strong><button class="filter-reset" type="button" data-filter-reset>清除全部</button></div>
+            <details data-filter-group="scenarios"><summary>使用场景</summary><div class="filter-options">
+              <button type="button" data-filter-dimension="scenarios" data-filter-value="AI协作与效率" aria-pressed="false">AI 协作</button><button type="button" data-filter-dimension="scenarios" data-filter-value="汇报与绩效" aria-pressed="false">汇报绩效</button><button type="button" data-filter-dimension="scenarios" data-filter-value="项目推进与复盘" aria-pressed="false">项目推进</button><button type="button" data-filter-dimension="scenarios" data-filter-value="沟通表达" aria-pressed="false">沟通表达</button><button type="button" data-filter-dimension="scenarios" data-filter-value="新人入职" aria-pressed="false">新人入职</button><button type="button" data-filter-dimension="scenarios" data-filter-value="团队管理" aria-pressed="false">团队管理</button><button type="button" data-filter-dimension="scenarios" data-filter-value="内容创作与展示" aria-pressed="false">内容创作</button><button type="button" data-filter-dimension="scenarios" data-filter-value="职场成长" aria-pressed="false">职场成长</button>
+            </div></details>
+            <details data-filter-group="materialTypes"><summary>资料类型</summary><div class="filter-options">
+              <button type="button" data-filter-dimension="materialTypes" data-filter-value="提示词" aria-pressed="false">提示词</button><button type="button" data-filter-dimension="materialTypes" data-filter-value="模板/表格" aria-pressed="false">模板/表格</button><button type="button" data-filter-dimension="materialTypes" data-filter-value="清单/检查表" aria-pressed="false">清单</button><button type="button" data-filter-dimension="materialTypes" data-filter-value="话术" aria-pressed="false">话术</button><button type="button" data-filter-dimension="materialTypes" data-filter-value="指南/手册" aria-pressed="false">指南</button><button type="button" data-filter-dimension="materialTypes" data-filter-value="资料包" aria-pressed="false">资料包</button><button type="button" data-filter-dimension="materialTypes" data-filter-value="其他/待整理" aria-pressed="false">其他</button>
+            </div></details>
+            <details data-filter-group="audiences"><summary>适用人群</summary><div class="filter-options">
+              <button type="button" data-filter-dimension="audiences" data-filter-value="通用职场人" aria-pressed="false">通用职场人</button><button type="button" data-filter-dimension="audiences" data-filter-value="职场新人" aria-pressed="false">职场新人</button><button type="button" data-filter-dimension="audiences" data-filter-value="产品经理" aria-pressed="false">产品经理</button><button type="button" data-filter-dimension="audiences" data-filter-value="管理者" aria-pressed="false">管理者</button><button type="button" data-filter-dimension="audiences" data-filter-value="内容创作者" aria-pressed="false">内容创作者</button>
+            </div></details>
+            <details data-filter-group="collectionIds"><summary>原始专题</summary><div class="filter-options">
+              <button type="button" data-filter-dimension="collectionIds" data-filter-value="ai" aria-pressed="false">AI 知识</button><button type="button" data-filter-dimension="collectionIds" data-filter-value="newcomer" aria-pressed="false">职场新人</button><button type="button" data-filter-dimension="collectionIds" data-filter-value="management" aria-pressed="false">管理主题</button><button type="button" data-filter-dimension="collectionIds" data-filter-value="promotion" aria-pressed="false">升职加薪</button>
+            </div></details>
           </div>
 
-          <div class="results-bar">
-            <p class="results-summary" id="results-summary" aria-live="polite">正在整理资料…</p>
-            <p class="access-note">点击后由飞书打开；能否免登录由资料的飞书分享设置决定。</p>
-          </div>
+          <div class="results-bar"><p class="results-summary" id="results-summary" aria-live="polite">正在整理资料…</p><p class="access-note">点击后由飞书打开，访问权限以飞书设置为准。</p></div>
           <div class="resource-list" id="resource-list" aria-busy="true"></div>
-          <div class="load-more-wrap"><button class="button button--secondary" id="load-more" type="button" hidden>再看 30 条</button></div>
+          <div id="resource-pagination"></div>
           <noscript><p class="notice">请开启 JavaScript，以使用资料搜索和筛选。</p></noscript>
         </div>
       </section>
 
-      <section class="product section" id="product" aria-labelledby="product-title">
-        <div class="shell">
-          <div class="section-heading">
-            <div><p class="eyebrow">小产品</p><h2 id="product-title">把方法做成可以直接使用的产品</h2></div>
-            <p>网站只展示产品介绍，获取方式以对应平台页面为准。</p>
-          </div>
-          <div class="product-list" data-product-list aria-live="polite"><p class="notice">正在加载产品介绍…</p></div>
-        </div>
-      </section>
+      <section class="product section content-panel" id="product" data-section-panel="product" role="tabpanel" aria-labelledby="tab-product" hidden><div class="shell">
+        <div class="panel-heading"><h2>个人产品</h2><p>查看产品内容和获取方式。</p></div>
+        <div class="product-list" data-product-list aria-live="polite"><p class="notice">正在加载产品介绍…</p></div>
+      </div></section>
 
-      <section class="about section" id="about" aria-labelledby="about-title">
-        <div class="shell about-panel">
-          <div><p class="eyebrow">关于 PM大力王</p><h2 id="about-title">白天做产品，晚上写点东西。</h2></div>
-          <div class="about-copy">
-            <p>我是一名产品经理，也是一名内容创作者，持续分享职场成长、个人思考、AI 使用和工作提效，把复杂工作拆成普通人看得懂、拿来就能用的方法。</p>
-            <div class="about-links"><a href="https://xhslink.cn/o/2RwQxXP0v1J" target="_blank" rel="noopener noreferrer">小红书主页 ↗</a><a href="https://www.douyin.com/user/MS4wLjABAAAAQ5Al9OUGKDIws5YiYE5ByAbUIrgR1qr8Z0s4W8mDkOr0Tf-pCmwqzINvBc6KxhvW" target="_blank" rel="noopener noreferrer">抖音主页 ↗</a></div>
-          </div>
+      <section class="about section content-panel" id="about" data-section-panel="about" role="tabpanel" aria-labelledby="tab-about" hidden><div class="shell about-panel">
+        <div class="about-identity"><img class="about-avatar" src="assets/brand/pm-daliwang-avatar.png" alt="PM大力王头像"><div><p class="eyebrow">PM大力王</p><h2>白天做产品，晚上写点东西。</h2></div></div>
+        <div class="about-copy"><p>产品经理、内容创作者，分享职场成长、AI 使用与工作提效。</p>
+          <div class="about-links"><a data-social-platform="xiaohongshu" href="https://xhslink.cn/o/2RwQxXP0v1J" target="_blank" rel="noopener noreferrer">小红书主页 ↗</a><a data-social-platform="douyin" href="https://www.douyin.com/user/MS4wLjABAAAAQ5Al9OUGKDIws5YiYE5ByAbUIrgR1qr8Z0s4W8mDkOr0Tf-pCmwqzINvBc6KxhvW" target="_blank" rel="noopener noreferrer">抖音主页 ↗</a></div>
         </div>
-      </section>
+      </div></section>
     </main>
 
     <footer class="site-footer"><div class="shell footer-inner"><p><strong>懒羊羊</strong> · 懒人创造世界</p><p>内容持续更新，由 PM大力王整理。</p></div></footer>
