@@ -39,7 +39,7 @@ export const renderResourceCard = renderResourceItem;
 export const renderResourceGrid = renderResourceList;
 
 export function renderResultsSummary({ visible, total, query }) {
-  const prefix = query ? `“${escapeHtml(query)}”找到` : '找到';
+  const prefix = query ? `“${query}”找到` : '找到';
   return `${prefix} ${total} 条资料，当前显示 ${visible} 条`;
 }
 

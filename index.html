@@ -1,22 +1,22 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="description" content="PM大力王整理的职场与 AI 免费资料库，可以按场景搜索提示词、模板、清单和话术。">
-    <meta name="theme-color" content="#f6f7f3">
-    <meta property="og:title" content="PM大力王｜职场与 AI 免费资料库">
-    <meta property="og:description" content="按使用场景找到需要的职场与 AI 资料，点击直接打开。">
-    <meta property="og:type" content="website">
-    <title>PM大力王｜职场与 AI 免费资料库</title>
-    <link rel="icon" type="image/png" href="assets/brand/pm-daliwang-avatar.png">
-    <link rel="stylesheet" href="styles/main.css">
-    <script type="module" src="js/sections.js"></script>
-    <script type="module" src="js/app.js"></script>
-    <script type="module" src="js/products.js"></script>
-    <script type="module" src="js/social-links.js"></script>
-  </head>
-  <body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="PM大力王的个人小站。分享 AI、职场与成长经验，免费模板、开源 Skills 和认真做的小产品。让工具忙起来，把时间留给值得的事。">
+<meta name="theme-color" content="#aebfc5">
+<meta property="og:title" content="PM大力王｜把时间留给值得的事">
+<meta property="og:description" content="90 份免费资料、免费开源 Skills、AI 与职场内容。白天产品经理，晚上写点东西。">
+<meta property="og:type" content="website">
+<title>PM大力王｜把时间留给值得的事</title>
+<link rel="icon" type="image/png" href="assets/brand/pm-daliwang-avatar.png">
+<link rel="preload" as="image" href="assets/mascot/sloth-interactive.png">
+<link rel="stylesheet" href="styles/main.css">
+<script type="module" src="js/experience.js"></script>
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/products.js"></script>
+</head>
+<body>
     <svg class="icon-sprite" aria-hidden="true" focusable="false">
       <symbol id="icon-xiaohongshu" viewBox="0 0 24 24">
         <rect width="24" height="24" rx="7" fill="#ff2442"/>
@@ -36,33 +36,59 @@
         <path d="M5.1 12.5a3.8 3.8 0 0 1 5.4-5.4l-1 1.7a1.9 1.9 0 1 0-2.7 2.7l-1.7 1Z" fill="#576b95"/>
       </symbol>
     </svg>
-    <a class="skip-link" href="#main-content">跳到主要内容</a>
 
-    <header class="site-header"><div class="shell header-inner">
-      <a class="brand" href="#resources" aria-label="PM大力王首页"><span class="brand-avatar" aria-hidden="true"><img src="assets/brand/pm-daliwang-avatar.png" alt=""></span><span>PM大力王</span></a>
-      <nav class="header-actions" aria-label="PM大力王公开账号">
-        <a class="social-link" data-social-platform="xiaohongshu" href="https://xhslink.cn/o/2RwQxXP0v1J" target="_blank" rel="noopener noreferrer" aria-label="打开 PM大力王的小红书主页"><svg class="social-link__icon" aria-hidden="true"><use href="#icon-xiaohongshu"/></svg><span class="social-link__label">小红书</span></a>
-        <a class="social-link" data-social-platform="douyin" href="https://www.douyin.com/user/MS4wLjABAAAAQ5Al9OUGKDIws5YiYE5ByAbUIrgR1qr8Z0s4W8mDkOr0Tf-pCmwqzINvBc6KxhvW" target="_blank" rel="noopener noreferrer" aria-label="打开 PM大力王的抖音主页"><svg class="social-link__icon" aria-hidden="true"><use href="#icon-douyin"/></svg><span class="social-link__label">抖音</span></a>
-        <a class="social-link" data-social-platform="wechat-channels" data-video-channel-account="PM大力王" href="weixin://" aria-label="打开微信并搜索 PM大力王 视频号"><svg class="social-link__icon" aria-hidden="true"><use href="#icon-wechat-channels"/></svg><span class="social-link__label">视频号</span></a>
-      </nav>
-    </div></header>
-
-    <main id="main-content">
-      <section class="home-intro" id="top" aria-labelledby="page-title"><div class="shell">
-        <div class="home-intro__identity">
-          <img src="assets/brand/pm-daliwang-avatar.png" alt="PM大力王头像">
-          <div><h1 id="page-title">PM大力王</h1><p class="home-intro__description">白天产品经理，晚上写点东西。分享AI/职场/成长内容，持续沉淀经验和模板资料。</p></div>
-        </div>
-        <div class="section-switcher" role="tablist" aria-label="首页内容快捷入口">
-          <button class="section-tab" id="tab-resources" type="button" role="tab" data-section-tab="resources" aria-controls="resources" aria-selected="true"><strong>免费资料</strong></button>
-          <button class="section-tab" id="tab-product" type="button" role="tab" data-section-tab="product" aria-controls="product" aria-selected="false" tabindex="-1"><strong>个人产品</strong></button>
-          <button class="section-tab" id="tab-about" type="button" role="tab" data-section-tab="about" aria-controls="about" aria-selected="false" tabindex="-1"><strong>关于我</strong></button>
-        </div>
-      </div></section>
-
-      <section class="directory content-panel" id="resources" data-section-panel="resources" role="tabpanel" aria-labelledby="tab-resources">
+<a class="skip-link" href="#main-content">跳到主要内容</a>
+<header class="site-header"><div class="shell header-inner">
+<a class="brand" href="#top" aria-label="PM大力王首页"><span class="brand-avatar"><img src="assets/brand/pm-daliwang-avatar.png" alt=""></span><span>PM大力王<span class="brand-period">.</span></span></a>
+<nav class="site-nav" aria-label="主要导航"><a href="#content">内容</a><a href="#skills">Skills</a><a href="#resources">资料</a><a href="#product">产品</a><a href="#about">关于</a></nav>
+<a class="header-contact" href="#about">来串个门 <span aria-hidden="true">↗</span></a>
+</div></header>
+<main id="main-content">
+<section class="hero" id="top" aria-labelledby="page-title">
+<div class="shell hero-layout">
+<div class="mascot-stage">
+<div class="mascot-ground" aria-hidden="true"></div>
+<button class="mascot" id="mascot" type="button" aria-label="和树懒打个招呼，眼睛会跟随鼠标或触摸位置">
+<img class="mascot-image" src="assets/mascot/sloth-interactive.png" width="1145" height="1374" alt="棕色毛绒树懒，笑着看向你" fetchpriority="high">
+<span class="eye eye--left" aria-hidden="true"><span class="pupil"></span><span class="eyelid"></span></span>
+<span class="eye eye--right" aria-hidden="true"><span class="pupil"></span><span class="eyelid"></span></span>
+</button>
+<span class="mascot-note" id="mascot-note">嗨，慢慢逛。<span class="mascot-note-line" aria-hidden="true"></span></span>
+<span class="mascot-hint">移动鼠标，和我对个眼神 ↗</span>
+</div>
+<div class="hero-copy">
+<p class="eyebrow hero-eyebrow"><span></span> 一个产品经理的生活提案</p>
+<h1 id="page-title">把时间，<br>留给<span class="hero-emphasis">值得的事。</span></h1>
+<p class="hero-subtitle">白天产品经理，晚上写点东西。<br>分享 AI / 职场 / 成长内容，<br class="desktop-break">持续沉淀经验和模板资料。</p>
+<div class="hero-actions"><a class="button button--primary" href="#resources">取一份免费资料 <span aria-hidden="true">↗</span></a><a class="button button--outline" href="#content">看看我的作品 <span aria-hidden="true">↓</span></a></div>
+<div class="hero-facts"><a href="#resources"><strong>90</strong><span>份免费资料</span></a><a href="#skills"><strong>3</strong><span>个开源 Skills</span></a><a href="#about"><strong>一直</strong><span>在折腾新东西</span></a></div>
+</div>
+</div>
+<div class="hero-bottom"><span>让工具忙起来 · 让自己慢下来</span><a href="#content">往下，发现一点好东西 ↓</a><span>AI · 工作 · 生活</span></div>
+</section>
+<section class="section content-section" id="content" aria-labelledby="content-title"><div class="shell">
+<div class="section-heading"><div><span class="section-index">01 / 我的表达</span><h2 id="content-title">有些经验，<br>值得<span class="serif">分享。</span></h2></div><p>关于 AI，也关于具体的人和事。<br>挑一篇感兴趣的，聊聊。</p></div>
+<div class="content-tabs" role="tablist" aria-label="按平台查看作品">
+<button role="tab" id="platform-douyin" aria-controls="platform-works" aria-selected="true" data-platform="douyin">抖音 <span>05</span></button>
+<button role="tab" id="platform-xiaohongshu" aria-controls="platform-works" aria-selected="false" tabindex="-1" data-platform="xiaohongshu">小红书 <span>05</span></button>
+<button role="tab" id="platform-channels" aria-controls="platform-works" aria-selected="false" tabindex="-1" data-platform="channels">视频号 <span>05</span></button>
+<button role="tab" id="platform-wechat" aria-controls="platform-works" aria-selected="false" tabindex="-1" data-platform="wechat">公众号 <span>05</span></button>
+</div>
+<p class="platform-note" id="platform-note"></p>
+<div id="platform-works" role="tabpanel" aria-labelledby="platform-douyin" class="work-grid"></div>
+</div></section>
+<section class="section skills-section" id="skills" aria-labelledby="skills-title"><div class="shell">
+<div class="section-heading"><div><span class="section-index">02 / 把方法交给 AI</span><h2 id="skills-title">重复的事，<br>让 <span class="serif">Skills</span> 接手。</h2></div><a class="text-link" href="https://github.com/dali-wang-007" target="_blank" rel="noopener noreferrer">我的 GitHub ↗</a></div>
+<div class="skills-grid">
+<a class="skill-card skill-card--main" href="https://github.com/dali-wang-007/project-clean-room-skill" target="_blank" rel="noopener noreferrer"><div class="skill-meta"><span>01 / 跨窗口继续</span><span>免费开源 ↗</span></div><h3>换个窗口，<br>也接得住。</h3><p>AI 项目协作接续 Skill<br>把有效背景、规则和进展留下，让新对话继续干活。</p><div class="handoff-demo" aria-hidden="true"><div><span>当前窗口</span><strong>净化</strong></div><span class="handoff-line">→</span><div class="handoff-file"><span>协作文件</span><strong>记住重点</strong></div><span class="handoff-line">→</span><div><span>新的窗口</span><strong>接管</strong></div></div><span class="skill-link">查看使用方法 <span>↗</span></span></a>
+<div class="skill-stack">
+<a class="skill-card" href="https://github.com/dali-wang-007/project-agent-team-skills" target="_blank" rel="noopener noreferrer"><div class="skill-meta"><span>02 / 组建团队</span><span>↗</span></div><h3>给项目配个 AI 团队。</h3><p>项目智能体团队组建 Skill<br>先判断需要谁，再分好工。</p><div class="team-demo" aria-hidden="true"><span>产品</span><i>—</i><span>研发</span><i>—</i><span>验收</span></div></a>
+<a class="skill-card" href="https://github.com/dali-wang-007/project-agent-team-skills" target="_blank" rel="noopener noreferrer"><div class="skill-meta"><span>03 / 协作运行</span><span>↗</span></div><h3>让 AI 团队好好配合。</h3><p>项目智能体协作运行 Skill<br>谁负责、谁审核、怎么交接，都有章法。</p><div class="collab-demo" aria-hidden="true"><span>主责</span><span>审核</span><span>交接 ✓</span></div></a>
+</div></div>
+</div></section>
+      <section class="directory content-panel" id="resources" aria-labelledby="resource-title">
         <div class="shell">
-          <div class="panel-heading"><div><h2 class="resource-title"><strong>90</strong><span>份免费资料</span></h2></div><p>搜索、筛选，点击直接打开飞书。</p></div>
+          <div class="section-heading"><div><span class="section-index">03 / 随手取用</span><h2 class="resource-title" id="resource-title"><strong data-count="all">90</strong><span>份免费资料</span></h2></div><p>少一点从零开始。<br>多一点拿来就用。</p></div>
           <div class="catalog-tools"><form class="hero-search" role="search" aria-label="搜索免费资料" data-search-form>
             <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             <label class="sr-only" for="catalog-search">搜索资料</label>
@@ -100,32 +126,27 @@
             </div><div class="filter-panel__footer"><button class="filter-reset" type="button" data-filter-reset>清除全部</button><button class="button button--primary" type="button" data-filter-apply>查看资料</button></div></div>
           </dialog>
 
-          <div class="results-bar"><p class="results-summary" id="results-summary" aria-live="polite">正在整理资料…</p><p class="access-note">点击后由飞书打开，访问权限以飞书设置为准。</p></div>
+          <div class="results-bar"><p class="results-summary" id="results-summary" aria-live="polite">正在整理资料…</p><p class="access-note">点击资料，直接在飞书打开。</p></div>
           <div class="resource-list" id="resource-list" aria-busy="true"></div>
           <div id="resource-pagination"></div>
           <noscript><p class="notice">请开启 JavaScript，以使用资料搜索和筛选。</p></noscript>
         </div>
       </section>
 
-      <section class="product section content-panel" id="product" data-section-panel="product" role="tabpanel" aria-labelledby="tab-product" hidden><div class="shell">
-        <div class="panel-heading panel-heading--light"><div><p class="eyebrow">个人产品</p><h2>把方法整理成可用的产品</h2></div><p>本网站只做介绍，不提供站内支付。</p></div>
-        <div class="product-layout"><aside class="product-shelf" data-product-shelf aria-label="产品列表"><p class="notice">正在加载产品…</p></aside><div data-product-showcase aria-live="polite"><p class="notice">正在加载产品介绍…</p></div></div>
-      </div></section>
 
-      <section class="about section content-panel" id="about" data-section-panel="about" role="tabpanel" aria-labelledby="tab-about" hidden><div class="shell">
-        <div class="panel-heading"><div><p class="eyebrow">关于我</p><h2>PM大力王</h2></div><p>认真做产品，也认真研究怎么少走弯路。</p></div>
-        <div class="about-panel"><div class="about-identity"><img class="about-avatar" src="assets/brand/pm-daliwang-avatar.png" alt="PM大力王头像"><div class="about-intro"><strong>白天产品经理，晚上写点东西</strong><p>分享 AI / 职场 / 成长内容，持续沉淀经验和模板资料。</p><p class="about-note">🔍 把复杂工作拆成能照着做的清单和模板。这里不讲空话，只拆问题和真实场景。</p></div></div>
-        <div class="about-actions">
-          <div class="about-links">
-            <a class="social-link" data-social-platform="xiaohongshu" href="https://xhslink.cn/o/2RwQxXP0v1J" target="_blank" rel="noopener noreferrer" aria-label="打开 PM大力王的小红书主页"><svg class="social-link__icon" aria-hidden="true"><use href="#icon-xiaohongshu"/></svg><span>小红书</span></a>
-            <a class="social-link" data-social-platform="douyin" href="https://www.douyin.com/user/MS4wLjABAAAAQ5Al9OUGKDIws5YiYE5ByAbUIrgR1qr8Z0s4W8mDkOr0Tf-pCmwqzINvBc6KxhvW" target="_blank" rel="noopener noreferrer" aria-label="打开 PM大力王的抖音主页"><svg class="social-link__icon" aria-hidden="true"><use href="#icon-douyin"/></svg><span>抖音</span></a>
-            <a class="social-link" data-social-platform="wechat-channels" data-video-channel-account="PM大力王" href="weixin://" aria-label="打开微信并搜索 PM大力王 视频号"><svg class="social-link__icon" aria-hidden="true"><use href="#icon-wechat-channels"/></svg><span>视频号</span></a>
-          </div>
-        </div></div>
-      </div></section>
-    </main>
-
-    <p class="social-feedback" id="social-feedback" role="status" aria-live="polite" hidden></p>
-    <footer class="site-footer"><div class="shell footer-inner"><p><strong>PM大力王</strong> · 白天做产品，晚上写点东西</p><p>资料和方法持续更新。</p></div></footer>
-  </body>
-</html>
+<section class="product section" id="product" aria-labelledby="product-title"><div class="shell">
+<div class="section-heading"><div><span class="section-index">04 / 产品小实验</span><h2 id="product-title">把经验，<br>做成<span class="serif">小产品。</span></h2></div><p>认真打磨，慢慢上新。<br>感兴趣的话，小红书见。</p></div>
+<div class="product-layout"><aside class="product-shelf" data-product-shelf aria-label="产品列表"><p>正在加载产品…</p></aside><div data-product-showcase aria-live="polite"><p>正在加载产品介绍…</p></div></div>
+</div></section>
+<section class="about section" id="about" aria-labelledby="about-title"><div class="shell">
+<div class="about-layout"><div class="about-portrait"><img class="about-avatar" src="assets/brand/pm-daliwang-avatar.png" width="400" height="400" loading="lazy" alt="PM大力王在湖边张开双臂"><span>保持好奇，也允许慢一点。</span></div>
+<div class="about-copy"><span class="section-index">05 / 屏幕另一边</span><h2 id="about-title">嗨，我是<span class="serif">大力王。</span></h2><p class="about-lead">白天产品经理，晚上写点东西。</p><p>持续分享 AI 落地、职场方法和管理协作。<br>把复杂工作拆成能照着做的清单和模板。</p><p>工作里爱问“为什么”，生活里爱试“要不呢”。<br>这里放着我的思考、实验，还有一些想和你分享的好东西。</p><div class="about-links"><a class="social-link" data-social-platform="xiaohongshu" href="https://xhslink.cn/o/2RwQxXP0v1J" target="_blank" rel="noopener noreferrer"><svg class="social-link__icon" aria-hidden="true"><use href="#icon-xiaohongshu"/></svg><span>小红书</span><span aria-hidden="true">↗</span></a>
+<a class="social-link" data-social-platform="douyin" href="https://www.douyin.com/user/MS4wLjABAAAAQ5Al9OUGKDIws5YiYE5ByAbUIrgR1qr8Z0s4W8mDkOr0Tf-pCmwqzINvBc6KxhvW" target="_blank" rel="noopener noreferrer"><svg class="social-link__icon" aria-hidden="true"><use href="#icon-douyin"/></svg><span>抖音</span><span aria-hidden="true">↗</span></a>
+<button class="social-link" type="button" data-social-platform="wechat-channels" data-wechat-kind="视频号" data-video-channel-account="PM大力王"><svg class="social-link__icon" aria-hidden="true"><use href="#icon-wechat-channels"/></svg><span>视频号</span><span aria-hidden="true">↗</span></button>
+<button class="social-link" type="button" data-wechat-kind="公众号"><span class="wechat-icon" aria-hidden="true">●</span><span>公众号</span><span aria-hidden="true">↗</span></button></div><a class="text-link github-about" href="https://github.com/dali-wang-007" target="_blank" rel="noopener noreferrer">GitHub · 开源小工具 ↗</a></div></div>
+</div></section>
+</main>
+<dialog id="wechat-dialog" class="wechat-dialog" aria-labelledby="wechat-dialog-title"><button class="filter-close" type="button" data-wechat-close aria-label="关闭">×</button><p class="eyebrow">在微信，也能找到我</p><h2 id="wechat-dialog-title">PM大力王</h2><p id="wechat-instructions">打开微信，在搜一搜中查找“PM大力王”。</p><button class="button button--primary" type="button" data-copy-account>复制账号名称</button><a class="text-link" href="weixin://">打开微信 ↗</a><p class="wechat-small">如果没有唤起微信，请手动打开后搜索。</p></dialog>
+<p class="social-feedback" id="social-feedback" role="status" aria-live="polite" hidden></p>
+<footer class="site-footer"><div class="shell footer-inner"><a class="footer-brand" href="#top">PM大力王<span>.</span></a><p>认真生活，顺手创造。</p><a href="#top" class="back-top" aria-label="回到顶部">↑</a></div><div class="shell footer-bottom"><span>AI · 职场 · 成长</span><span>内容与产品，持续更新中</span></div></footer>
+</body></html>
