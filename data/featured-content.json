@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
-  "updatedAt": "2026-10-19",
-  "selectionRule": "分平台优先按播放量/阅读量排序。相同显示量级视为并列，选不同主题。跨平台保留独立列表；无数据时不套用其他平台排名。后续补全时同一作品只分配一个平台展示位。",
+  "schemaVersion": 2,
+  "updatedAt": "2026-10-20",
+  "selectionRule": "视频平台各3条且跨平台不重复，公众号5篇；平台内按可见播放/阅读量排序。没有平台数据时只标候选占位，不声称排名。总量不可用时为null，不能用展示条数代替总量。",
   "platforms": [
     {
       "id": "douyin",
@@ -9,7 +9,7 @@
       "status": "snapshot",
       "metric": "播放",
       "observedAt": "2026-10-18",
-      "note": "按 10 月 18 日主页可见播放量选取；同量级作品按主题择选，非实时榜单。",
+      "note": "按 10 月 18 日可见播放量选取 3 篇；非实时榜单。部分封面采用本地制作版。",
       "source": "用户提供的抖音主页截图与页面文本，40 条作品。当前重新读取超时。",
       "items": [
         {
@@ -20,7 +20,8 @@
           "url": "https://www.douyin.com/video/7680703476602637614",
           "metricDisplay": "4.1万",
           "metricValue": 41000,
-          "glyph": "↗"
+          "glyph": "↗",
+          "cover": null
         },
         {
           "id": "emotion",
@@ -30,7 +31,10 @@
           "url": "https://www.douyin.com/video/7689843039371644175",
           "metricDisplay": "1.6万",
           "metricValue": 16000,
-          "glyph": "≈"
+          "glyph": "≈",
+          "cover": "assets/works/emotion.jpg",
+          "preview": "assets/previews/emotion-5s.mp4",
+          "coverSource": "作者本地制作文件；线上封面版本待复核"
         },
         {
           "id": "nervous",
@@ -40,29 +44,14 @@
           "url": "https://www.douyin.com/video/7697624615140592922",
           "metricDisplay": "1.4万",
           "metricValue": 14000,
-          "glyph": "↝"
-        },
-        {
-          "id": "skill",
-          "title": "3分钟学会用 WorkBuddy 创建自己的 Skill",
-          "artTitle": "把经验，\n写成 Skill。",
-          "topic": "AI 实操 / WorkBuddy",
-          "url": "https://www.douyin.com/video/7682774550790130978",
-          "metricDisplay": "1.3万",
-          "metricValue": 13000,
-          "glyph": "✳"
-        },
-        {
-          "id": "build",
-          "title": "教程｜用AI复刻价值10w的小生意",
-          "artTitle": "一个想法，\n做成一个网站。",
-          "topic": "AI 实操 / 产品创造",
-          "url": "https://www.douyin.com/video/7695388341507788073",
-          "metricDisplay": "1.3万",
-          "metricValue": 13000,
-          "glyph": "↗"
+          "glyph": "↝",
+          "cover": "assets/works/nervous.jpg",
+          "preview": "assets/previews/nervous-5s.mp4",
+          "coverSource": "作者本地制作文件；线上封面版本待复核"
         }
-      ]
+      ],
+      "totalWorks": 40,
+      "totalObservedAt": "2026-10-18"
     },
     {
       "id": "xiaohongshu",
@@ -70,50 +59,42 @@
       "status": "pending",
       "metric": "播放",
       "observedAt": null,
-      "note": "小红书精选正在整理，先预留 5 篇的位置。",
+      "note": "先展示 3 篇不重复的候选作品；平台链接、播放排行和总量待核对，不代表当前前 3 名。",
       "reason": "公开主页读取失败，无法确认作品链接及平台内排名。",
       "items": [
         {
-          "id": "xiaohongshu-pending-1",
+          "id": "sensitivity",
           "status": "pending",
           "slot": 1,
-          "title": null,
+          "title": "高敏感的人一旦开窍，人生就开挂。",
           "url": null,
-          "metricValue": null
+          "metricValue": null,
+          "cover": "assets/works/sensitivity.jpg",
+          "coverSource": "作者本地制作文件，候选展示；尚未核对该平台发布及排名"
         },
         {
-          "id": "xiaohongshu-pending-2",
+          "id": "prompt",
           "status": "pending",
           "slot": 2,
-          "title": null,
+          "title": "万人收藏提示词：让 AI 给你最优解。",
           "url": null,
-          "metricValue": null
+          "metricValue": null,
+          "cover": "assets/works/prompt.jpg",
+          "coverSource": "作者本地制作文件，候选展示；尚未核对该平台发布及排名"
         },
         {
-          "id": "xiaohongshu-pending-3",
+          "id": "settings",
           "status": "pending",
           "slot": 3,
-          "title": null,
+          "title": "WorkBuddy 装好后别急着用，先检查这 5 项",
           "url": null,
-          "metricValue": null
-        },
-        {
-          "id": "xiaohongshu-pending-4",
-          "status": "pending",
-          "slot": 4,
-          "title": null,
-          "url": null,
-          "metricValue": null
-        },
-        {
-          "id": "xiaohongshu-pending-5",
-          "status": "pending",
-          "slot": 5,
-          "title": null,
-          "url": null,
-          "metricValue": null
+          "metricValue": null,
+          "cover": "assets/works/settings.jpg",
+          "coverSource": "作者本地制作文件，候选展示；尚未核对该平台发布及排名"
         }
-      ]
+      ],
+      "totalWorks": null,
+      "totalObservedAt": null
     },
     {
       "id": "channels",
@@ -121,50 +102,42 @@
       "status": "pending",
       "metric": "播放",
       "observedAt": null,
-      "note": "视频号精选正在整理，先预留 5 篇的位置。",
+      "note": "先展示 3 篇不重复的候选作品；平台链接、播放排行和总量待核对，不代表当前前 3 名。",
       "reason": "视频号助手返回登录页面，无法读取作品播放数据。",
       "items": [
         {
-          "id": "channels-pending-1",
+          "id": "value",
           "status": "pending",
           "slot": 1,
-          "title": null,
+          "title": "AI 接手基础工作后，打工人这两种能力更值钱",
           "url": null,
-          "metricValue": null
+          "metricValue": null,
+          "cover": "assets/works/value.jpg",
+          "coverSource": "作者本地制作文件，候选展示；尚未核对该平台发布及排名"
         },
         {
-          "id": "channels-pending-2",
+          "id": "mcp",
           "status": "pending",
           "slot": 2,
-          "title": null,
+          "title": "MCP 到底是什么？用会议纪要工作流讲明白",
           "url": null,
-          "metricValue": null
+          "metricValue": null,
+          "cover": "assets/works/mcp.jpg",
+          "coverSource": "作者本地制作文件，候选展示；尚未核对该平台发布及排名"
         },
         {
-          "id": "channels-pending-3",
+          "id": "boundary",
           "status": "pending",
           "slot": 3,
-          "title": null,
+          "title": "30 岁后，我终于敢在职场“拍桌”了",
           "url": null,
-          "metricValue": null
-        },
-        {
-          "id": "channels-pending-4",
-          "status": "pending",
-          "slot": 4,
-          "title": null,
-          "url": null,
-          "metricValue": null
-        },
-        {
-          "id": "channels-pending-5",
-          "status": "pending",
-          "slot": 5,
-          "title": null,
-          "url": null,
-          "metricValue": null
+          "metricValue": null,
+          "cover": "assets/works/boundary.jpg",
+          "coverSource": "作者本地制作文件，候选展示；尚未核对该平台发布及排名"
         }
-      ]
+      ],
+      "totalWorks": null,
+      "totalObservedAt": null
     },
     {
       "id": "wechat",
@@ -172,7 +145,7 @@
       "status": "pending",
       "metric": "阅读",
       "observedAt": null,
-      "note": "公众号精选正在整理，先预留 5 篇的位置。",
+      "note": "阅读量前 5 篇待核对，暂不填入未经确认的文章和数据。",
       "reason": "微信公众平台要求扫码登录，无法读取已发布作品及阅读数据。",
       "items": [
         {
@@ -215,7 +188,9 @@
           "url": null,
           "metricValue": null
         }
-      ]
+      ],
+      "totalWorks": null,
+      "totalObservedAt": null
     }
   ]
 }
