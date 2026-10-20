@@ -9,7 +9,7 @@
       "status": "snapshot",
       "metric": "播放",
       "observedAt": "2026-10-18",
-      "note": "按 10 月 18 日可见播放量选取 3 篇；非实时榜单。部分封面采用本地制作版。",
+      "note": "按 10 月 18 日可见播放量选取；原始封面待核对。",
       "source": "用户提供的抖音主页截图与页面文本，40 条作品。当前重新读取超时。",
       "items": [
         {
@@ -21,7 +21,8 @@
           "metricDisplay": "4.1万",
           "metricValue": 41000,
           "glyph": "↗",
-          "cover": null
+          "cover": null,
+          "coverSource": "平台原始封面待补充；已撤下未匹配的本地版本"
         },
         {
           "id": "emotion",
@@ -32,9 +33,9 @@
           "metricDisplay": "1.6万",
           "metricValue": 16000,
           "glyph": "≈",
-          "cover": "assets/works/emotion.jpg",
+          "cover": null,
           "preview": "assets/previews/emotion-5s.mp4",
-          "coverSource": "作者本地制作文件；线上封面版本待复核"
+          "coverSource": "平台原始封面待补充；已撤下未匹配的本地版本"
         },
         {
           "id": "nervous",
@@ -45,9 +46,9 @@
           "metricDisplay": "1.4万",
           "metricValue": 14000,
           "glyph": "↝",
-          "cover": "assets/works/nervous.jpg",
+          "cover": null,
           "preview": "assets/previews/nervous-5s.mp4",
-          "coverSource": "作者本地制作文件；线上封面版本待复核"
+          "coverSource": "平台原始封面待补充；已撤下未匹配的本地版本"
         }
       ],
       "totalWorks": 40,

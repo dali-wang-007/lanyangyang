@@ -8,62 +8,18 @@ export function eyeOffset(dx, dy, maxX, maxY) {
 }
 
 function initMascot() {
-  const mascot = document.querySelector('#mascot');
-  if (!mascot) return;
-  const eyes = [...mascot.querySelectorAll('.eye')];
-  const head = mascot.querySelector('.mascot-head');
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  const note = document.querySelector('#mascot-note');
-  const hint = document.querySelector('.mascot-hint');
-  if (matchMedia('(pointer: coarse)').matches) hint.textContent = '轻轻点我，打个招呼';
-  let point = null, frame = 0, visible = true;
-  const reset = () => {
-    eyes.forEach(eye => { eye.style.setProperty('--eye-x', '0px'); eye.style.setProperty('--eye-y', '0px'); });
-    if(head) head.style.transform = '';
-  };
-  function update() {
-    frame = 0;
-    if (!point || reduced.matches || !visible) return;
-    const bounds = mascot.getBoundingClientRect();
-    const x = Math.max(-1, Math.min(1, (point.x - bounds.x - bounds.width / 2) / (innerWidth * .38)));
-    const y = Math.max(-1, Math.min(1, (point.y - bounds.y - bounds.height * .22) / (innerHeight * .5)));
-    if (head) head.style.transform = `perspective(700px) translate(${x*9}px,${y*3}px) rotateY(${x*19}deg) rotateX(${-y*10}deg) rotateZ(${x*4}deg)`;
-    eyes.forEach(eye => {
-      const rect = eye.getBoundingClientRect();
-      const offset = eyeOffset(point.x - rect.x - rect.width / 2, point.y - rect.y - rect.height / 2, rect.width * .13, rect.height * .10);
-      eye.style.setProperty('--eye-x', `${offset.x.toFixed(2)}px`);
-      eye.style.setProperty('--eye-y', `${offset.y.toFixed(2)}px`);
-    });
-  }
-  window.addEventListener('pointermove', event => {
-    point = {x: event.clientX, y: event.clientY};
-    if (!frame && visible && !reduced.matches) frame = requestAnimationFrame(update);
-  }, {passive: true});
-  window.addEventListener('pointerdown', event => {
-    point = {x: event.clientX, y: event.clientY}; update();
-  }, {passive: true});
-  document.documentElement.addEventListener('pointerleave', reset);
-  reduced.addEventListener('change', reset);
-  new IntersectionObserver(entries => {
-    visible = entries[0].isIntersecting;
-    mascot.style.animationPlayState = visible ? 'running' : 'paused';
-    if (!visible) reset();
-  }).observe(mascot);
-  function blink() {
-    if (visible && !document.hidden && !reduced.matches) {
-      mascot.classList.add('is-blinking');
-      setTimeout(() => mascot.classList.remove('is-blinking'), 250);
-    }
-  }
-  setInterval(blink, 5700);
-  const greetings = ['收到你的招呼啦。', '慢一点，也没关系。', '好东西，在下面。'];
-  let greeting = 0, timer;
-  mascot.addEventListener('click', () => {
-    note.textContent = greetings[greeting++ % greetings.length];
-    mascot.classList.add('is-greeting'); blink();
-    clearTimeout(timer);
-    timer = setTimeout(() => { mascot.classList.remove('is-greeting'); note.textContent = '嗨，慢慢逛。'; }, 2200);
+  const mascot=document.querySelector('#mascot');
+  if(!mascot)return;
+  const note=document.querySelector('#mascot-note');
+  const greetings=['收到你的招呼啦。','慢一点，也没关系。','好东西，在下面。'];
+  let count=0,timer;
+  mascot.addEventListener('click',()=>{
+    note.textContent=greetings[count++%greetings.length];
+    clearTimeout(timer);timer=setTimeout(()=>note.textContent='嗨，慢慢逛。',2200);
   });
+  import('./sloth-3d.js').then(({createSloth})=>{
+    if(!createSloth(mascot))document.querySelector('.mascot-hint').textContent='轻轻点我，打个招呼';
+  }).catch(()=>{document.querySelector('.mascot-hint').textContent='轻轻点我，打个招呼';});
 }
 
 export function renderFeatured(platform) {
@@ -120,7 +76,7 @@ async function initFeatured() {
   const panel = document.querySelector('#platform-works');
   if (!panel) return;
   try {
-    const response = await fetch('data/featured-content.json?v=20261020-editorial');
+    const response = await fetch('data/featured-content.json?v=20261020-studio');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     panel.innerHTML = data.platforms.map(platform=>`<section class="platform-section" id="works-${escapeHtml(platform.id)}" aria-labelledby="title-${escapeHtml(platform.id)}"><div class="platform-heading"><h3 id="title-${escapeHtml(platform.id)}">${escapeHtml(platform.label)}</h3><p>已发布 <strong>${platform.totalWorks ?? '待补充'}</strong>${platform.totalWorks===null?'':' 篇'}${platform.totalObservedAt ? ` <small>截至 ${escapeHtml(platform.totalObservedAt)}</small>` : ''}</p></div><p class="platform-note">${escapeHtml(platform.note)}</p><div class="work-grid">${renderFeatured(platform)}</div></section>`).join('');
@@ -186,4 +142,5 @@ if (typeof document !== 'undefined') {
   window.addEventListener('resize',updateHeader);
   new ResizeObserver(updateHeader).observe(document.body); updateHeader();
   initMascot(); initFeatured(); initWechat(); initReveals();
+  import('./studio-motion.js').then(m=>m.initStudioMotion());
 }
