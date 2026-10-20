@@ -11,6 +11,7 @@ function initMascot() {
   const mascot=document.querySelector('#mascot');
   if(!mascot)return;
   const note=document.querySelector('#mascot-note');
+  if(matchMedia('(pointer: coarse)').matches)document.querySelector('.mascot-hint').textContent='轻轻点我，打个招呼';
   const greetings=['收到你的招呼啦。','慢一点，也没关系。','好东西，在下面。'];
   let count=0,timer;
   mascot.addEventListener('click',()=>{

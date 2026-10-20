@@ -33,6 +33,7 @@
 .work-body{padding:20px 22px 21px}
 .work-card h3,.work-placeholder h3{font-size:18px;line-height:1.55;font-weight:600;letter-spacing:-.02em;min-height:56px}
 .work-meta{font-size:11px;letter-spacing:.025em;color:#787c75}
+.work-card .work-meta>span{font-family:inherit;font-size:inherit;color:inherit}
 .work-meta>span:last-child{color:var(--platform,#6c6c62)}
 .work-card .work-open{display:flex;align-items:center;justify-content:space-between;padding-top:15px;border-top:1px solid #eee9df;font-size:13px}
 .work-open>span{width:31px;height:31px;border-radius:50%;display:grid;place-items:center;background:#eee9dd;transition:transform .35s,background .35s,color .35s}
