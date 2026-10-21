@@ -1,6 +1,7 @@
 // Original procedural mesh. No rotating image planes: eyes, muzzle, head and
 // limbs all have depth and move in one shared, lit three-dimensional scene.
 import * as T from './vendor/three.module.min.js';
+import {strandPoints} from './fur-groom.js';
 
 export function createSloth(host) {
   let renderer;
@@ -30,24 +31,35 @@ export function createSloth(host) {
   const sphere=new T.SphereGeometry(1,48,32);
   let seed=77;
   const rand=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};
-  const dummy=new T.Object3D(), normal=new T.Vector3(), up=new T.Vector3(0,1,0);
+  const normal=new T.Vector3();
   function ellipsoid(parent,mat,pos,scale,fur=0) {
     const group=new T.Group(); group.position.set(...pos); parent.add(group);
     const mesh=new T.Mesh(sphere,mat); mesh.scale.set(...scale); group.add(mesh);
     if(fur) {
-      const fibers=new T.InstancedMesh(new T.ConeGeometry(.005,1,3),mat,fur);
-      for(let i=0;i<fur;i++){
+      // Fine curved guard hairs over a dense undercoat, not rigid cone spikes.
+      const count=Math.round(fur*(innerWidth<760?1.65:2.4));
+      const positions=[],colors=[];
+      const base=mat.color;
+      const fine=scale[2]<.45;
+      for(let i=0;i<count;i++){
         const y=rand()*2-1,a=rand()*Math.PI*2,r=Math.sqrt(1-y*y);
         const x=Math.cos(a)*r,z=Math.sin(a)*r;
         normal.set(x/scale[0],y/scale[1],z/scale[2]).normalize();
-        const length=.025+rand()*.045;
-        dummy.position.set(x*scale[0],y*scale[1],z*scale[2]).addScaledVector(normal,length*.3);
-        dummy.quaternion.setFromUnitVectors(up,normal);
-        dummy.scale.set(.5+rand()*.65,length,1);
-        dummy.updateMatrix(); fibers.setMatrixAt(i,dummy.matrix);
-        fibers.setColorAt(i,new T.Color().setScalar(.72+rand()*.4));
+        const guard=rand()>.7;
+        const length=(guard?.045+rand()*.05:.02+rand()*.025)*(fine?.45:1);
+        const points=strandPoints([x*scale[0],y*scale[1],z*scale[2]],normal.toArray(),length,-length*(.25+rand()*.5));
+        const light=.82+Math.max(0,normal.y)*.25+rand()*.14;
+        for(let j=0;j<points.length-1;j++)for(const k of [j,j+1]){
+          positions.push(...points[k]);
+          const brightness=light*(.85+k*.075);
+          colors.push(base.r*brightness,base.g*brightness,base.b*brightness);
+        }
       }
-      group.add(fibers);
+      const geometry=new T.BufferGeometry();
+      geometry.setAttribute('position',new T.Float32BufferAttribute(positions,3));
+      geometry.setAttribute('color',new T.Float32BufferAttribute(colors,3));
+      const hairs=new T.LineSegments(geometry,new T.LineBasicMaterial({vertexColors:true,transparent:true,opacity:.34,depthWrite:false}));
+      group.add(hairs);
     }
     return group;
   }

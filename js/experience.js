@@ -18,19 +18,24 @@ function initMascot() {
     note.textContent=greetings[count++%greetings.length];
     clearTimeout(timer);timer=setTimeout(()=>note.textContent='嗨，慢慢逛。',2200);
   });
-  import('./sloth-3d.js').then(({createSloth})=>{
+  import('./sloth-3d.js?v=20261021-fur').then(({createSloth})=>{
     if(!createSloth(mascot))document.querySelector('.mascot-hint').textContent='轻轻点我，打个招呼';
   }).catch(()=>{document.querySelector('.mascot-hint').textContent='轻轻点我，打个招呼';});
 }
 
+export function sortFeaturedItems(items) {
+  return [...items].sort((a,b)=>(Number.isFinite(b.metricValue)?b.metricValue:-1)-(Number.isFinite(a.metricValue)?a.metricValue:-1));
+}
+
 export function renderFeatured(platform) {
-  return platform.items.map((item, index) => {
+  return sortFeaturedItems(platform.items).map((item, index) => {
     const pending = item.status === 'pending' || !item.url;
     const media = item.cover
       ? `<img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.title || platform.label)}封面" loading="eager" decoding="async" width="540" height="720">`
       : `<div class="cover-pending"><span>${escapeHtml(platform.label)}</span><strong>${String(index+1).padStart(2,'0')}</strong><small>作品封面待补充</small></div>`;
     const preview = item.preview && !pending ? `<video muted playsinline preload="none" data-preview-src="${escapeHtml(item.preview)}" aria-hidden="true"></video><button type="button" class="preview-control" aria-label="预览前5秒：${escapeHtml(item.title)}">预览 5 秒</button><span class="preview-status" aria-live="polite"></span>` : '';
-    return `<article class="work-card${pending ? ' work-placeholder' : ''}"><div class="work-media">${media}${preview}</div><div class="work-body"><div class="work-meta"><span>${escapeHtml(platform.label)} / ${String(index+1).padStart(2,'0')}</span><span>${pending ? '待补充' : escapeHtml(item.metricDisplay)+' '+escapeHtml(platform.metric)}</span></div><h3>${escapeHtml(item.title || (platform.label+'精选作品 · 整理中'))}</h3>${pending ? '<span class="work-open work-open--pending">链接与数据待补充</span>' : `<a class="work-open" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">观看完整${platform.id==='wechat'?'文章':'视频'} <span aria-hidden="true">↗</span></a>`}</div></article>`;
+    const stats = item.stats?.length ? `<dl class="work-stats">${item.stats.map(stat=>`<div><dt>${escapeHtml(stat.label)}</dt>${stat.value===null?'<dd title="后台未提供该指标" aria-label="未提供">—</dd>':`<dd>${escapeHtml(String(stat.value))}</dd>`}</div>`).join('')}</dl>` : '';
+    return `<article class="work-card${pending ? ' work-placeholder' : ''}"><div class="work-media">${media}${preview}</div><div class="work-body"><div class="work-meta"><span>${escapeHtml(platform.label)} / ${String(index+1).padStart(2,'0')}</span><span>${pending ? '待补充' : escapeHtml(item.metricDisplay)+' '+escapeHtml(platform.metric)}</span></div><h3>${escapeHtml(item.title || (platform.label+'精选作品 · 整理中'))}</h3>${stats}${pending ? '<span class="work-open work-open--pending">链接与数据待补充</span>' : `<a class="work-open" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${platform.id==='wechat'?'阅读完整文章':'观看完整视频'} <span aria-hidden="true">↗</span></a>`}</div></article>`;
   }).join('');
 }
 
@@ -77,10 +82,13 @@ async function initFeatured() {
   const panel = document.querySelector('#platform-works');
   if (!panel) return;
   try {
-    const response = await fetch('data/featured-content.json?v=20261020-studio');
+    const response = await fetch('data/featured-content.json?v=20261021-snapshot');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
-    panel.innerHTML = data.platforms.map(platform=>`<section class="platform-section" id="works-${escapeHtml(platform.id)}" aria-labelledby="title-${escapeHtml(platform.id)}"><div class="platform-heading"><h3 id="title-${escapeHtml(platform.id)}">${escapeHtml(platform.label)}</h3><p>已发布 <strong>${platform.totalWorks ?? '待补充'}</strong>${platform.totalWorks===null?'':' 篇'}${platform.totalObservedAt ? ` <small>截至 ${escapeHtml(platform.totalObservedAt)}</small>` : ''}</p></div><p class="platform-note">${escapeHtml(platform.note)}</p><div class="work-grid">${renderFeatured(platform)}</div></section>`).join('');
+    panel.innerHTML = data.platforms.map(platform=>{
+      const more=platform.profileUrl?`<a class="platform-more" href="${escapeHtml(platform.profileUrl)}" target="_blank" rel="noopener noreferrer">看更多，去串门 <span aria-hidden="true">↗</span></a>`:`<button class="platform-more" type="button" data-wechat-kind="${escapeHtml(platform.label)}">看更多 · 去微信 <span aria-hidden="true">↗</span></button>`;
+      return `<section class="platform-section" id="works-${escapeHtml(platform.id)}" aria-labelledby="title-${escapeHtml(platform.id)}"><div class="platform-heading"><h3 id="title-${escapeHtml(platform.id)}">${escapeHtml(platform.label)}</h3><p>${platform.totalLabel?escapeHtml(platform.totalLabel):`已发布 <strong>${platform.totalWorks ?? '待补充'}</strong> 篇`}</p></div><p class="platform-note">${escapeHtml(platform.note)}</p><div class="work-grid">${renderFeatured(platform)}</div>${more}</section>`;
+    }).join('');
     initPreviews(panel);
   } catch (error) {
     panel.innerHTML = '<p class="notice">作品暂时未加载成功，请稍后刷新。</p>';
@@ -91,10 +99,12 @@ async function initFeatured() {
 function initWechat() {
   const dialog = document.querySelector('#wechat-dialog');
   if (!dialog) return;
-  document.querySelectorAll('[data-wechat-kind]').forEach(button => button.addEventListener('click', () => {
+  document.addEventListener('click', event => {
+    const button=event.target.closest('[data-wechat-kind]');
+    if(!button)return;
     document.querySelector('#wechat-instructions').textContent = `打开微信，在搜一搜中搜索“PM大力王”，选择“${button.dataset.wechatKind}”找到我。`;
     dialog.showModal();
-  }));
+  });
   dialog.querySelector('[data-wechat-close]').addEventListener('click',()=>dialog.close());
   dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
   dialog.querySelector('[data-copy-account]').addEventListener('click', async () => {

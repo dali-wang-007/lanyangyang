@@ -1,197 +1,370 @@
 {
-  "schemaVersion": 2,
-  "updatedAt": "2026-10-20",
-  "selectionRule": "视频平台各3条且跨平台不重复，公众号5篇；平台内按可见播放/阅读量排序。没有平台数据时只标候选占位，不声称排名。总量不可用时为null，不能用展示条数代替总量。",
+  "schemaVersion": 3,
+  "updatedAt": "2026-10-21",
+  "selectionRule": "用户指定作品，平台内按本次可见阅读/播放量降序。去除重复视频号链接及与小红书相同的10w小生意作品，视频号保留2篇。数据不是实时值，万单位仅作近似排序；null表示未提供，不是0。",
   "platforms": [
     {
       "id": "douyin",
       "label": "抖音",
-      "status": "snapshot",
       "metric": "播放",
-      "observedAt": "2026-10-18",
-      "note": "按 10 月 18 日可见播放量选取；原始封面待核对。",
-      "source": "用户提供的抖音主页截图与页面文本，40 条作品。当前重新读取超时。",
+      "totalWorks": 40,
+      "totalLabel": null,
+      "profileUrl": "https://www.douyin.com/user/MS4wLjABAAAAQ5Al9OUGKDIws5YiYE5ByAbUIrgR1qr8Z0s4W8mDkOr0Tf-pCmwqzINvBc6KxhvW",
+      "status": "snapshot",
+      "observedAt": "2026-10-21",
+      "totalObservedAt": "2026-10-21",
+      "note": "指定精选 · 数据截至 2026-10-21，非实时更新。播放量保留平台显示精度。",
       "items": [
         {
-          "id": "report",
-          "title": "职场人最值得练的顶级能力｜职场汇报喂饭教学",
-          "artTitle": "让你的努力，\n被看见。",
-          "topic": "职场表达 / 工作汇报",
-          "url": "https://www.douyin.com/video/7680703476602637614",
-          "metricDisplay": "4.1万",
-          "metricValue": 41000,
-          "glyph": "↗",
-          "cover": null,
-          "coverSource": "平台原始封面待补充；已撤下未匹配的本地版本"
+          "id": "7682774550790130978",
+          "title": "3分钟学会用 WorkBuddy 创建自己的 Skill",
+          "metricValue": 13100,
+          "metricDisplay": "1.31万",
+          "cover": "assets/works/dy-skill-20261021.webp",
+          "coverSource": "平台作品原始封面，2026-10-21读取",
+          "url": "https://www.douyin.com/video/7682774550790130978",
+          "stats": [
+            {
+              "label": "点赞",
+              "value": 259
+            },
+            {
+              "label": "收藏",
+              "value": 198
+            },
+            {
+              "label": "分享",
+              "value": 26
+            }
+          ]
         },
         {
-          "id": "emotion",
-          "title": "情绪不稳定的本质，是判断力低下。",
-          "artTitle": "情绪背后，\n是判断。",
-          "topic": "个人成长 / 情绪边界",
-          "url": "https://www.douyin.com/video/7689843039371644175",
-          "metricDisplay": "1.6万",
-          "metricValue": 16000,
-          "glyph": "≈",
-          "cover": null,
-          "preview": "assets/previews/emotion-5s.mp4",
-          "coverSource": "平台原始封面待补充；已撤下未匹配的本地版本"
+          "id": "7691295705993923867",
+          "title": "AI时代，重新认识下HTML。",
+          "metricValue": 12900,
+          "metricDisplay": "1.29万",
+          "cover": "assets/works/dy-html-20261021.webp",
+          "coverSource": "平台作品原始封面，2026-10-21读取",
+          "url": "https://www.douyin.com/video/7691295705993923867",
+          "stats": [
+            {
+              "label": "点赞",
+              "value": 215
+            },
+            {
+              "label": "收藏",
+              "value": 201
+            },
+            {
+              "label": "分享",
+              "value": 17
+            }
+          ]
         },
         {
-          "id": "nervous",
-          "title": "紧张的本质，是一种傲慢。",
-          "artTitle": "和紧张，\n聊一聊。",
-          "topic": "个人成长 / 公开表达",
-          "url": "https://www.douyin.com/video/7697624615140592922",
-          "metricDisplay": "1.4万",
-          "metricValue": 14000,
-          "glyph": "↝",
-          "cover": null,
-          "preview": "assets/previews/nervous-5s.mp4",
-          "coverSource": "平台原始封面待补充；已撤下未匹配的本地版本"
+          "id": "7677583205138058547",
+          "title": "WorkBuddy装好后别急着用，先检查这5项",
+          "metricValue": 10600,
+          "metricDisplay": "1.06万",
+          "cover": "assets/works/dy-settings-20261021.webp",
+          "coverSource": "平台作品原始封面，2026-10-21读取",
+          "url": "https://www.douyin.com/video/7677583205138058547",
+          "stats": [
+            {
+              "label": "点赞",
+              "value": 252
+            },
+            {
+              "label": "收藏",
+              "value": 221
+            },
+            {
+              "label": "分享",
+              "value": 17
+            }
+          ]
         }
-      ],
-      "totalWorks": 40,
-      "totalObservedAt": "2026-10-18"
+      ]
     },
     {
       "id": "xiaohongshu",
       "label": "小红书",
-      "status": "pending",
-      "metric": "播放",
-      "observedAt": null,
-      "note": "先展示 3 篇不重复的候选作品；平台链接、播放排行和总量待核对，不代表当前前 3 名。",
-      "reason": "公开主页读取失败，无法确认作品链接及平台内排名。",
+      "metric": "观看",
+      "totalWorks": null,
+      "totalLabel": "后台全部笔记 100 条",
+      "profileUrl": "https://xhslink.cn/o/2RwQxXP0v1J",
+      "status": "snapshot",
+      "observedAt": "2026-10-21",
+      "totalObservedAt": "2026-10-21",
+      "note": "指定精选 · 数据截至 2026-10-21，非实时更新。",
       "items": [
         {
-          "id": "sensitivity",
-          "status": "pending",
-          "slot": 1,
-          "title": "高敏感的人一旦开窍，人生就开挂。",
-          "url": null,
-          "metricValue": null,
-          "cover": "assets/works/sensitivity.jpg",
-          "coverSource": "作者本地制作文件，候选展示；尚未核对该平台发布及排名"
+          "id": "6ad3740d000000001303fabd",
+          "title": "紧张的本质，是一种傲慢。",
+          "metricValue": 104875,
+          "metricDisplay": "104,875",
+          "cover": "assets/works/xhs-6ad3740d000000001303fabd-20261021.jpg",
+          "coverSource": "平台作品原始封面，2026-10-21读取",
+          "url": "https://www.xiaohongshu.com/explore/6ad3740d000000001303fabd?xsec_token=YBm40PZcO6jZi64VLs7um0AvywYPS4z6T-TKczRsdjJF0=&xsec_source=pc_creatormng",
+          "stats": [
+            {
+              "label": "点赞",
+              "value": 3834
+            },
+            {
+              "label": "收藏",
+              "value": 4092
+            },
+            {
+              "label": "分享",
+              "value": 296
+            }
+          ]
         },
         {
-          "id": "prompt",
-          "status": "pending",
-          "slot": 2,
-          "title": "万人收藏提示词：让 AI 给你最优解。",
-          "url": null,
-          "metricValue": null,
-          "cover": "assets/works/prompt.jpg",
-          "coverSource": "作者本地制作文件，候选展示；尚未核对该平台发布及排名"
+          "id": "6acb82b2000000001303e24c",
+          "title": "用AI复刻价值10w的小生意。",
+          "metricValue": 10737,
+          "metricDisplay": "10,737",
+          "cover": "assets/works/xhs-6acb82b2000000001303e24c-20261021.jpg",
+          "coverSource": "平台作品原始封面，2026-10-21读取",
+          "url": "https://www.xiaohongshu.com/explore/6acb82b2000000001303e24c?xsec_token=YBX9AlKEgZdLPrOFnkFESdwkuXThuisuSxuSxn3M4pWcs=&xsec_source=pc_creatormng",
+          "stats": [
+            {
+              "label": "点赞",
+              "value": 325
+            },
+            {
+              "label": "收藏",
+              "value": 706
+            },
+            {
+              "label": "分享",
+              "value": 113
+            }
+          ]
         },
         {
-          "id": "settings",
-          "status": "pending",
-          "slot": 3,
-          "title": "WorkBuddy 装好后别急着用，先检查这 5 项",
-          "url": null,
-          "metricValue": null,
-          "cover": "assets/works/settings.jpg",
-          "coverSource": "作者本地制作文件，候选展示；尚未核对该平台发布及排名"
+          "id": "6ab9206b000000001803b462",
+          "title": "用AI手搓一个国庆旅游行程网页",
+          "metricValue": 2487,
+          "metricDisplay": "2,487",
+          "cover": "assets/works/xhs-6ab9206b000000001803b462-20261021.jpg",
+          "coverSource": "平台作品原始封面，2026-10-21读取",
+          "url": "https://www.xiaohongshu.com/explore/6ab9206b000000001803b462?xsec_token=YBFnDFJ4m-eNa5NStjw1qvcu9MShfcx_Z3Ku-YeEKl-xQ=&xsec_source=pc_creatormng",
+          "stats": [
+            {
+              "label": "点赞",
+              "value": 91
+            },
+            {
+              "label": "收藏",
+              "value": 154
+            },
+            {
+              "label": "分享",
+              "value": 27
+            }
+          ]
         }
-      ],
-      "totalWorks": null,
-      "totalObservedAt": null
+      ]
     },
     {
       "id": "channels",
       "label": "视频号",
-      "status": "pending",
       "metric": "播放",
-      "observedAt": null,
-      "note": "先展示 3 篇不重复的候选作品；平台链接、播放排行和总量待核对，不代表当前前 3 名。",
-      "reason": "视频号助手返回登录页面，无法读取作品播放数据。",
+      "totalWorks": 36,
+      "totalLabel": null,
+      "profileUrl": null,
+      "status": "snapshot",
+      "observedAt": "2026-10-21",
+      "totalObservedAt": "2026-10-21",
+      "note": "指定精选 · 数据截至 2026-10-21，非实时更新。已去除跨平台重复作品；收藏数据未提供。",
       "items": [
         {
-          "id": "value",
-          "status": "pending",
-          "slot": 1,
-          "title": "AI 接手基础工作后，打工人这两种能力更值钱",
-          "url": null,
-          "metricValue": null,
-          "cover": "assets/works/value.jpg",
-          "coverSource": "作者本地制作文件，候选展示；尚未核对该平台发布及排名"
+          "id": "ASgdDopsY",
+          "title": "AI蒸馏到底是什么？一条视频讲清原理和操作",
+          "metricValue": 18000,
+          "metricDisplay": "1.8万",
+          "cover": "assets/works/channels-distill-20261021.jpg",
+          "coverSource": "平台作品原始封面，2026-10-21读取",
+          "url": "https://weixin.qq.com/sph/ASgdDopsY",
+          "stats": [
+            {
+              "label": "喜欢",
+              "value": 55
+            },
+            {
+              "label": "推荐",
+              "value": 165
+            },
+            {
+              "label": "分享",
+              "value": 768
+            },
+            {
+              "label": "收藏",
+              "value": null
+            }
+          ]
         },
         {
-          "id": "mcp",
-          "status": "pending",
-          "slot": 2,
-          "title": "MCP 到底是什么？用会议纪要工作流讲明白",
-          "url": null,
-          "metricValue": null,
-          "cover": "assets/works/mcp.jpg",
-          "coverSource": "作者本地制作文件，候选展示；尚未核对该平台发布及排名"
-        },
-        {
-          "id": "boundary",
-          "status": "pending",
-          "slot": 3,
-          "title": "30 岁后，我终于敢在职场“拍桌”了",
-          "url": null,
-          "metricValue": null,
-          "cover": "assets/works/boundary.jpg",
-          "coverSource": "作者本地制作文件，候选展示；尚未核对该平台发布及排名"
+          "id": "AclwNgUVv",
+          "title": "WorkBuddy 这 8 个 Skill，你一定要用起来",
+          "metricValue": 3276,
+          "metricDisplay": "3,276",
+          "cover": "assets/works/channels-skills-20261021.jpg",
+          "coverSource": "平台作品原始封面，2026-10-21读取",
+          "url": "https://weixin.qq.com/sph/AclwNgUVv",
+          "stats": [
+            {
+              "label": "喜欢",
+              "value": 16
+            },
+            {
+              "label": "推荐",
+              "value": 30
+            },
+            {
+              "label": "分享",
+              "value": 149
+            },
+            {
+              "label": "收藏",
+              "value": null
+            }
+          ]
         }
-      ],
-      "totalWorks": null,
-      "totalObservedAt": null
+      ]
     },
     {
       "id": "wechat",
       "label": "公众号",
-      "status": "pending",
-      "metric": "阅读",
-      "observedAt": null,
-      "note": "阅读量前 5 篇待核对，暂不填入未经确认的文章和数据。",
-      "reason": "微信公众平台要求扫码登录，无法读取已发布作品及阅读数据。",
+      "metric": "阅读人数",
+      "totalWorks": null,
+      "totalLabel": "发表记录 159 次",
+      "profileUrl": null,
+      "status": "snapshot",
+      "observedAt": "2026-10-21",
+      "totalObservedAt": "2026-10-21",
+      "note": "指定精选 · 数据截至 2026-10-21，非实时更新。按阅读人数排序；收藏数据未提供。",
       "items": [
         {
-          "id": "wechat-pending-1",
-          "status": "pending",
-          "slot": 1,
-          "title": null,
-          "url": null,
-          "metricValue": null
+          "id": "dfkXl3v-BAaskD0tqYdKFw",
+          "title": "用WorkBuddy协助自己办公一个月，分享点实用经验",
+          "metricValue": 20020,
+          "metricDisplay": "20,020",
+          "cover": "assets/works/wx-month-20261021.jpg",
+          "coverSource": "平台作品原始封面，2026-10-21读取",
+          "url": "https://mp.weixin.qq.com/s/dfkXl3v-BAaskD0tqYdKFw",
+          "stats": [
+            {
+              "label": "点赞人数",
+              "value": 107
+            },
+            {
+              "label": "收藏",
+              "value": null
+            },
+            {
+              "label": "分享人数",
+              "value": 1556
+            }
+          ]
         },
         {
-          "id": "wechat-pending-2",
-          "status": "pending",
-          "slot": 2,
-          "title": null,
-          "url": null,
-          "metricValue": null
+          "id": "HKykwVcVaWjP6t_3wPPgzQ",
+          "title": "我用 WorkBuddy 搭了个个人知识库，终于不用反复给 AI 喂资料了（实操分享）",
+          "metricValue": 5198,
+          "metricDisplay": "5,198",
+          "cover": "assets/works/wx-knowledge-20261021.jpg",
+          "coverSource": "平台作品原始封面，2026-10-21读取",
+          "url": "https://mp.weixin.qq.com/s/HKykwVcVaWjP6t_3wPPgzQ",
+          "stats": [
+            {
+              "label": "点赞人数",
+              "value": 27
+            },
+            {
+              "label": "收藏",
+              "value": null
+            },
+            {
+              "label": "分享人数",
+              "value": 468
+            }
+          ]
         },
         {
-          "id": "wechat-pending-3",
-          "status": "pending",
-          "slot": 3,
-          "title": null,
-          "url": null,
-          "metricValue": null
+          "id": "NrC106J-im_QDbgaN-IuSA",
+          "title": "【实战分享】用好 WorkBuddy 第一步：先搭一个项目管理平台",
+          "metricValue": 3319,
+          "metricDisplay": "3,319",
+          "cover": "assets/works/wx-project-20261021.jpg",
+          "coverSource": "平台作品原始封面，2026-10-21读取",
+          "url": "https://mp.weixin.qq.com/s/NrC106J-im_QDbgaN-IuSA",
+          "stats": [
+            {
+              "label": "点赞人数",
+              "value": 24
+            },
+            {
+              "label": "收藏",
+              "value": null
+            },
+            {
+              "label": "分享人数",
+              "value": 357
+            }
+          ]
         },
         {
-          "id": "wechat-pending-4",
-          "status": "pending",
-          "slot": 4,
-          "title": null,
-          "url": null,
-          "metricValue": null
+          "id": "Pn0qaZBtsN5XaHzQvCgnzQ",
+          "title": "产品经理先搞懂这 7 个概念，再去和老板、研发聊 AI 项目",
+          "metricValue": 2878,
+          "metricDisplay": "2,878",
+          "cover": "assets/works/wx-concepts-20261021.jpg",
+          "coverSource": "平台作品原始封面，2026-10-21读取",
+          "url": "https://mp.weixin.qq.com/s/Pn0qaZBtsN5XaHzQvCgnzQ",
+          "stats": [
+            {
+              "label": "点赞人数",
+              "value": 13
+            },
+            {
+              "label": "收藏",
+              "value": null
+            },
+            {
+              "label": "分享人数",
+              "value": 311
+            }
+          ]
         },
         {
-          "id": "wechat-pending-5",
-          "status": "pending",
-          "slot": 5,
-          "title": null,
-          "url": null,
-          "metricValue": null
+          "id": "Uim0ljUSAIALuitgYq79_g",
+          "title": "刚入职，先用 AI 搭一个自己的工作系统",
+          "metricValue": 2053,
+          "metricDisplay": "2,053",
+          "cover": "assets/works/wx-onboard-20261021.jpg",
+          "coverSource": "平台作品原始封面，2026-10-21读取",
+          "url": "https://mp.weixin.qq.com/s/Uim0ljUSAIALuitgYq79_g",
+          "stats": [
+            {
+              "label": "点赞人数",
+              "value": 10
+            },
+            {
+              "label": "收藏",
+              "value": null
+            },
+            {
+              "label": "分享人数",
+              "value": 115
+            }
+          ]
         }
-      ],
-      "totalWorks": null,
-      "totalObservedAt": null
+      ]
     }
   ]
 }
