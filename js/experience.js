@@ -27,7 +27,7 @@ export function renderFeatured(platform) {
   return platform.items.map((item, index) => {
     const pending = item.status === 'pending' || !item.url;
     const media = item.cover
-      ? `<img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.title || platform.label)}封面" loading="lazy" width="540" height="720">`
+      ? `<img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.title || platform.label)}封面" loading="eager" decoding="async" width="540" height="720">`
       : `<div class="cover-pending"><span>${escapeHtml(platform.label)}</span><strong>${String(index+1).padStart(2,'0')}</strong><small>作品封面待补充</small></div>`;
     const preview = item.preview && !pending ? `<video muted playsinline preload="none" data-preview-src="${escapeHtml(item.preview)}" aria-hidden="true"></video><button type="button" class="preview-control" aria-label="预览前5秒：${escapeHtml(item.title)}">预览 5 秒</button><span class="preview-status" aria-live="polite"></span>` : '';
     return `<article class="work-card${pending ? ' work-placeholder' : ''}"><div class="work-media">${media}${preview}</div><div class="work-body"><div class="work-meta"><span>${escapeHtml(platform.label)} / ${String(index+1).padStart(2,'0')}</span><span>${pending ? '待补充' : escapeHtml(item.metricDisplay)+' '+escapeHtml(platform.metric)}</span></div><h3>${escapeHtml(item.title || (platform.label+'精选作品 · 整理中'))}</h3>${pending ? '<span class="work-open work-open--pending">链接与数据待补充</span>' : `<a class="work-open" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">观看完整${platform.id==='wechat'?'文章':'视频'} <span aria-hidden="true">↗</span></a>`}</div></article>`;
@@ -114,7 +114,7 @@ function initReveals() {
     if(entry.isIntersecting){entry.target.classList.add('is-revealed');observer.unobserve(entry.target);}
   }),{threshold:.08,rootMargin:'0px 0px 30px 0px'});
   function collect(){
-    document.querySelectorAll('.section-heading,.work-card,.open-tools-grid a,.about-layout,.product-showcase').forEach(el=>{
+    document.querySelectorAll('.section-heading,.open-tools-grid a,.about-layout,.product-showcase').forEach(el=>{
       if(seen.has(el))return;
       seen.add(el);el.classList.add('reveal-ready');observer.observe(el);
     });

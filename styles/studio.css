@@ -1,4 +1,10 @@
 /* Studio edition: tactile surfaces, controlled motion, authentic content. */
+.site-nav{gap:30px}
+.site-nav a{font-size:19px;font-weight:650;line-height:1.4;min-height:46px;display:flex;align-items:center;color:#444b46}
+.site-nav a:hover,.site-nav a[aria-current="location"]{color:#795735}
+.site-nav a[aria-current="location"]:after{height:3px;background:#a47c4b;border-radius:3px}
+.work-card{opacity:1;translate:none}
+.work-media>img{opacity:1;visibility:visible}
 .mascot{position:relative;aspect-ratio:1145/1374}
 .sloth-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .mascot.has-3d>.mascot-body,.mascot.has-3d>.mascot-head{visibility:hidden}
@@ -92,10 +98,12 @@
  .resource-item:hover h3{translate:5px 0;color:#7a5a32}
 }
 @media(max-width:1100px){
+ .site-nav{gap:20px}.site-nav a{font-size:18px}
  #works-wechat .work-grid{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:195px;overflow-x:auto;scroll-snap-type:x proximity;padding:10px 4px 24px}
  #works-wechat .work-card{scroll-snap-align:start}
 }
 @media(max-width:760px){
+ .site-nav{gap:6px}.site-nav a{font-size:16px;font-weight:650;min-height:44px}
  .work-grid{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:min(76vw,290px);overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 3px 25px;gap:15px;scroll-padding-left:3px;overscroll-behavior-x:contain}
  .work-card{scroll-snap-align:start}
  .work-card,.work-card:first-child,.work-card:nth-child(-n+2){border-radius:18px}
