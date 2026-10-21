@@ -18,8 +18,8 @@ function initMascot() {
     note.textContent=greetings[count++%greetings.length];
     clearTimeout(timer);timer=setTimeout(()=>note.textContent='嗨，慢慢逛。',2200);
   });
-  import('./sloth-3d.js?v=20261021-fur').then(({createSloth})=>{
-    if(!createSloth(mascot))document.querySelector('.mascot-hint').textContent='轻轻点我，打个招呼';
+  import('./sloth-views.js?v=20261021-multiview').then(async ({createSloth})=>{
+    if(!await createSloth(mascot))document.querySelector('.mascot-hint').textContent='轻轻点我，打个招呼';
   }).catch(()=>{document.querySelector('.mascot-hint').textContent='轻轻点我，打个招呼';});
 }
 
