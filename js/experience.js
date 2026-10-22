@@ -18,7 +18,7 @@ function initMascot() {
     note.textContent=greetings[count++%greetings.length];
     clearTimeout(timer);timer=setTimeout(()=>note.textContent='嗨，慢慢逛。',2200);
   });
-  import('./sloth-views.js?v=20261021-multiview').then(async ({createSloth})=>{
+  import('./sloth-views.js?v=20261022-follow').then(async ({createSloth})=>{
     if(!await createSloth(mascot))document.querySelector('.mascot-hint').textContent='轻轻点我，打个招呼';
   }).catch(()=>{document.querySelector('.mascot-hint').textContent='轻轻点我，打个招呼';});
 }
@@ -35,7 +35,7 @@ export function renderFeatured(platform) {
       : `<div class="cover-pending"><span>${escapeHtml(platform.label)}</span><strong>${String(index+1).padStart(2,'0')}</strong><small>作品封面待补充</small></div>`;
     const preview = item.preview && !pending ? `<video muted playsinline preload="none" data-preview-src="${escapeHtml(item.preview)}" aria-hidden="true"></video><button type="button" class="preview-control" aria-label="预览前5秒：${escapeHtml(item.title)}">预览 5 秒</button><span class="preview-status" aria-live="polite"></span>` : '';
     const stats = item.stats?.length ? `<dl class="work-stats">${item.stats.map(stat=>`<div><dt>${escapeHtml(stat.label)}</dt>${stat.value===null?'<dd title="后台未提供该指标" aria-label="未提供">—</dd>':`<dd>${escapeHtml(String(stat.value))}</dd>`}</div>`).join('')}</dl>` : '';
-    return `<article class="work-card${pending ? ' work-placeholder' : ''}"><div class="work-media">${media}${preview}</div><div class="work-body"><div class="work-meta"><span>${escapeHtml(platform.label)} / ${String(index+1).padStart(2,'0')}</span><span>${pending ? '待补充' : escapeHtml(item.metricDisplay)+' '+escapeHtml(platform.metric)}</span></div><h3>${escapeHtml(item.title || (platform.label+'精选作品 · 整理中'))}</h3>${stats}${pending ? '<span class="work-open work-open--pending">链接与数据待补充</span>' : `<a class="work-open" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${platform.id==='wechat'?'阅读完整文章':'观看完整视频'} <span aria-hidden="true">↗</span></a>`}</div></article>`;
+    return `<article class="work-card${pending ? ' work-placeholder' : ''}"><div class="work-media">${media}${preview}</div><div class="work-body"><div class="work-meta"><span>${pending ? '待补充' : escapeHtml(item.metricDisplay)+' '+escapeHtml(platform.metric)}</span></div><h3>${escapeHtml(item.title || (platform.label+'精选作品 · 整理中'))}</h3>${stats}${pending ? '<span class="work-open work-open--pending">链接与数据待补充</span>' : `<a class="work-open" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${platform.id==='wechat'?'阅读完整文章':'观看完整视频'} <span aria-hidden="true">↗</span></a>`}</div></article>`;
   }).join('');
 }
 
@@ -78,6 +78,18 @@ function initPreviews(root) {
   });
 }
 
+export function renderPlatform(platform) {
+  const variant = ['douyin','xiaohongshu','channels','wechat'].includes(platform.id) ? platform.id : 'douyin';
+  const label = escapeHtml(platform.label);
+  const inside = '<span class="visit-pet" aria-hidden="true"><img src="assets/mascot/views/front.webp" alt="" width="1145" height="1374" loading="lazy"></span><span class="visit-label">看更多<span>去串门</span></span><span class="visit-arrow" aria-hidden="true">↗</span>';
+  const classes = `platform-more platform-more--${variant}`;
+  const more = platform.profileUrl
+    ? `<a class="${classes}" aria-label="去${label}主页看更多作品" href="${escapeHtml(platform.profileUrl)}" target="_blank" rel="noopener noreferrer">${inside}</a>`
+    : `<button class="${classes}" aria-label="在微信查看${label}更多作品" type="button" data-wechat-kind="${label}">${inside}</button>`;
+  const total = platform.totalLabel ? escapeHtml(platform.totalLabel) : platform.totalWorks == null ? '作品持续更新中' : `已发布 <strong>${platform.totalWorks}</strong> 篇`;
+  return `<section class="platform-section" id="works-${escapeHtml(platform.id)}" aria-labelledby="title-${escapeHtml(platform.id)}"><div class="platform-heading"><h3 id="title-${escapeHtml(platform.id)}">${label}</h3><div class="platform-actions"><p class="platform-total">${total}</p>${more}</div></div><div class="work-grid">${renderFeatured(platform)}</div></section>`;
+}
+
 async function initFeatured() {
   const panel = document.querySelector('#platform-works');
   if (!panel) return;
@@ -85,10 +97,7 @@ async function initFeatured() {
     const response = await fetch('data/featured-content.json?v=20261021-snapshot');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
-    panel.innerHTML = data.platforms.map(platform=>{
-      const more=platform.profileUrl?`<a class="platform-more" href="${escapeHtml(platform.profileUrl)}" target="_blank" rel="noopener noreferrer">看更多，去串门 <span aria-hidden="true">↗</span></a>`:`<button class="platform-more" type="button" data-wechat-kind="${escapeHtml(platform.label)}">看更多 · 去微信 <span aria-hidden="true">↗</span></button>`;
-      return `<section class="platform-section" id="works-${escapeHtml(platform.id)}" aria-labelledby="title-${escapeHtml(platform.id)}"><div class="platform-heading"><h3 id="title-${escapeHtml(platform.id)}">${escapeHtml(platform.label)}</h3><p>${platform.totalLabel?escapeHtml(platform.totalLabel):`已发布 <strong>${platform.totalWorks ?? '待补充'}</strong> 篇`}</p></div><p class="platform-note">${escapeHtml(platform.note)}</p><div class="work-grid">${renderFeatured(platform)}</div>${more}</section>`;
-    }).join('');
+    panel.innerHTML = data.platforms.map(renderPlatform).join('');
     initPreviews(panel);
   } catch (error) {
     panel.innerHTML = '<p class="notice">作品暂时未加载成功，请稍后刷新。</p>';
