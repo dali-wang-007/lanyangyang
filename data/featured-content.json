@@ -40,6 +40,7 @@
         },
         {
           "id": "7691295705993923867",
+          "preview": "assets/previews/html-5s.mp4",
           "title": "AI时代，重新认识下HTML。",
           "metricValue": 12900,
           "metricDisplay": "1.29万",
@@ -63,6 +64,7 @@
         },
         {
           "id": "7677583205138058547",
+          "preview": "assets/previews/settings-5s.mp4",
           "title": "WorkBuddy装好后别急着用，先检查这5项",
           "metricValue": 10600,
           "metricDisplay": "1.06万",
@@ -100,6 +102,7 @@
       "items": [
         {
           "id": "6ad3740d000000001303fabd",
+          "preview": "assets/previews/nervous-5s.mp4",
           "title": "紧张的本质，是一种傲慢。",
           "metricValue": 104875,
           "metricDisplay": "104,875",
@@ -123,6 +126,7 @@
         },
         {
           "id": "6acb82b2000000001303e24c",
+          "preview": "assets/previews/business-5s.mp4",
           "title": "用AI复刻价值10w的小生意。",
           "metricValue": 10737,
           "metricDisplay": "10,737",
@@ -146,6 +150,7 @@
         },
         {
           "id": "6ab9206b000000001803b462",
+          "preview": "assets/previews/travel-5s.mp4",
           "title": "用AI手搓一个国庆旅游行程网页",
           "metricValue": 2487,
           "metricDisplay": "2,487",
@@ -171,6 +176,7 @@
     },
     {
       "id": "channels",
+      "additionalLinks": [{"url": "https://weixin.qq.com/sph/A2HGybzfW", "label": "新分享 · 在视频号打开"}],
       "label": "视频号",
       "metric": "播放",
       "totalWorks": 36,

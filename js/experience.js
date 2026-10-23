@@ -79,22 +79,22 @@ function initPreviews(root) {
 }
 
 export function renderPlatform(platform) {
-  const variant = ['douyin','xiaohongshu','channels','wechat'].includes(platform.id) ? platform.id : 'douyin';
   const label = escapeHtml(platform.label);
   const inside = '<span class="visit-pet" aria-hidden="true"><img src="assets/mascot/views/front.webp" alt="" width="1145" height="1374" loading="lazy"></span><span class="visit-label">看更多<span>去串门</span></span><span class="visit-arrow" aria-hidden="true">↗</span>';
-  const classes = `platform-more platform-more--${variant}`;
+  const classes = 'platform-more platform-more--sticker';
   const more = platform.profileUrl
     ? `<a class="${classes}" aria-label="去${label}主页看更多作品" href="${escapeHtml(platform.profileUrl)}" target="_blank" rel="noopener noreferrer">${inside}</a>`
     : `<button class="${classes}" aria-label="在微信查看${label}更多作品" type="button" data-wechat-kind="${label}">${inside}</button>`;
   const total = platform.totalLabel ? escapeHtml(platform.totalLabel) : platform.totalWorks == null ? '作品持续更新中' : `已发布 <strong>${platform.totalWorks}</strong> 篇`;
-  return `<section class="platform-section" id="works-${escapeHtml(platform.id)}" aria-labelledby="title-${escapeHtml(platform.id)}"><div class="platform-heading"><h3 id="title-${escapeHtml(platform.id)}">${label}</h3><div class="platform-actions"><p class="platform-total">${total}</p>${more}</div></div><div class="work-grid">${renderFeatured(platform)}</div></section>`;
+  const extras=(platform.additionalLinks||[]).map(link=>`<a class="supplemental-work" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label)} <span aria-hidden="true">↗</span></a>`).join('');
+  return `<section class="platform-section" id="works-${escapeHtml(platform.id)}" aria-labelledby="title-${escapeHtml(platform.id)}"><div class="platform-heading"><div class="platform-identity"><h3 id="title-${escapeHtml(platform.id)}">${label}</h3><p class="platform-total">${total}</p></div><div class="platform-actions">${more}</div></div><div class="work-grid">${renderFeatured(platform)}</div>${extras}</section>`;
 }
 
 async function initFeatured() {
   const panel = document.querySelector('#platform-works');
   if (!panel) return;
   try {
-    const response = await fetch('data/featured-content.json?v=20261021-snapshot');
+    const response = await fetch('data/featured-content.json?v=20261023-full');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     panel.innerHTML = data.platforms.map(renderPlatform).join('');
