@@ -1,0 +1,65 @@
+/* Selected type study 03: 慢半拍呼吸. Scope the redesign to the hero. */
+.site-header{background:#fff;height:128px;padding-top:32px}
+.site-header.is-scrolled{background:#fffffff2}
+.site-header .header-inner{width:min(1120px,calc(100% - 64px));height:64px}
+.site-header .brand{font-size:22px;color:#101819}
+.site-header .brand-avatar{width:44px;height:44px}
+.site-header .brand-period{display:none}
+.site-header .site-nav{gap:32px}
+.site-header .site-nav a{font-size:17px;font-weight:600;color:#101819}
+.site-header .site-nav a[aria-current="location"]:after{background:#2864ff}
+section[id]{scroll-margin-top:144px}
+#top{scroll-margin-top:0}
+.hero{background:#fff;padding:145px 0 20px;color:#101819;min-height:100svh}
+.hero .hero-layout{width:min(1120px,calc(100% - 64px));padding:35px 25px 28px;grid-template-columns:1fr 1.15fr;gap:60px;min-height:590px}
+.hero .mascot-stage{align-self:center;display:flex;flex-direction:column;align-items:center;justify-content:center;height:auto;padding:0}
+.hero .mascot{width:100%;max-width:385px}
+.hero .mascot-stage:before{display:none}
+.hero .mascot-ground{display:none}
+.hero .mascot-note{top:-12px;left:0;font-size:16px;color:#343c3d;font-family:'Kaiti SC','STKaiti',serif}
+.hero .mascot-hint{position:static;margin-top:12px;font-size:12px;line-height:1.6;color:#6b7375}
+.hero .hero-copy{padding:12px 0 0}
+.hero .breathe-title{font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-size:clamp(52px,6.8vw,89px);font-weight:800;letter-spacing:-.055em;line-height:1.26;white-space:normal;--look-x:0px;--look-y:0px}
+.breathe-title .type-line{display:block;white-space:nowrap;transform:translate(var(--look-x),var(--look-y));transition:transform 1s cubic-bezier(.16,1,.3,1)}
+.breathe-title .type-glyph{display:inline-block;position:relative;transform-origin:50% 78%;vertical-align:baseline;animation:type-gentle-in 1.25s both cubic-bezier(.2,.8,.2,1);animation-delay:calc(var(--i)*35ms)}
+.breathe-title .type-letter{display:inline-block;animation:type-breath 4.8s 2 ease-in-out;animation-delay:calc(1s + var(--i)*90ms)}
+.breathe-title .type-punctuation{font-weight:600}
+.breathe-title .type-love{color:#102d28}
+.breathe-title .type-love .type-letter{text-decoration:underline;text-decoration-color:#eef31f;text-decoration-thickness:.075em;text-underline-offset:.13em}
+.hero-scroll{width:min(1120px,calc(100% - 64px));margin:0 auto;min-height:44px}
+.hero-scroll a{color:#6b7375}
+.hero-scroll a:hover{color:#101819}
+.hero-scroll a:focus-visible,.hero .mascot:focus-visible{outline-color:#2864ff}
+@keyframes type-gentle-in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes type-breath{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-6px) rotate(-1deg)}}
+@media(max-width:1100px) and (min-width:761px){
+ .hero .hero-layout{gap:35px;min-height:480px;padding-inline:0}
+ .hero .breathe-title{font-size:clamp(52px,6.8vw,75px)}
+}
+@media(min-width:761px) and (max-height:820px){
+ .hero{padding-top:128px;padding-bottom:16px}
+ .hero .hero-layout{min-height:0;padding-block:20px}
+ .hero .mascot{max-width:340px}
+ .hero .breathe-title{font-size:clamp(52px,8.6vh,75px)}
+}
+@media(max-width:760px){
+ .site-header{height:124px;padding-top:20px}
+ .site-header .header-inner{width:calc(100% - 48px);height:95px;gap:8px;align-items:flex-start}
+ .site-header .brand{font-size:19px}
+ .site-header .brand-avatar{width:36px;height:36px}
+ .site-header .site-nav{gap:0;width:100%;justify-content:space-between}
+ .site-header .site-nav a{font-size:14px}
+ .hero{padding:142px 0 16px}
+ .hero .hero-layout{width:calc(100% - 48px);display:flex;flex-direction:column-reverse;justify-content:center;gap:28px;padding:12px 0 14px;min-height:0}
+ .hero .hero-copy{padding:0;width:100%;max-width:340px;text-align:left}
+ .hero .breathe-title{font-size:clamp(44px,12.5vw,75px);line-height:1.15;letter-spacing:-.06em}
+ .hero .mascot-stage{width:225px;max-width:65vw;height:auto}
+ .hero .mascot{width:100%;max-width:none}
+ .hero .mascot-note{top:10px;left:-28px;font-size:13px}
+ .hero .mascot-hint{font-size:10px;white-space:nowrap;margin-top:10px}
+ .hero-scroll{width:calc(100% - 48px)}
+}
+@media(prefers-reduced-motion:reduce){
+ .breathe-title .type-glyph,.breathe-title .type-letter{animation:none;opacity:1;transform:none}
+ .breathe-title .type-line{transform:none;transition:none}
+}
