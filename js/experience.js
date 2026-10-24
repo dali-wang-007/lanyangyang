@@ -46,9 +46,11 @@ export function renderFeatured(platform) {
     const media = item.cover
       ? `<img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.title || platform.label)}封面" loading="eager" decoding="async" width="540" height="720">`
       : `<div class="cover-pending"><span aria-hidden="true">↗</span><strong>${metadataPending?'新分享':String(index+1).padStart(2,'0')}</strong><small>${metadataPending?'标题与封面待补充':'作品封面待补充'}</small></div>`;
-    const preview = item.preview && !pending ? `<video muted playsinline preload="none" data-preview-src="${escapeHtml(item.preview)}" aria-hidden="true"></video><button type="button" class="preview-control" aria-label="播放预览：${escapeHtml(item.title)}">▶</button><span class="preview-status" aria-live="polite"></span>` : platform.id!=='wechat'&&!pending?'<span class="preview-unavailable">↗ 前往平台观看</span>':'';
+    const preview = platform.id==='xiaohongshu' && item.preview && !pending ? `<video muted playsinline preload="none" data-preview-src="${escapeHtml(item.preview)}" aria-hidden="true"></video><button type="button" class="preview-control" aria-label="播放预览：${escapeHtml(item.title)}">▶</button><span class="preview-status" aria-live="polite"></span>` : '';
     const stats = item.stats?.length ? `<dl class="work-stats">${item.stats.map(stat=>`<div><dt>${escapeHtml(stat.label)}</dt>${stat.value===null?'<dd title="后台未提供该指标" aria-label="未提供">—</dd>':`<dd>${escapeHtml(String(stat.value))}</dd>`}</div>`).join('')}</dl>` : '';
-    return `<article class="work-card${pending ? ' work-placeholder' : ''}"><div class="work-media">${media}${preview}</div><div class="work-body"><div class="work-meta"><span>${pending||metadataPending ? '数据待补充' : escapeHtml(item.metricDisplay)+' '+escapeHtml(platform.metric)}</span></div><h3>${escapeHtml(item.title || (platform.label+'精选作品 · 整理中'))}</h3>${stats}${pending ? '<span class="work-open work-open--pending">链接与数据待补充</span>' : `<a class="work-open" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${platform.id==='wechat'?'阅读完整文章':'观看完整视频'} <span aria-hidden="true">↗</span></a>`}</div></article>`;
+    const title=escapeHtml(item.title || (platform.label+'精选作品 · 整理中'));
+    const action=platform.id==='wechat'?'阅读完整文章':platform.id==='xiaohongshu'?'观看完整视频':'去平台观看';
+    return `<article class="work-card${pending ? ' work-placeholder' : ''}"><div class="work-media">${media}${preview}</div><div class="work-body"><div class="work-meta"><span>${pending||metadataPending ? '数据待补充' : escapeHtml(item.metricDisplay)+' '+escapeHtml(platform.metric)}</span></div><h3 title="${title}">${title}</h3>${stats}${pending ? '<span class="work-open work-open--pending">链接与数据待补充</span>' : `<a class="work-open" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${action} <span aria-hidden="true">↗</span></a>`}</div></article>`;
   }).join('');
 }
 
@@ -110,6 +112,11 @@ export function renderPlatform(platform) {
   return `<section class="platform-section" id="works-${escapeHtml(platform.id)}" aria-labelledby="title-${escapeHtml(platform.id)}"><div class="platform-heading"><div class="platform-identity"><h3 id="title-${escapeHtml(platform.id)}">${label}</h3><p class="platform-total">${total}</p></div><div class="platform-actions">${more}</div></div><div class="work-grid">${renderFeatured(platform)}</div>${extras}</section>`;
 }
 
+export function renderPlatforms(platforms) {
+  const order=['xiaohongshu','douyin','channels','wechat'];
+  return [...platforms].sort((a,b)=>(order.indexOf(a.id)<0?99:order.indexOf(a.id))-(order.indexOf(b.id)<0?99:order.indexOf(b.id))).map(renderPlatform).join('');
+}
+
 async function initFeatured() {
   const panel = document.querySelector('#platform-works');
   if (!panel) return;
@@ -117,7 +124,7 @@ async function initFeatured() {
     const response = await fetch('data/featured-content.json?v=20261024-run-v2');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
-    panel.innerHTML = data.platforms.map(renderPlatform).join('');
+    panel.innerHTML = renderPlatforms(data.platforms);
     panel.addEventListener('dblclick',openFullWork);
     initPreviews(panel);
   } catch (error) {

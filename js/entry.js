@@ -15,6 +15,7 @@ if(overlay&&document.documentElement.classList.contains('entry-active')){
     if(finished)return;
     finished=true;cancelAnimationFrame(frame);
     document.documentElement.classList.remove('entry-active');
+    window.resetEntryLocation?.();
     background.forEach(el=>{if('entryInert' in el.dataset){el.inert=false;delete el.dataset.entryInert;}});
     overlay.classList.add('entry-leaving');
     const hadFocus=overlay.contains(document.activeElement);

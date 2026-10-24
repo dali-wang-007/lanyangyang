@@ -37,6 +37,18 @@
 @keyframes ing-hop{0%,15%,65%,100%{transform:translateY(0) rotate(0)}25%{transform:translateY(-7px) rotate(5deg)}35%{transform:translateY(1px) rotate(-3deg)}45%{transform:translateY(-2px) rotate(0)}}
 @keyframes spark-turn{0%,60%,100%{transform:rotate(0) scale(1)}30%{transform:rotate(90deg) scale(1.2)}}
 
+/* Two uninterrupted hero lines; preserve the approved breathing animation. */
+.hero .hero-layout{grid-template-columns:minmax(0,.85fr) minmax(0,1.35fr);gap:40px}
+.hero .hero-copy{min-width:0}
+.hero .breathe-title{font-size:clamp(34px,4.7vw,64px);line-height:1.4}
+.platform-section .work-card h3,#works-wechat .work-card h3{font-size:17px;line-height:1.6;min-height:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+#works-wechat .work-card h3{white-space:normal;min-height:82px}
+@media(max-width:760px){
+ .hero .hero-layout{gap:28px}
+ .hero .hero-copy{max-width:100%}
+ .hero .breathe-title{font-size:clamp(28px,8.8vw,42px);line-height:1.4}
+}
+
 /* One quiet cover canvas; platform personality belongs to the visit sticker. */
 #works-douyin,#works-xiaohongshu,#works-channels,#works-wechat{--card-tint:#f7f6fd}
 .platform-section .work-media{background:#f7f6fd;border-color:#eeedf7}
