@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-10-21",
-  "selectionRule": "用户指定作品，平台内按已读取阅读/播放量降序，缺数据的作品排最后。去除重复视频号链接及与小红书相同的10w小生意作品；新补视频号链接已加入，元信息待核实。数据不是实时值，万单位仅作近似排序；null表示未提供，不是0。",
+  "updatedAt": "2026-10-24",
+  "selectionRule": "用户指定作品，平台内按已读取阅读/播放量降序，缺数据的作品排最后。去除重复视频号链接及与小红书相同的10w小生意作品；新补视频号已核实标题、原始封面和指标。三个视频平台为2026-10-24快照，公众号保留2026-10-21快照。数据不是实时值，万单位仅作近似排序；null表示未提供，不是0。",
   "platforms": [
     {
       "id": "douyin",
@@ -11,15 +11,15 @@
       "totalLabel": null,
       "profileUrl": "https://www.douyin.com/user/MS4wLjABAAAAQ5Al9OUGKDIws5YiYE5ByAbUIrgR1qr8Z0s4W8mDkOr0Tf-pCmwqzINvBc6KxhvW",
       "status": "snapshot",
-      "observedAt": "2026-10-21",
-      "totalObservedAt": "2026-10-21",
-      "note": "指定精选 · 数据截至 2026-10-21，非实时更新。播放量保留平台显示精度。",
+      "observedAt": "2026-10-24",
+      "totalObservedAt": "2026-10-24",
+      "note": "指定精选 · 数据截至 2026-10-24，非实时更新。播放量保留平台显示精度。",
       "items": [
         {
           "id": "7682774550790130978",
           "title": "3分钟学会用 WorkBuddy 创建自己的 Skill",
-          "metricValue": 13100,
-          "metricDisplay": "1.31万",
+          "metricValue": 13200,
+          "metricDisplay": "1.32万",
           "cover": "assets/works/dy-skill-20261021.webp",
           "coverSource": "平台作品原始封面，2026-10-21读取",
           "url": "https://www.douyin.com/video/7682774550790130978",
@@ -30,7 +30,7 @@
             },
             {
               "label": "收藏",
-              "value": 198
+              "value": 199
             },
             {
               "label": "分享",
@@ -50,11 +50,11 @@
           "stats": [
             {
               "label": "点赞",
-              "value": 215
+              "value": 216
             },
             {
               "label": "收藏",
-              "value": 201
+              "value": 202
             },
             {
               "label": "分享",
@@ -96,31 +96,31 @@
       "totalLabel": "后台全部笔记 100 条",
       "profileUrl": "https://xhslink.cn/o/2RwQxXP0v1J",
       "status": "snapshot",
-      "observedAt": "2026-10-21",
-      "totalObservedAt": "2026-10-21",
-      "note": "指定精选 · 数据截至 2026-10-21，非实时更新。",
+      "observedAt": "2026-10-24",
+      "totalObservedAt": "2026-10-24",
+      "note": "指定精选 · 数据截至 2026-10-24，非实时更新。",
       "items": [
         {
           "id": "6ad3740d000000001303fabd",
           "preview": "assets/previews/nervous-5s.mp4",
           "title": "紧张的本质，是一种傲慢。",
-          "metricValue": 104875,
-          "metricDisplay": "104,875",
+          "metricValue": 110770,
+          "metricDisplay": "110,770",
           "cover": "assets/works/xhs-6ad3740d000000001303fabd-20261021.jpg",
           "coverSource": "平台作品原始封面，2026-10-21读取",
           "url": "https://www.xiaohongshu.com/explore/6ad3740d000000001303fabd?xsec_token=YBm40PZcO6jZi64VLs7um0AvywYPS4z6T-TKczRsdjJF0=&xsec_source=pc_creatormng",
           "stats": [
             {
               "label": "点赞",
-              "value": 3834
+              "value": 4179
             },
             {
               "label": "收藏",
-              "value": 4092
+              "value": 4493
             },
             {
               "label": "分享",
-              "value": 296
+              "value": 334
             }
           ]
         },
@@ -128,23 +128,23 @@
           "id": "6acb82b2000000001303e24c",
           "preview": "assets/previews/business-5s.mp4",
           "title": "用AI复刻价值10w的小生意。",
-          "metricValue": 10737,
-          "metricDisplay": "10,737",
+          "metricValue": 26649,
+          "metricDisplay": "26,649",
           "cover": "assets/works/xhs-6acb82b2000000001303e24c-20261021.jpg",
           "coverSource": "平台作品原始封面，2026-10-21读取",
           "url": "https://www.xiaohongshu.com/explore/6acb82b2000000001303e24c?xsec_token=YBX9AlKEgZdLPrOFnkFESdwkuXThuisuSxuSxn3M4pWcs=&xsec_source=pc_creatormng",
           "stats": [
             {
               "label": "点赞",
-              "value": 325
+              "value": 940
             },
             {
               "label": "收藏",
-              "value": 706
+              "value": 1637
             },
             {
               "label": "分享",
-              "value": 113
+              "value": 279
             }
           ]
         },
@@ -152,23 +152,23 @@
           "id": "6ab9206b000000001803b462",
           "preview": "assets/previews/travel-5s.mp4",
           "title": "用AI手搓一个国庆旅游行程网页",
-          "metricValue": 2487,
-          "metricDisplay": "2,487",
+          "metricValue": 2584,
+          "metricDisplay": "2,584",
           "cover": "assets/works/xhs-6ab9206b000000001803b462-20261021.jpg",
           "coverSource": "平台作品原始封面，2026-10-21读取",
           "url": "https://www.xiaohongshu.com/explore/6ab9206b000000001803b462?xsec_token=YBFnDFJ4m-eNa5NStjw1qvcu9MShfcx_Z3Ku-YeEKl-xQ=&xsec_source=pc_creatormng",
           "stats": [
             {
               "label": "点赞",
-              "value": 91
+              "value": 94
             },
             {
               "label": "收藏",
-              "value": 154
+              "value": 157
             },
             {
               "label": "分享",
-              "value": 27
+              "value": 28
             }
           ]
         }
@@ -182,9 +182,9 @@
       "totalLabel": null,
       "profileUrl": null,
       "status": "snapshot",
-      "observedAt": "2026-10-21",
-      "totalObservedAt": "2026-10-21",
-      "note": "指定精选 · 数据截至 2026-10-21，非实时更新。已去除跨平台重复作品；收藏数据未提供。",
+      "observedAt": "2026-10-24",
+      "totalObservedAt": "2026-10-24",
+      "note": "指定精选 · 数据截至 2026-10-24，非实时更新。已去除跨平台重复作品；收藏数据未提供。",
       "items": [
         {
           "id": "ASgdDopsY",
@@ -216,8 +216,8 @@
         {
           "id": "AclwNgUVv",
           "title": "WorkBuddy 这 8 个 Skill，你一定要用起来",
-          "metricValue": 3276,
-          "metricDisplay": "3,276",
+          "metricValue": 3279,
+          "metricDisplay": "3,279",
           "cover": "assets/works/channels-skills-20261021.jpg",
           "coverSource": "平台作品原始封面，2026-10-21读取",
           "url": "https://weixin.qq.com/sph/AclwNgUVv",
@@ -242,14 +242,19 @@
         },
         {
           "id": "A6usi2UDs",
-          "title": "视频号新分享",
-          "status": "metadata-pending",
-          "note": "用户补充链接；标题、原始封面和指标尚未读取，当前标题为入口标签，不是作品原题。",
-          "metricValue": null,
-          "metricDisplay": null,
-          "cover": null,
+          "title": "用费曼学习法，讲清 Skill 到底是什么",
+          "titleSource": "平台原始封面标题；分享页正文和后台2026-08-29作品已交叉核对",
+          "metricValue": 1287,
+          "metricDisplay": "1,287",
+          "cover": "assets/works/channels-skill-intro-20261024.jpg",
+          "coverSource": "平台分享页原始封面，2026-10-24读取",
           "url": "https://weixin.qq.com/sph/A6usi2UDs",
-          "stats": []
+          "stats": [
+            { "label": "喜欢", "value": 1 },
+            { "label": "推荐", "value": 8 },
+            { "label": "分享", "value": 24 },
+            { "label": "收藏", "value": null }
+          ]
         }
       ]
     },

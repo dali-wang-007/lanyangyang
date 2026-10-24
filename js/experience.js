@@ -121,7 +121,7 @@ async function initFeatured() {
   const panel = document.querySelector('#platform-works');
   if (!panel) return;
   try {
-    const response = await fetch('data/featured-content.json?v=20261024-run-v2');
+    const response = await fetch('data/featured-content.json?v=20261024-metrics');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     panel.innerHTML = renderPlatforms(data.platforms);
