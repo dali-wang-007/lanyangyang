@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "updatedAt": "2026-10-21",
-  "selectionRule": "用户指定作品，平台内按本次可见阅读/播放量降序。去除重复视频号链接及与小红书相同的10w小生意作品，视频号保留2篇。数据不是实时值，万单位仅作近似排序；null表示未提供，不是0。",
+  "selectionRule": "用户指定作品，平台内按已读取阅读/播放量降序，缺数据的作品排最后。去除重复视频号链接及与小红书相同的10w小生意作品；新补视频号链接已加入，元信息待核实。数据不是实时值，万单位仅作近似排序；null表示未提供，不是0。",
   "platforms": [
     {
       "id": "douyin",
@@ -176,7 +176,6 @@
     },
     {
       "id": "channels",
-      "additionalLinks": [{"url": "https://weixin.qq.com/sph/A2HGybzfW", "label": "新分享 · 在视频号打开"}],
       "label": "视频号",
       "metric": "播放",
       "totalWorks": 36,
@@ -240,6 +239,17 @@
               "value": null
             }
           ]
+        },
+        {
+          "id": "A2HGybzfW",
+          "title": "视频号新分享",
+          "status": "metadata-pending",
+          "note": "用户补充链接；标题、原始封面和指标尚未读取，当前标题为入口标签，不是作品原题。",
+          "metricValue": null,
+          "metricDisplay": null,
+          "cover": null,
+          "url": "https://weixin.qq.com/sph/A2HGybzfW",
+          "stats": []
         }
       ]
     },

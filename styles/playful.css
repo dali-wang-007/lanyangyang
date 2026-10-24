@@ -1,0 +1,78 @@
+/* Playful details, shared across the existing light design. */
+.entry-screen{transition:opacity .24s;outline:none}
+.entry-active{overflow:hidden}
+.entry-center{gap:16px;transform:translateY(-12px)}
+.entry-runway{position:relative;width:260px;height:270px}
+.entry-runner{position:absolute;inset:0 0 10px;background:url('../assets/mascot/sloth-run-atlas.png') 0 0/400% 200% no-repeat;animation:sloth-run .8s steps(1,end) infinite;z-index:1}
+.run-track{position:absolute;bottom:7px;left:32px;right:32px;height:3px;border-radius:50%;background:repeating-linear-gradient(90deg,#dce5f1 0 24px,transparent 24px 39px);animation:track-run .5s linear infinite}
+.run-dust{position:absolute;bottom:24px;left:14px;width:17px;height:6px;border-radius:100%;background:#dce9ff;box-shadow:-12px -10px 0 -1px #eef2ff;animation:dust-pop .4s ease-out infinite}
+.entry-center p{font-size:24px;font-weight:650;letter-spacing:.02em;color:#152026;margin:0}
+.entry-center p>span{display:inline-block;color:#2863ed;font-size:17px;vertical-align:top;margin-left:7px;animation:spark-turn 1.5s ease-in-out 2}
+.entry-center progress{width:140px;height:5px;margin-top:6px}
+@keyframes sloth-run{0%{background-position:0 0}12.5%{background-position:33.3333% 0}25%{background-position:66.6667% 0}37.5%{background-position:100% 0}50%{background-position:0 100%}62.5%{background-position:33.3333% 100%}75%{background-position:66.6667% 100%}87.5%{background-position:100% 100%}100%{background-position:0 0}}
+@keyframes track-run{to{background-position:-39px 0}}
+@keyframes dust-pop{0%{opacity:0;transform:translate(14px,4px) scale(.4)}30%{opacity:1}100%{opacity:0;transform:translate(-10px,-6px) scale(1.2)}}
+
+/* Headline accents are anchored to their words, not to empty card surfaces. */
+.kinetic-heading{display:flex;align-items:baseline;flex-wrap:wrap;gap:0;line-height:1.6!important}
+.thinking-word,.doing-word{position:relative;display:inline-block;isolation:isolate}
+.thinking-word:after{content:'';position:absolute;inset:auto -3px 6px;height:10px;background:#edf866;z-index:-1;transform:rotate(-2deg);border-radius:40% 15%}
+.doing-word{color:#2863ed;transform:rotate(-2deg)}
+.doing-word:after{content:'';position:absolute;left:0;right:0;bottom:3px;height:9px;border-top:3px solid currentColor;border-radius:50%;transform:rotate(-3deg)}
+.heading-comma{margin-right:.12em}
+.ing-tag{font-size:.64em;letter-spacing:-.025em;display:inline-block;margin-left:.06em;transform-origin:50% 90%}
+.is-revealed .ing-tag{animation:ing-hop 2.8s ease-in-out 2}.is-revealed .doing-word .ing-tag{animation-delay:.3s}
+.resource-motto{font-size:clamp(17px,1.65vw,22px)!important;text-align:left;line-height:1.9!important;color:#24313b!important;transform:rotate(-2deg);padding-right:12px}
+.resource-motto>span{display:block;white-space:nowrap;position:relative}
+.resource-motto em{font-style:normal;display:inline-block}
+.motto-zero{color:#77828e;font-size:.85em}
+.motto-ready{font-weight:650;color:#2454cc;background:linear-gradient(transparent 62%,#eff85b 62%,#eff85b 91%,transparent 91%);padding:0 3px;transform:rotate(2deg)}
+.resource-motto i{position:absolute;right:-17px;top:0;color:#2863ed;font-style:normal;font-size:15px}
+.is-revealed .resource-motto i{animation:spark-turn 2.6s ease-in-out 2}
+.drawn-word{position:relative;display:inline-block;z-index:0;color:#2863ed}
+.drawn-word:after{content:'';position:absolute;left:-3px;right:-3px;bottom:3px;height:9px;background:#eef65a;z-index:-1;border-radius:40%;transform:rotate(-3deg)}
+.motto-spark{display:inline-block;color:#2863ed;font-size:23px;vertical-align:middle;margin-right:5px}.is-revealed .motto-spark{animation:spark-turn 3s ease-in-out 2}
+.about-manifesto mark{box-decoration-break:clone;-webkit-box-decoration-break:clone}.about-manifesto .manifesto-no{transition:transform .4s}
+@keyframes ing-hop{0%,15%,65%,100%{transform:translateY(0) rotate(0)}25%{transform:translateY(-7px) rotate(5deg)}35%{transform:translateY(1px) rotate(-3deg)}45%{transform:translateY(-2px) rotate(0)}}
+@keyframes spark-turn{0%,60%,100%{transform:rotate(0) scale(1)}30%{transform:rotate(90deg) scale(1.2)}}
+
+/* One quiet cover canvas; platform personality belongs to the visit sticker. */
+#works-douyin,#works-xiaohongshu,#works-channels,#works-wechat{--card-tint:#f7f6fd}
+.platform-section .work-media{background:#f7f6fd;border-color:#eeedf7}
+#works-douyin{--sticker:#f0ecff;--sticker-line:#c9b9f0;--sticker-shadow:#e7def8}
+#works-xiaohongshu{--sticker:#fff0f7;--sticker-line:#eab6d0;--sticker-shadow:#f7e0ec}
+#works-channels{--sticker:#edfcf3;--sticker-line:#b2dfc5;--sticker-shadow:#dcefe4}
+#works-wechat{--sticker:#fff9d9;--sticker-line:#e4d88b;--sticker-shadow:#f3ebbe}
+.platform-actions .platform-more--sticker{background:var(--sticker);border-color:var(--sticker-line);box-shadow:3px 4px 0 var(--sticker-shadow)}
+.work-card .work-open,#works-wechat .work-card .work-open{display:inline-flex;align-items:center;justify-content:flex-start;align-self:flex-start;gap:12px;width:max-content;max-width:100%;border:1px solid #d9e4ff;border-radius:99px;padding:10px 15px;margin-top:auto;background:#edf3ff;color:#214fc7;font-size:14px;font-weight:650;min-height:46px;transition:transform .25s,background .25s,box-shadow .25s}
+.work-card .work-open>span{width:24px;height:24px;border-radius:50%;background:#2863ed;color:white;font-size:18px;flex-shrink:0;transition:transform .25s}
+.work-card .work-open--pending{border:0;background:none;color:#65717a;font-weight:400}
+.work-media .preview-control{position:absolute;bottom:12px;left:12px;top:auto;transform:none;border-radius:99px;font-size:12px;padding:9px 13px;min-height:38px;z-index:3}
+.preview-unavailable{position:absolute;bottom:12px;left:12px;background:#ffffffed;border:1px solid #e5e8ef;border-radius:99px;padding:8px 12px;font-size:11px;color:#64717c;pointer-events:none}
+.preview-status:empty{display:none}.preview-status{bottom:58px!important;max-width:calc(100% - 24px);border-radius:8px}
+.cover-pending{background:transparent!important;color:#60729b;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;height:100%;padding:30px;text-align:center}
+.cover-pending>span{font-size:34px!important;color:#2863ed}.cover-pending>strong{font-size:25px!important;font-weight:550;position:static!important;opacity:1!important}.cover-pending small{font-size:12px}
+.open-tools-grid a .tool-heading{display:flex;align-items:center;justify-content:flex-start;gap:12px;flex-wrap:wrap}
+.open-tools-grid .tool-heading b{position:static;inset:auto;display:inline-grid;place-items:center;flex:0 0 30px;width:30px;height:30px;margin:0;font-size:21px;transform:none}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+ .kinetic-heading:hover .ing-tag{animation:ing-hop 1s ease-in-out 1}
+ .work-card .work-open:hover,.work-card .work-open:focus-visible{background:#2863ed;color:#fff;border-color:#2863ed;box-shadow:0 5px 0 #d5e2ff;transform:translateY(-3px)}
+ .work-card:hover .work-open>span{animation:cta-nudge .9s ease-in-out 2}
+ .platform-actions .platform-more--sticker:hover{box-shadow:5px 8px 0 var(--sticker-shadow)}
+ .resource-motto:hover .motto-ready{transform:rotate(-1deg) translateY(-3px)}
+ .open-tools-grid a:hover .tool-heading b{transform:translate(3px,-3px)}
+}
+@keyframes cta-nudge{0%,100%{transform:translate(0,0)}45%{transform:translate(4px,-4px) rotate(10deg)}}
+@media(max-width:760px){
+ .entry-runway{width:220px;height:230px}.entry-center p{font-size:22px}
+ .kinetic-heading{font-size:clamp(25px,7.4vw,33px)!important;white-space:nowrap;flex-wrap:nowrap}
+ .section-heading:has(.resource-motto){align-items:flex-start;flex-direction:column;gap:20px}.directory .section-heading>.resource-motto{display:block;font-size:17px!important;align-self:flex-start;margin:0 10px 0 0!important}
+ .platform-identity{flex-direction:row;gap:6px 12px;align-items:baseline}.platform-total{white-space:normal}
+ .work-card .work-open,#works-wechat .work-card .work-open{font-size:13px;padding:9px 13px}
+ .open-tools-grid a .tool-heading{gap:9px}.open-tools-grid .tool-heading b{width:28px;height:28px;flex-basis:28px}
+}
+@media(prefers-reduced-motion:reduce){
+ .entry-active .entry-screen{display:grid!important}.entry-screen[hidden]{display:none!important}
+ .entry-runner,.run-track,.run-dust,.entry-center p>span,.ing-tag,.resource-motto i,.motto-spark{animation:none!important}.run-dust{display:none}
+ .work-card .work-open,.work-card .work-open>span,.motto-ready{transition:none!important;animation:none!important}
+}
