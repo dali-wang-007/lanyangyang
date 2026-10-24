@@ -27,6 +27,10 @@ export function sortFeaturedItems(items) {
   return [...items].sort((a,b)=>(Number.isFinite(b.metricValue)?b.metricValue:-1)-(Number.isFinite(a.metricValue)?a.metricValue:-1));
 }
 
+export function previewClickAction(paused, sinceHover) {
+  return paused ? 'play' : sinceHover < 300 ? 'keep' : 'pause';
+}
+
 export function openFullWork(event, open=(...args)=>window.open(...args)) {
   // Anchors already perform their native navigation; do not open a second tab.
   if(event.target.closest('a'))return;
@@ -42,7 +46,7 @@ export function renderFeatured(platform) {
     const media = item.cover
       ? `<img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.title || platform.label)}封面" loading="eager" decoding="async" width="540" height="720">`
       : `<div class="cover-pending"><span aria-hidden="true">↗</span><strong>${metadataPending?'新分享':String(index+1).padStart(2,'0')}</strong><small>${metadataPending?'标题与封面待补充':'作品封面待补充'}</small></div>`;
-    const preview = item.preview && !pending ? `<video muted playsinline preload="none" data-preview-src="${escapeHtml(item.preview)}" aria-hidden="true"></video><button type="button" class="preview-control" aria-label="预览前5秒：${escapeHtml(item.title)}">▶ 预览 5 秒</button><span class="preview-status" aria-live="polite"></span>` : platform.id!=='wechat'&&!pending?'<span class="preview-unavailable">↗ 前往平台观看</span>':'';
+    const preview = item.preview && !pending ? `<video muted playsinline preload="none" data-preview-src="${escapeHtml(item.preview)}" aria-hidden="true"></video><button type="button" class="preview-control" aria-label="播放预览：${escapeHtml(item.title)}">▶</button><span class="preview-status" aria-live="polite"></span>` : platform.id!=='wechat'&&!pending?'<span class="preview-unavailable">↗ 前往平台观看</span>':'';
     const stats = item.stats?.length ? `<dl class="work-stats">${item.stats.map(stat=>`<div><dt>${escapeHtml(stat.label)}</dt>${stat.value===null?'<dd title="后台未提供该指标" aria-label="未提供">—</dd>':`<dd>${escapeHtml(String(stat.value))}</dd>`}</div>`).join('')}</dl>` : '';
     return `<article class="work-card${pending ? ' work-placeholder' : ''}"><div class="work-media">${media}${preview}</div><div class="work-body"><div class="work-meta"><span>${pending||metadataPending ? '数据待补充' : escapeHtml(item.metricDisplay)+' '+escapeHtml(platform.metric)}</span></div><h3>${escapeHtml(item.title || (platform.label+'精选作品 · 整理中'))}</h3>${stats}${pending ? '<span class="work-open work-open--pending">链接与数据待补充</span>' : `<a class="work-open" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${platform.id==='wechat'?'阅读完整文章':'观看完整视频'} <span aria-hidden="true">↗</span></a>`}</div></article>`;
   }).join('');
@@ -53,10 +57,13 @@ function initPreviews(root) {
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   videos.forEach(video => {
     const media = video.closest('.work-media'), button = media.querySelector('button'), status = media.querySelector('.preview-status');
-    let token=0,hoverTimer;
+    const card=media.closest('.work-card');
+    let token=0,hoverStarted=-Infinity;
+    const playLabel=button.getAttribute('aria-label');
     const stop = (complete=false) => {
-      clearTimeout(hoverTimer); token++; video.pause(); media.classList.remove('is-playing');
-      button.textContent = complete ? '↻ 重播 5 秒' : '▶ 预览 5 秒';
+      token++; video.pause(); media.classList.remove('is-playing');
+      button.textContent = '▶';
+      button.setAttribute('aria-label',playLabel);
       button.setAttribute('aria-pressed','false');
       status.textContent = complete ? '预览结束，点击下方观看完整视频 ↗' : '';
     };
@@ -68,16 +75,20 @@ function initPreviews(root) {
       try {
         await video.play();
         if(attempt!==token) { video.pause(); return; }
-        media.classList.add('is-playing'); button.textContent='Ⅱ 暂停预览';
+        media.classList.add('is-playing'); button.textContent='Ⅱ';
+        button.setAttribute('aria-label',playLabel.replace('播放','暂停'));
         button.setAttribute('aria-pressed','true'); status.textContent='';
       } catch { if(attempt===token) { stop(); status.textContent='预览暂不可用，可直接打开原视频'; } }
     }
     button.setAttribute('aria-pressed','false');
-    button.addEventListener('click',()=>{clearTimeout(hoverTimer);video.paused ? play() : stop();});
-    media.addEventListener('pointerenter',event=>{
-      if(event.pointerType==='mouse'&&!reduced.matches&&!navigator.connection?.saveData) hoverTimer=setTimeout(play,200);
+    button.addEventListener('click',()=>{
+      const action=previewClickAction(video.paused,performance.now()-hoverStarted);
+      if(action==='play')play();else if(action==='pause')stop();
     });
-    media.addEventListener('pointerleave',()=>stop());
+    card.addEventListener('pointerenter',event=>{
+      if(event.pointerType==='mouse'&&!reduced.matches&&!navigator.connection?.saveData){hoverStarted=performance.now();play();}
+    });
+    card.addEventListener('pointerleave',()=>stop());
     video.addEventListener('stoppreview',()=>stop());
     video.addEventListener('ended',()=>stop(true));
     video.addEventListener('timeupdate',()=>{if(video.currentTime>=4.95)stop(true);});
@@ -103,7 +114,7 @@ async function initFeatured() {
   const panel = document.querySelector('#platform-works');
   if (!panel) return;
   try {
-    const response = await fetch('data/featured-content.json?v=20261024-playful');
+    const response = await fetch('data/featured-content.json?v=20261024-run-v2');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     panel.innerHTML = data.platforms.map(renderPlatform).join('');
