@@ -3,7 +3,7 @@
 .entry-active{overflow:hidden}
 .entry-center{gap:16px;transform:translateY(-12px)}
 .entry-runway{position:relative;width:min(88vw,480px);height:270px;--run-distance:clamp(35px,12vw,110px)}
-.entry-runner{position:absolute;left:calc(50% - 125px);top:0;width:250px;height:250px;background:url('../assets/mascot/sloth-run-side-v3.png') 0 0/200% 200% no-repeat;animation:sloth-run .6s steps(1,end) infinite,run-travel 3s linear both;z-index:1}
+.entry-runner{position:absolute;left:calc(50% - 125px);top:0;width:250px;height:250px;background:url('../assets/mascot/sloth-run-side-v3.png') 0 0/200% 200% no-repeat;animation:sloth-run .6s steps(1,end) infinite,run-travel 2s linear both;z-index:1}
 .run-track{position:absolute;bottom:7px;left:32px;right:32px;height:3px;border-radius:50%;background:repeating-linear-gradient(90deg,#dce5f1 0 24px,transparent 24px 39px);animation:track-run .5s linear infinite}
 .run-dust{position:absolute;bottom:24px;left:14px;width:17px;height:6px;border-radius:100%;background:#dce9ff;box-shadow:-12px -10px 0 -1px #eef2ff;animation:dust-pop .4s ease-out infinite}
 .entry-center p{font-size:24px;font-weight:650;letter-spacing:.02em;color:#152026;margin:0}

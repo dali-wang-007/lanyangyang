@@ -49,7 +49,7 @@ export function renderFeatured(platform) {
     const preview = platform.id==='xiaohongshu' && item.preview && !pending ? `<video muted playsinline preload="none" data-preview-src="${escapeHtml(item.preview)}" aria-hidden="true"></video><button type="button" class="preview-control" aria-label="播放预览：${escapeHtml(item.title)}">▶</button><span class="preview-status" aria-live="polite"></span>` : '';
     const stats = item.stats?.length ? `<dl class="work-stats">${item.stats.map(stat=>`<div><dt>${escapeHtml(stat.label)}</dt>${stat.value===null?'<dd title="后台未提供该指标" aria-label="未提供">—</dd>':`<dd>${escapeHtml(String(stat.value))}</dd>`}</div>`).join('')}</dl>` : '';
     const title=escapeHtml(item.title || (platform.label+'精选作品 · 整理中'));
-    const action=platform.id==='wechat'?'阅读完整文章':platform.id==='xiaohongshu'?'观看完整视频':'去平台观看';
+    const action=platform.id==='wechat'?'阅读完整文章':platform.id==='xiaohongshu'?'观看完整视频':'观看视频';
     return `<article class="work-card${pending ? ' work-placeholder' : ''}"><div class="work-media">${media}${preview}</div><div class="work-body"><div class="work-meta"><span>${pending||metadataPending ? '数据待补充' : escapeHtml(item.metricDisplay)+' '+escapeHtml(platform.metric)}</span></div><h3 title="${title}">${title}</h3>${stats}${pending ? '<span class="work-open work-open--pending">链接与数据待补充</span>' : `<a class="work-open" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${action} <span aria-hidden="true">↗</span></a>`}</div></article>`;
   }).join('');
 }
@@ -121,7 +121,7 @@ async function initFeatured() {
   const panel = document.querySelector('#platform-works');
   if (!panel) return;
   try {
-    const response = await fetch('data/featured-content.json?v=20261024-metrics');
+    const response = await fetch('data/featured-content.json?v=20261024-two-second');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     panel.innerHTML = renderPlatforms(data.platforms);

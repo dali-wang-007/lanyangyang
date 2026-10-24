@@ -1,4 +1,4 @@
-import {entryState} from './hero-type-motion.js?v=20261024-playful';
+import {entryState} from './hero-type-motion.js?v=20261024-two-second';
 
 const overlay=document.querySelector('#entry');
 if(overlay&&document.documentElement.classList.contains('entry-active')){
@@ -28,5 +28,5 @@ if(overlay&&document.documentElement.classList.contains('entry-active')){
     bar.value=state.progress;
     if(state.done)finish();else frame=requestAnimationFrame(tick);
   };
-  tick();setTimeout(finish,3000);
+  tick();setTimeout(finish,2000);
 }else if(overlay)overlay.hidden=true;

@@ -242,12 +242,12 @@
         },
         {
           "id": "A6usi2UDs",
-          "title": "用费曼学习法，讲清 Skill 到底是什么",
-          "titleSource": "平台原始封面标题；分享页正文和后台2026-08-29作品已交叉核对",
+          "title": "学会3步生成自己的 Skill",
+          "titleSource": "用户于2026-10-24指定",
           "metricValue": 1287,
           "metricDisplay": "1,287",
-          "cover": "assets/works/channels-skill-intro-20261024.jpg",
-          "coverSource": "平台分享页原始封面，2026-10-24读取",
+          "cover": "assets/works/channels-skill-user-20261024.jpeg",
+          "coverSource": "用户于2026-10-24提供的作品封面",
           "url": "https://weixin.qq.com/sph/A6usi2UDs",
           "stats": [
             { "label": "喜欢", "value": 1 },
