@@ -1,0 +1,68 @@
+/* Mobile rails share one rhythm. Desktop keeps its editorial grid. */
+.reading-progress { left: auto; right: 20px; }
+.carousel-controls, .mobile-products { display: none; }
+
+@media (max-width: 760px) {
+  .reading-progress { left: auto; right: 0; top: 58%; gap: 7px; width: 16px; }
+  .reading-progress__track { height: 72px; }
+  .reading-progress output { writing-mode: horizontal-tb; min-width: 16px; font-size: 7px; }
+  .platform-section { min-width: 0; margin-top: 32px; }
+  .platform-heading { gap: 12px; margin-bottom: 18px; align-items: center; }
+  .platform-identity { flex-wrap: wrap; gap: 4px 10px; }
+  .platform-total { font-size: 11px; margin: 0; }
+  .platform-section .work-grid, #works-wechat .work-grid,
+  .open-tools-grid, .mobile-product-track {
+    display: grid; grid-template-columns: none; grid-template-rows: auto;
+    grid-auto-flow: column; grid-auto-columns: calc(100% - 32px);
+    gap: 16px; min-width: 0; width: 100%;
+    overflow-x: auto; overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory; scroll-padding-inline: 0;
+    padding: 8px 0 12px; scrollbar-width: none;
+  }
+  .work-grid::-webkit-scrollbar, .open-tools-grid::-webkit-scrollbar,
+  .mobile-product-track::-webkit-scrollbar, .about-links::-webkit-scrollbar { display: none; }
+  .platform-section .work-grid > .work-card,
+  .open-tools-grid > a, .mobile-product-track > article {
+    grid-column: auto; min-width: 0; width: auto; margin: 0;
+    scroll-snap-align: start; scroll-snap-stop: normal;
+  }
+  .platform-section .work-media { aspect-ratio: 1.14; margin: 0; border-radius: 18px; }
+  .platform-section .work-body { padding: 14px 2px 0; }
+  .platform-section .work-card h3 { font-size: 17px; margin: 12px 0 18px; }
+  #works-wechat .work-card h3 { font-size: 17px; min-height: 55px; }
+  .platform-section .work-stats { gap: 18px; margin: 0 0 16px; }
+  .platform-section .work-stats dt { font-size: 11px; }
+  .platform-section .work-stats dd { font-size: 14px; }
+  .platform-section .work-open { min-height: 44px; font-size: 14px; }
+  .carousel-controls { display: flex; align-items: center; justify-content: center; gap: 0; min-height: 44px; margin-top: 2px; }
+  .carousel-dot { border: 0; background: transparent; padding: 0; width: 32px; height: 44px; display: grid; place-items: center; cursor: pointer; }
+  .carousel-dot::before { content: ''; width: 6px; height: 6px; border-radius: 10px; background: #ccd3df; transition: width .22s ease, background .22s ease; }
+  .carousel-dot[aria-pressed="true"]::before { width: 20px; background: #315eff; }
+  .carousel-dot:focus-visible { outline: 2px solid #315eff; outline-offset: -4px; border-radius: 12px; }
+  .carousel-count { font-size: 11px; color: #73808c; margin-left: 10px; font-variant-numeric: tabular-nums; }
+  .open-tools-grid { gap: 16px; }
+  .open-tools-grid .tool-scene { height: 154px; }
+  .open-tools-grid > a { padding: 0 0 10px; }
+  .open-tools-grid .tool-heading { font-size: 18px; }
+  .open-tools-grid small { line-height: 1.8; }
+  .product-layout { display: none; }
+  .mobile-products { display: block; min-width: 0; }
+  .mobile-product-track .product-card { display: flex; flex-direction: column; border: 1px solid #e8edf5; border-radius: 18px; overflow: hidden; background: #fff; box-shadow: none; }
+  .mobile-product-track .product-card__image { display: block; aspect-ratio: 1.14; overflow: hidden; background: #f5f5fd; }
+  .mobile-product-track .product-card__image img { width: 100%; height: 100%; object-fit: contain; }
+  .mobile-product-track .product-card__body { padding: 18px; }
+  .mobile-product-track .product-card__body h3 { font-size: 18px; line-height: 1.55; margin: 8px 0; }
+  .mobile-product-track .product-card__body p { font-size: 14px; line-height: 1.8; }
+  .mobile-product-track .text-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 10px; }
+  .mobile-product-coming { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 360px; border: 1px dashed #ccd5ef; border-radius: 18px; background: #f7f8ff; }
+  .mobile-product-coming > span { font-size: 44px; color: #315eff; }
+  .mobile-product-coming h3 { margin: 24px 0 8px; font-size: 22px; }
+  .mobile-product-coming p { color: #73808c; font-size: 14px; }
+  .about-layout, .about-copy { min-width: 0; }
+  .about-links { display: flex; flex-wrap: nowrap; gap: 7px; width: 100%; overflow-x: auto; scrollbar-width: none; padding: 6px 0; }
+  .about-links .social-link { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; gap: 4px; padding: 10px 6px; min-width: 0; min-height: 44px; font-size: 11px; white-space: nowrap; }
+  .about-links .social-link__icon { width: 16px; height: 16px; flex-shrink: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-dot::before { transition: none; }
+}

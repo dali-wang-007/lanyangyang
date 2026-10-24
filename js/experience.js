@@ -1,4 +1,5 @@
 import { escapeHtml } from './render.js';
+import { initCarousels } from './carousel.js';
 
 export function eyeOffset(dx, dy, maxX, maxY) {
   const length = Math.hypot(dx, dy);
@@ -127,6 +128,7 @@ async function initFeatured() {
     panel.innerHTML = renderPlatforms(data.platforms);
     panel.addEventListener('dblclick',openFullWork);
     initPreviews(panel);
+    initCarousels(panel);
   } catch (error) {
     panel.innerHTML = '<p class="notice">作品暂时未加载成功，请稍后刷新。</p>';
     console.error('Unable to load featured content',error);
@@ -190,5 +192,6 @@ if (typeof document !== 'undefined') {
   window.addEventListener('resize',updateHeader);
   new ResizeObserver(updateHeader).observe(document.body); updateHeader();
   initMascot(); initFeatured(); initWechat(); initReveals();
+  initCarousels();
   import('./studio-motion.js').then(m=>m.initStudioMotion());
 }

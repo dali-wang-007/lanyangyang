@@ -5,6 +5,7 @@ import {
   renderProductShelf,
   renderProductShowcase
 } from './render.js';
+import { initCarousels } from './carousel.js';
 
 function setupGallery(root) {
   root.querySelectorAll('[data-gallery]').forEach((gallery) => {
@@ -51,6 +52,11 @@ export async function initProducts(root = document) {
     if (showcase && products[0]) {
       showcase.innerHTML = renderProductShowcase(products[0]);
       setupGallery(showcase);
+      const mobile = document.createElement('div');
+      mobile.className = 'mobile-products';
+      mobile.innerHTML = `<div class="mobile-product-track">${products.map(renderProductCard).join('')}<article class="mobile-product-coming"><span aria-hidden="true">✦</span><h3>更多产品</h3><p>正在整理中</p></article></div>`;
+      showcase.closest('.product-layout').after(mobile);
+      initCarousels(mobile);
     }
     shelf?.addEventListener('click', (event) => {
       const button = event.target.closest('[data-product-select]');
