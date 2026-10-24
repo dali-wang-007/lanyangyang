@@ -3,9 +3,9 @@
 .carousel-controls, .mobile-products { display: none; }
 
 @media (max-width: 760px) {
-  .reading-progress { left: auto; right: 0; top: 58%; gap: 7px; width: 16px; }
+  .reading-progress { left: auto; right: 2px; top: 58%; gap: 8px; width: 36px; }
   .reading-progress__track { height: 72px; }
-  .reading-progress output { writing-mode: horizontal-tb; min-width: 16px; font-size: 7px; }
+  .reading-progress output { writing-mode: horizontal-tb; min-width: 36px; font-size: 12px; line-height: 1.6; font-weight: 650; color: #344657; background: #fffffff2; border-radius: 8px; padding: 2px 3px; font-variant-numeric: tabular-nums; }
   .platform-section { min-width: 0; margin-top: 32px; }
   .platform-heading { gap: 12px; margin-bottom: 18px; align-items: center; }
   .platform-identity { flex-wrap: wrap; gap: 4px 10px; }

@@ -1,8 +1,5 @@
 // Deliberately independent of the mascot renderer: typography never swaps its art.
-export function entryState(elapsed) {
-  const progress=Math.floor(Math.max(0,Math.min(2000,elapsed))/20);
-  return {progress,done:elapsed>=2000};
-}
+export {entryState} from './entry-state.js';
 export function titleOffset(x, y, rect) {
   const clamp = n => Math.max(-1, Math.min(1, n));
   if (!(rect.width > 0 && rect.height > 0)) return {x:0,y:0};
