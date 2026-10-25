@@ -35,5 +35,38 @@
         "url": "https://xhslink.cn/o/2RwQxXP0v1J"
       }
     ]
+  },
+  {
+    "id": "ai-assessment-course",
+    "title": "用 AI 做出第一个可售卖的测评网站",
+    "summary": "从一个测评点子，到自己的第一款数字商品。",
+    "audience": "适合会使用聊天型 AI、有测评或小工具想法，但不会编程、没有技术搭档的个人创作者。需要准备电脑、飞书账号和具备项目开发能力的 AI 工具。",
+    "cover": {
+      "src": "assets/product/ai-assessment-01.png",
+      "alt": "用 AI 做出第一个可售卖的测评网站：零编程基础图文带教课",
+      "width": 1200,
+      "height": 1600
+    },
+    "gallery": [
+      { "src": "assets/product/ai-assessment-01.png", "alt": "课程介绍：产品设计、AI 制作、测试上线与上架准备", "width": 1200, "height": 1600 },
+      { "src": "assets/product/ai-assessment-02.png", "alt": "课程结构：五个完整学习模块", "width": 1200, "height": 1600 },
+      { "src": "assets/product/ai-assessment-03.png", "alt": "适合人群与开始前需要的准备", "width": 1200, "height": 1600 },
+      { "src": "assets/product/ai-assessment-04.png", "alt": "学习路线：从产品方向到上架交付的六个阶段", "width": 1200, "height": 1600 },
+      { "src": "assets/product/ai-assessment-05.png", "alt": "跟练方式：目标、资料、提示词、操作、检查与复测", "width": 1200, "height": 1600 },
+      { "src": "assets/product/ai-assessment-06.png", "alt": "学习成果与课程交付内容", "width": 1200, "height": 1600 },
+      { "src": "assets/product/ai-assessment-07.png", "alt": "获准公开的课程选读：选题方法、提示词与检查要求", "width": 1200, "height": 1600 },
+      { "src": "assets/product/ai-assessment-08.png", "alt": "独立演练项目：正式网站、限次密码后台与部署验证记录", "width": 1200, "height": 1600 }
+    ],
+    "highlights": [
+      "从选题、题目与计分，到 AI 制作、测试上线和售卖准备",
+      "飞书图文教程，配套完整提示词、演练截图、检查表和商品资料模板",
+      "按步骤练习正式网址、限次密码、管理后台与上架交付资料",
+      "交付的是教程，不是现成网站；不含案例题库、工具安装或定制开发",
+      "不承诺流量、销量、收入或平台审核结果；自动交付需另接发货工具并验证测试订单",
+      "教程仅供购买者本人学习，可制作自己的原创产品，不可转售或公开传播教程；正式购买入口待补充，可先到小红书主页了解"
+    ],
+    "channels": [
+      { "label": "去小红书主页了解", "url": "https://xhslink.cn/o/2RwQxXP0v1J" }
+    ]
   }
 ]
