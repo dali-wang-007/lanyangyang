@@ -43,7 +43,8 @@ export async function initProducts(root = document) {
   if (!list && !shelf && !showcase && !detail) return;
 
   try {
-    const response = await fetch('data/products.json');
+    // Revalidate editorial updates instead of retaining old names for the CDN's max-age.
+    const response = await fetch('data/products.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const products = await response.json();
 
