@@ -90,8 +90,10 @@ export function renderProductCard(product) {
 }
 
 export function renderProductShelf(products) {
-  const items = products.map((product, index) => `<button class="product-shelf__item${index === 0 ? ' is-active' : ''}" type="button" data-product-select="${escapeHtml(product.id)}" aria-pressed="${index === 0}">
-  <span>数字产品</span>
+  const items = products.map((product, index) => `<button class="product-shelf__item${index === 0 ? ' is-active' : ''}" type="button" data-product-select="${escapeHtml(product.id)}" aria-label="${escapeHtml(product.title)}" aria-pressed="${index === 0}">
+  <span class="product-shelf__top" aria-hidden="true"><span class="product-shelf__number">${String(index + 1).padStart(2, '0')}</span><span class="product-shelf__status">正在展出</span><span class="product-shelf__arrow">↗</span></span>
+  <span class="product-shelf__book" aria-hidden="true">${renderProductImage(product.cover)}</span>
+  <span class="product-shelf__label">数字产品</span>
   <strong>${escapeHtml(product.title)}</strong>
 </button>`).join('\n');
   return `${items}
